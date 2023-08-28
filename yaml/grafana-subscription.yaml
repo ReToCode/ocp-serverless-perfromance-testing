@@ -1,0 +1,27 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: Subscription
+metadata:
+  labels:
+    operators.coreos.com/grafana-operator.influx: ""
+  name: grafana-operator
+  namespace: influx
+spec:
+  channel: v4
+  installPlanApproval: Automatic
+  name: grafana-operator
+  source: community-operators
+  sourceNamespace: openshift-marketplace
+  startingCSV: grafana-operator.v4.10.1
+---
+apiVersion: operators.coreos.com/v1
+kind: OperatorGroup
+metadata:
+  annotations:
+    olm.providedAPIs: Grafana.v1alpha1.integreatly.org,GrafanaDashboard.v1alpha1.integreatly.org,GrafanaDataSource.v1alpha1.integreatly.org,GrafanaFolder.v1alpha1.integreatly.org,GrafanaNotificationChannel.v1alpha1.integreatly.org
+  generateName: influx-
+  name: influx-fxmkf
+  namespace: influx
+spec:
+  targetNamespaces:
+    - influx
+  upgradeStrategy: Default

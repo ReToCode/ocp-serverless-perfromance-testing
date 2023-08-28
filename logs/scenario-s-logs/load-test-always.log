@@ -1,0 +1,16 @@
+{"level":"info","ts":1692775322.8159423,"logger":"fallback","caller":"injection/injection.go:63","msg":"Starting informers..."}
+2023/08/23 07:22:03 Starting the load test.
+2023/08/23 07:23:06 All pods are done (scaled to zero) or terminating after 1m1.0005993s
+Requests      [total, rate, throughput]         719998, 2000.00, 1999.43
+Duration      [total, attack, wait]             6m0s, 6m0s, 102.735ms
+Latencies     [min, mean, 50, 90, 95, 99, max]  101.104ms, 110.436ms, 102.128ms, 102.754ms, 103.025ms, 116.548ms, 3.459s
+Bytes In      [total, mean]                     17199823, 23.89
+Bytes Out     [total, mean]                     0, 0.00
+Success       [ratio]                           100.00%
+Status Codes  [code:count]                      200:719998  
+Error Set:
+2023/08/23 07:29:06 SLA 1 passed. P95 latency is in 100-115ms time range
+2023/08/23 07:29:06 SLA 2 passed. Max latency is below 10s
+2023/08/23 07:29:06 SLA 3 passed. No errors occurred
+2023/08/23 07:29:06 Load test finished
+2023/08/23 07:29:06 Shutting down InfluxReporter

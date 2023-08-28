@@ -1,0 +1,42 @@
+{"level":"info","ts":1693209262.3580525,"logger":"fallback","caller":"injection/injection.go:63","msg":"Starting informers..."}
+2023/08/28 07:54:32 Created: basic-hvc8f
+2023/08/28 07:54:42 Created: basic-mc9zv
+2023/08/28 07:54:52 Created: basic-9jk7t
+2023/08/28 07:55:02 Created: basic-k42zz
+2023/08/28 07:55:12 Created: basic-nhwdx
+2023/08/28 07:55:22 Created: basic-ww8dc
+2023/08/28 07:55:32 Created: basic-rzgdd
+2023/08/28 07:55:42 Created: basic-gx9d6
+2023/08/28 07:55:52 Created: basic-pn7gv
+2023/08/28 07:56:02 Created: basic-4j4qm
+2023/08/28 07:56:12 Created: basic-sw922
+2023/08/28 07:56:22 Created: basic-82qnh
+2023/08/28 07:56:32 Created: basic-hqhtn
+2023/08/28 07:56:42 Created: basic-brnv6
+2023/08/28 07:56:52 Created: basic-wrnql
+2023/08/28 07:57:02 Created: basic-gbvdr
+2023/08/28 07:57:12 Created: basic-k2sj6
+2023/08/28 07:57:22 Created: basic-mxwf2
+2023/08/28 07:57:32 Created: basic-j8v9k
+2023/08/28 07:57:42 Created: basic-rbf88
+2023/08/28 07:57:52 Created: basic-hs925
+2023/08/28 07:58:02 Created: basic-km68j
+2023/08/28 07:58:12 Created: basic-ph6h4
+2023/08/28 07:58:22 Created: basic-hw5sh
+2023/08/28 07:58:32 Created: basic-qk9sf
+2023/08/28 07:58:42 Created: basic-kqn6x
+2023/08/28 07:58:52 Created: basic-ctk9j
+2023/08/28 07:59:02 Created: basic-7tmgx
+2023/08/28 07:59:12 Created: basic-l82gn
+2023/08/28 07:59:22 Shutting down InfluxReporter
+Requests      [total, rate, throughput]         203, 203.00, 29.00
+Duration      [total, attack, wait]             5s, 0s, 5s
+Latencies     [min, mean, 50, 90, 95, 99, max]  1s, 2.837s, 3s, 4s, 4s, 5s, 5s
+Bytes In      [total, mean]                     0, 0.00
+Bytes Out     [total, mean]                     0, 0.00
+Success       [ratio]                           14.29%
+Status Codes  [code:count]                      0:174  200:29  
+Error Set:
+2023/08/28 07:59:22 SLA 1 passed. P95 latency is in 0-25s time range
+2023/08/28 07:59:22 SLA 2 passed. Amount of ready services is within the expected range
+2023/08/28 07:59:22 Reconciliation delay run finished
