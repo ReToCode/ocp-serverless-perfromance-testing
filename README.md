@@ -68,7 +68,7 @@ for name in $(oc get machineset -n openshift-machine-api -o name); do oc scale $
 
 # Set resource scenario
 ## TODO
-oc apply -f scenarios/minimal/knative-serving.yaml
+oc apply -f scenarios/knative-serving-minimal.yaml
 
 # hack to stop HPA from interfering - this is optional (depending on tests)
 oc scale deploy -n openshift-serverless knative-operator-webhook --replicas=0
@@ -93,7 +93,7 @@ for name in $(oc get machineset -n openshift-machine-api -o name); do oc scale $
 oc wait --for=jsonpath={.status.availableReplicas}=4 machineset --all -n openshift-machine-api --timeout=-1s
 
 # Set resource scenario
-oc apply -f scenarios/limits/knative-serving.yaml
+oc apply -f scenarios/knative-serving-limits.yaml
 
 # hack to stop HPA from interfering - this is optional (depending on tests)
 oc scale deploy -n openshift-serverless knative-operator-webhook --replicas=0
@@ -108,6 +108,12 @@ oc patch cm config-autoscaler -n knative-serving -p '{"data": {"allow-zero-initi
 Running the tests needs some tweaks, because one calling pod is not enough:
 
 ```bash
+# for local debugging only
+export ARTIFACTS=$PWD/logs
+name= xxx; stern -n default --selector=job-name="$name" | tee "$ARTIFACTS/stern-$name.log"
+```
+
+```bash
 # Environment
 export KO_DOCKER_REPO=quay.io/rlehmann
 export SYSTEM_NAMESPACE=knative-serving
@@ -117,7 +123,7 @@ export INFLUX_URL=http://local-influx-influxdb2.influx:80
 export ARTIFACTS=$PWD/logs
 
 # Run the tests individually
-./scripts/run-reconciliation-delay.sh limits
+./scripts/run-reconciliation-delay.sh "1000ms"
 
-
+./scripts/run-dataplane-probe.sh 15
 ```

@@ -1,0 +1,65 @@
+dataplane-probe-queue-hvmbs dataplane-probe {"level":"info","ts":1693556369.9197485,"logger":"fallback","caller":"injection/injection.go:63","msg":"Starting informers..."}
+dataplane-probe-queue-qfg7w dataplane-probe {"level":"info","ts":1693556369.8296385,"logger":"fallback","caller":"injection/injection.go:63","msg":"Starting informers..."}
+dataplane-probe-queue-qfg7w dataplane-probe 2023/09/01 08:19:30 Starting dataplane probe for target: queue
+dataplane-probe-queue-hvmbs dataplane-probe 2023/09/01 08:19:30 Starting dataplane probe for target: queue
+dataplane-probe-queue-db7fk dataplane-probe {"level":"info","ts":1693556369.4711316,"logger":"fallback","caller":"injection/injection.go:63","msg":"Starting informers..."}
+dataplane-probe-queue-db7fk dataplane-probe 2023/09/01 08:19:29 Starting dataplane probe for target: queue
+dataplane-probe-queue-jjpz7 dataplane-probe {"level":"info","ts":1693556369.700908,"logger":"fallback","caller":"injection/injection.go:63","msg":"Starting informers..."}
+dataplane-probe-queue-jjpz7 dataplane-probe 2023/09/01 08:19:29 Starting dataplane probe for target: queue
+dataplane-probe-queue-t9fwv dataplane-probe {"level":"info","ts":1693556370.1111622,"logger":"fallback","caller":"injection/injection.go:63","msg":"Starting informers..."}
+dataplane-probe-queue-t9fwv dataplane-probe 2023/09/01 08:19:30 Starting dataplane probe for target: queue
+dataplane-probe-queue-db7fk dataplane-probe Requests      [total, rate, throughput]         180000, 1000.00, 999.44
+dataplane-probe-queue-db7fk dataplane-probe Duration      [total, attack, wait]             3m0s, 3m0s, 101.239ms
+dataplane-probe-queue-db7fk dataplane-probe Latencies     [min, mean, 50, 90, 95, 99, max]  100.535ms, 101.879ms, 101.688ms, 102.274ms, 102.439ms, 103.374ms, 963.81ms
+dataplane-probe-queue-db7fk dataplane-probe Bytes In      [total, mean]                     4300326, 23.89
+dataplane-probe-queue-db7fk dataplane-probe Bytes Out     [total, mean]                     0, 0.00
+dataplane-probe-queue-db7fk dataplane-probe Success       [ratio]                           100.00%
+dataplane-probe-queue-db7fk dataplane-probe Status Codes  [code:count]                      200:180000  
+dataplane-probe-queue-db7fk dataplane-probe Error Set:
+dataplane-probe-queue-db7fk dataplane-probe 2023/09/01 08:22:29 SLA 1 passed. P95 latency is in 100000000-110000000ms time range
+dataplane-probe-queue-db7fk dataplane-probe 2023/09/01 08:22:29 Dataplane probe test finished
+dataplane-probe-queue-db7fk dataplane-probe 2023/09/01 08:22:29 Shutting down InfluxReporter
+dataplane-probe-queue-jjpz7 dataplane-probe Requests      [total, rate, throughput]         180000, 1000.00, 999.43
+dataplane-probe-queue-jjpz7 dataplane-probe Duration      [total, attack, wait]             3m0s, 3m0s, 102.179ms
+dataplane-probe-queue-jjpz7 dataplane-probe Latencies     [min, mean, 50, 90, 95, 99, max]  100.533ms, 102.007ms, 101.819ms, 102.388ms, 102.532ms, 103.592ms, 974.71ms
+dataplane-probe-queue-jjpz7 dataplane-probe Bytes In      [total, mean]                     4300070, 23.89
+dataplane-probe-queue-jjpz7 dataplane-probe Bytes Out     [total, mean]                     0, 0.00
+dataplane-probe-queue-jjpz7 dataplane-probe Success       [ratio]                           100.00%
+dataplane-probe-queue-jjpz7 dataplane-probe Status Codes  [code:count]                      200:180000  
+dataplane-probe-queue-jjpz7 dataplane-probe Error Set:
+dataplane-probe-queue-jjpz7 dataplane-probe 2023/09/01 08:22:30 SLA 1 passed. P95 latency is in 100000000-110000000ms time range
+dataplane-probe-queue-jjpz7 dataplane-probe 2023/09/01 08:22:30 Dataplane probe test finished
+dataplane-probe-queue-jjpz7 dataplane-probe 2023/09/01 08:22:30 Shutting down InfluxReporter
+dataplane-probe-queue-qfg7w dataplane-probe Requests      [total, rate, throughput]         180000, 1000.00, 999.43
+dataplane-probe-queue-qfg7w dataplane-probe Duration      [total, attack, wait]             3m0s, 3m0s, 102.97ms
+dataplane-probe-queue-qfg7w dataplane-probe Latencies     [min, mean, 50, 90, 95, 99, max]  100.521ms, 101.944ms, 101.786ms, 102.365ms, 102.52ms, 103.32ms, 853.339ms
+dataplane-probe-queue-qfg7w dataplane-probe Bytes In      [total, mean]                     4299787, 23.89
+dataplane-probe-queue-qfg7w dataplane-probe Bytes Out     [total, mean]                     0, 0.00
+dataplane-probe-queue-qfg7w dataplane-probe Success       [ratio]                           100.00%
+dataplane-probe-queue-qfg7w dataplane-probe Status Codes  [code:count]                      200:180000  
+dataplane-probe-queue-qfg7w dataplane-probe Error Set:
+dataplane-probe-queue-qfg7w dataplane-probe 2023/09/01 08:22:30 SLA 1 passed. P95 latency is in 100000000-110000000ms time range
+dataplane-probe-queue-qfg7w dataplane-probe 2023/09/01 08:22:30 Dataplane probe test finished
+dataplane-probe-queue-qfg7w dataplane-probe 2023/09/01 08:22:30 Shutting down InfluxReporter
+dataplane-probe-queue-hvmbs dataplane-probe Requests      [total, rate, throughput]         180000, 1000.00, 999.44
+dataplane-probe-queue-hvmbs dataplane-probe Duration      [total, attack, wait]             3m0s, 3m0s, 101.159ms
+dataplane-probe-queue-hvmbs dataplane-probe Latencies     [min, mean, 50, 90, 95, 99, max]  100.572ms, 101.956ms, 101.74ms, 102.321ms, 102.52ms, 103.418ms, 884.44ms
+dataplane-probe-queue-hvmbs dataplane-probe Bytes In      [total, mean]                     4299952, 23.89
+dataplane-probe-queue-hvmbs dataplane-probe Bytes Out     [total, mean]                     0, 0.00
+dataplane-probe-queue-hvmbs dataplane-probe Success       [ratio]                           100.00%
+dataplane-probe-queue-hvmbs dataplane-probe Status Codes  [code:count]                      200:180000  
+dataplane-probe-queue-hvmbs dataplane-probe Error Set:
+dataplane-probe-queue-hvmbs dataplane-probe 2023/09/01 08:22:30 SLA 1 passed. P95 latency is in 100000000-110000000ms time range
+dataplane-probe-queue-hvmbs dataplane-probe 2023/09/01 08:22:30 Dataplane probe test finished
+dataplane-probe-queue-hvmbs dataplane-probe 2023/09/01 08:22:30 Shutting down InfluxReporter
+dataplane-probe-queue-t9fwv dataplane-probe Requests      [total, rate, throughput]         180000, 1000.00, 999.44
+dataplane-probe-queue-t9fwv dataplane-probe Duration      [total, attack, wait]             3m0s, 3m0s, 101.683ms
+dataplane-probe-queue-t9fwv dataplane-probe Latencies     [min, mean, 50, 90, 95, 99, max]  100.529ms, 101.979ms, 101.712ms, 102.338ms, 102.512ms, 105.572ms, 884.353ms
+dataplane-probe-queue-t9fwv dataplane-probe Bytes In      [total, mean]                     4299962, 23.89
+dataplane-probe-queue-t9fwv dataplane-probe Bytes Out     [total, mean]                     0, 0.00
+dataplane-probe-queue-t9fwv dataplane-probe Success       [ratio]                           100.00%
+dataplane-probe-queue-t9fwv dataplane-probe Status Codes  [code:count]                      200:180000  
+dataplane-probe-queue-t9fwv dataplane-probe Error Set:
+dataplane-probe-queue-t9fwv dataplane-probe 2023/09/01 08:22:30 SLA 1 passed. P95 latency is in 100000000-110000000ms time range
+dataplane-probe-queue-t9fwv dataplane-probe 2023/09/01 08:22:30 Dataplane probe test finished
+dataplane-probe-queue-t9fwv dataplane-probe 2023/09/01 08:22:30 Shutting down InfluxReporter

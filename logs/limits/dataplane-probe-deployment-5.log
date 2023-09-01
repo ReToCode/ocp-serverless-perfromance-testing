@@ -1,0 +1,65 @@
+dataplane-probe-deployment-mnfd6 dataplane-probe {"level":"info","ts":1693555388.4695961,"logger":"fallback","caller":"injection/injection.go:63","msg":"Starting informers..."}
+dataplane-probe-deployment-mnfd6 dataplane-probe 2023/09/01 08:03:08 Starting dataplane probe for target: deployment
+dataplane-probe-deployment-jjtch dataplane-probe {"level":"info","ts":1693555388.4360561,"logger":"fallback","caller":"injection/injection.go:63","msg":"Starting informers..."}
+dataplane-probe-deployment-jjtch dataplane-probe 2023/09/01 08:03:08 Starting dataplane probe for target: deployment
+dataplane-probe-deployment-4sl68 dataplane-probe {"level":"info","ts":1693555388.4041946,"logger":"fallback","caller":"injection/injection.go:63","msg":"Starting informers..."}
+dataplane-probe-deployment-4sl68 dataplane-probe 2023/09/01 08:03:08 Starting dataplane probe for target: deployment
+dataplane-probe-deployment-zst9c dataplane-probe {"level":"info","ts":1693555388.4554734,"logger":"fallback","caller":"injection/injection.go:63","msg":"Starting informers..."}
+dataplane-probe-deployment-zst9c dataplane-probe 2023/09/01 08:03:08 Starting dataplane probe for target: deployment
+dataplane-probe-deployment-mssqq dataplane-probe {"level":"info","ts":1693555388.415048,"logger":"fallback","caller":"injection/injection.go:63","msg":"Starting informers..."}
+dataplane-probe-deployment-mssqq dataplane-probe 2023/09/01 08:03:08 Starting dataplane probe for target: deployment
+dataplane-probe-deployment-4sl68 dataplane-probe Requests      [total, rate, throughput]         180000, 1000.01, 999.45
+dataplane-probe-deployment-4sl68 dataplane-probe Duration      [total, attack, wait]             3m0s, 3m0s, 100.29ms
+dataplane-probe-deployment-4sl68 dataplane-probe Latencies     [min, mean, 50, 90, 95, 99, max]  100.134ms, 101.178ms, 101.03ms, 101.589ms, 101.678ms, 101.843ms, 580.498ms
+dataplane-probe-deployment-4sl68 dataplane-probe Bytes In      [total, mean]                     4299917, 23.89
+dataplane-probe-deployment-4sl68 dataplane-probe Bytes Out     [total, mean]                     0, 0.00
+dataplane-probe-deployment-4sl68 dataplane-probe Success       [ratio]                           100.00%
+dataplane-probe-deployment-4sl68 dataplane-probe Status Codes  [code:count]                      200:180000  
+dataplane-probe-deployment-4sl68 dataplane-probe Error Set:
+dataplane-probe-deployment-4sl68 dataplane-probe 2023/09/01 08:06:08 SLA 1 passed. P95 latency is in 100000000-105000000ms time range
+dataplane-probe-deployment-4sl68 dataplane-probe 2023/09/01 08:06:08 Dataplane probe test finished
+dataplane-probe-deployment-4sl68 dataplane-probe 2023/09/01 08:06:08 Shutting down InfluxReporter
+dataplane-probe-deployment-mssqq dataplane-probe Requests      [total, rate, throughput]         180000, 1000.00, 999.44
+dataplane-probe-deployment-mssqq dataplane-probe Duration      [total, attack, wait]             3m0s, 3m0s, 101.035ms
+dataplane-probe-deployment-mssqq dataplane-probe Latencies     [min, mean, 50, 90, 95, 99, max]  100.126ms, 101.153ms, 101.005ms, 101.585ms, 101.683ms, 101.841ms, 653.324ms
+dataplane-probe-deployment-mssqq dataplane-probe Bytes In      [total, mean]                     4300204, 23.89
+dataplane-probe-deployment-mssqq dataplane-probe Bytes Out     [total, mean]                     0, 0.00
+dataplane-probe-deployment-mssqq dataplane-probe Success       [ratio]                           100.00%
+dataplane-probe-deployment-mssqq dataplane-probe Status Codes  [code:count]                      200:180000  
+dataplane-probe-deployment-mssqq dataplane-probe Error Set:
+dataplane-probe-deployment-mssqq dataplane-probe 2023/09/01 08:06:08 SLA 1 passed. P95 latency is in 100000000-105000000ms time range
+dataplane-probe-deployment-mssqq dataplane-probe 2023/09/01 08:06:08 Dataplane probe test finished
+dataplane-probe-deployment-mssqq dataplane-probe 2023/09/01 08:06:08 Shutting down InfluxReporter
+dataplane-probe-deployment-jjtch dataplane-probe Requests      [total, rate, throughput]         180000, 1000.00, 999.44
+dataplane-probe-deployment-jjtch dataplane-probe Duration      [total, attack, wait]             3m0s, 3m0s, 101.47ms
+dataplane-probe-deployment-jjtch dataplane-probe Latencies     [min, mean, 50, 90, 95, 99, max]  100.115ms, 101.092ms, 100.974ms, 101.547ms, 101.655ms, 101.807ms, 581.094ms
+dataplane-probe-deployment-jjtch dataplane-probe Bytes In      [total, mean]                     4300184, 23.89
+dataplane-probe-deployment-jjtch dataplane-probe Bytes Out     [total, mean]                     0, 0.00
+dataplane-probe-deployment-jjtch dataplane-probe Success       [ratio]                           100.00%
+dataplane-probe-deployment-jjtch dataplane-probe Status Codes  [code:count]                      200:180000  
+dataplane-probe-deployment-jjtch dataplane-probe Error Set:
+dataplane-probe-deployment-jjtch dataplane-probe 2023/09/01 08:06:08 SLA 1 passed. P95 latency is in 100000000-105000000ms time range
+dataplane-probe-deployment-jjtch dataplane-probe 2023/09/01 08:06:08 Dataplane probe test finished
+dataplane-probe-deployment-jjtch dataplane-probe 2023/09/01 08:06:08 Shutting down InfluxReporter
+dataplane-probe-deployment-mnfd6 dataplane-probe Requests      [total, rate, throughput]         180000, 1000.00, 999.44
+dataplane-probe-deployment-mnfd6 dataplane-probe Duration      [total, attack, wait]             3m0s, 3m0s, 101.348ms
+dataplane-probe-deployment-mnfd6 dataplane-probe Latencies     [min, mean, 50, 90, 95, 99, max]  100.15ms, 101.115ms, 100.959ms, 101.482ms, 101.594ms, 104.133ms, 557.592ms
+dataplane-probe-deployment-mnfd6 dataplane-probe Bytes In      [total, mean]                     4299984, 23.89
+dataplane-probe-deployment-mnfd6 dataplane-probe Bytes Out     [total, mean]                     0, 0.00
+dataplane-probe-deployment-mnfd6 dataplane-probe Success       [ratio]                           100.00%
+dataplane-probe-deployment-mnfd6 dataplane-probe Status Codes  [code:count]                      200:180000  
+dataplane-probe-deployment-mnfd6 dataplane-probe Error Set:
+dataplane-probe-deployment-mnfd6 dataplane-probe 2023/09/01 08:06:08 SLA 1 passed. P95 latency is in 100000000-105000000ms time range
+dataplane-probe-deployment-mnfd6 dataplane-probe 2023/09/01 08:06:08 Dataplane probe test finished
+dataplane-probe-deployment-mnfd6 dataplane-probe 2023/09/01 08:06:08 Shutting down InfluxReporter
+dataplane-probe-deployment-zst9c dataplane-probe Requests      [total, rate, throughput]         180000, 1000.01, 999.44
+dataplane-probe-deployment-zst9c dataplane-probe Duration      [total, attack, wait]             3m0s, 3m0s, 101.42ms
+dataplane-probe-deployment-zst9c dataplane-probe Latencies     [min, mean, 50, 90, 95, 99, max]  100.132ms, 101.135ms, 100.983ms, 101.509ms, 101.635ms, 101.777ms, 558.657ms
+dataplane-probe-deployment-zst9c dataplane-probe Bytes In      [total, mean]                     4300237, 23.89
+dataplane-probe-deployment-zst9c dataplane-probe Bytes Out     [total, mean]                     0, 0.00
+dataplane-probe-deployment-zst9c dataplane-probe Success       [ratio]                           100.00%
+dataplane-probe-deployment-zst9c dataplane-probe Status Codes  [code:count]                      200:180000  
+dataplane-probe-deployment-zst9c dataplane-probe Error Set:
+dataplane-probe-deployment-zst9c dataplane-probe 2023/09/01 08:06:08 SLA 1 passed. P95 latency is in 100000000-105000000ms time range
+dataplane-probe-deployment-zst9c dataplane-probe 2023/09/01 08:06:08 Dataplane probe test finished
+dataplane-probe-deployment-zst9c dataplane-probe 2023/09/01 08:06:08 Shutting down InfluxReporter

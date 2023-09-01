@@ -11,21 +11,21 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
+---
 apiVersion: v1
 kind: ServiceAccount
 metadata:
-  name: reconciliation-delay
+  name: prober
   namespace: default
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
 metadata:
-  name: service-creator
+  name: prober
   namespace: default
 subjects:
   - kind: ServiceAccount
-    name: reconciliation-delay
+    name: prober
     namespace: default
 roleRef:
   kind: ClusterRole
@@ -35,23 +35,19 @@ roleRef:
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: reconciliation-delay
+  name: dataplane-probe-activator
   namespace: default
 spec:
-  parallelism: 1
+  parallelism: $parallelism
   backoffLimit: 0
   template:
     spec:
-      serviceAccountName: reconciliation-delay
+      serviceAccountName: prober
+      restartPolicy: Never
       containers:
-        - name: probe
-          image: ko://knative.dev/serving/test/performance/benchmarks/reconciliation-delay
-          args:
-            - "-duration=5m"
-            - "-frequency=500ms"
-          resources:
-            requests:
-              cpu: 100m
+        - name: dataplane-probe
+          image: ko://knative.dev/serving/test/performance/benchmarks/dataplane-probe
+          args: ["-target=activator", "--duration=3m"]
           env:
             - name: KO_DOCKER_REPO
               value: @KO_DOCKER_REPO@
@@ -72,12 +68,7 @@ spec:
                 secretKeyRef:
                   name: performance-test-config
                   key: prowtag
-            - name: POD_NAME
-              valueFrom:
-                fieldRef:
-                  fieldPath: metadata.name
-            - name: POD_UID
-              valueFrom:
-                fieldRef:
-                  fieldPath: metadata.uid
-      restartPolicy: Never
+          resources:
+            requests:
+              cpu: 1000m
+              memory: 3Gi

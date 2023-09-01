@@ -6,11 +6,11 @@ set -o pipefail
 
 source "$(dirname "$0")/setup.sh"
 
-header "Reconciliation delay test"
+# Customization
+frequency=$1
+export frequency=$frequency
+envsubst < "$(dirname "$0")/../scenarios/customizations/reconciliation-delay.yaml" > "$SERVING/test/performance/benchmarks/reconciliation-delay/reconciliation-delay.yaml"
 
-scenario=$1
-file="$SERVING/test/performance/benchmarks/reconciliation-delay/reconciliation-delay.yaml"
 
-cp -f "$(dirname "$0")/../scenarios/$scenario/reconciliation-delay.yaml" "$file"
-
-run_job reconciliation-delay "$file"
+# Run the tests
+run_job reconciliation-delay "$SERVING/test/performance/benchmarks/reconciliation-delay/reconciliation-delay.yaml"
