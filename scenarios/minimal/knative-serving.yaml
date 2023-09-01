@@ -1,0 +1,48 @@
+apiVersion: operator.knative.dev/v1beta1
+kind: KnativeServing
+metadata:
+  annotations:
+    serverless.openshift.io/default-enable-http2: "true"
+  name: knative-serving
+  namespace: knative-serving
+spec:
+  ingress:
+    kourier:
+      enabled: true
+  high-availability:
+    replicas: 1
+  workloads:
+    - name: activator
+      replicas: 2           # lower than two causes a lot of 503s
+      resources:
+        - container: activator
+          requests:
+            cpu: 250m       # default: 300m  (HPA on this target 100%)
+            memory: 60Mi    # default: 60Mi
+          limits:
+            cpu: 1000m      # default: 1000m
+            memory: 600Mi   # default: 600Mi
+    - name: controller
+      resources:
+        - container: controller
+          requests:
+            cpu: 10m        # default: 100m
+            memory: 100Mi   # default: 100Mi
+          limits:
+            cpu: 200m       # default: 1000m
+            memory: 300Mi   # default: 1000Mi
+    - name: webhook
+      replicas: 1
+      resources:
+        - container: webhook
+          requests:
+            cpu: 100m       # default: 100m  (HPA on this target 100%)
+            memory: 20Mi    # default: 100Mi
+          limits:
+            cpu: 200m       # default: 500m
+            memory: 200Mi   # default: 1000Mi
+  podDisruptionBudgets:
+    - name: activator-pdb
+      minAvailable: 1
+    - name: webhook-pdb
+      minAvailable: 1

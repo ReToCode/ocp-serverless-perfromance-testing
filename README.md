@@ -19,7 +19,14 @@ export INFLUX_URL=http://influx.apps.rlehmann-ocp.serverless.devcluster.openshif
 echo $(kubectl get secret local-influx-influxdb2-auth -o "jsonpath={.data['admin-token']}" --namespace influx | base64 --decode)
 echo $(kubectl get secret local-influx-influxdb2-auth -o "jsonpath={.data['admin-password']}" --namespace influx | base64 --decode)
 export INFLUX_TOKEN=$(kubectl get secret local-influx-influxdb2-auth -o "jsonpath={.data['admin-token']}" --namespace influx | base64 --decode)
-$SERVING/test/performance/influx/setup-influx-db.sh
+$SERVING/test/performance/visualization/setup-influx-db.sh
+```
+
+### Backing up InfluxDB
+Only relevant on demand (if you want to save the data):
+```bash
+export INFLUX_URL=http://influx.apps.rlehmann-ocp.serverless.devcluster.openshift.com
+influx backup --host=$INFLUX_URL backup
 ```
 
 ### Grafana
@@ -33,18 +40,6 @@ echo $(kubectl get secret grafana-admin-credentials -o "jsonpath={.data['GF_SECU
 # Configure influx as DB with flux language: http://local-influx-influxdb2.influx:80
 ```
 
-
-### Cluster setup
-```bash
-# Scale machines
-for name in $(oc get machineset -n openshift-machine-api -o name); do oc scale $name -n openshift-machine-api --replicas=2; done
-
-# Optional (depending on tests)
-oc scale deploy -n openshift-serverless knative-operator-webhook --replicas=0
-# Optional (depending on tests)
-oc -n knative-serving patch hpa activator --patch '{"spec":{"minReplicas":2, "maxReplicas": 20}}'
-```
-
 ## Running the tests
 
 ```bash
@@ -53,8 +48,76 @@ export ARTIFACTS=$PWD/logs
 $SERVING/test/performance/performance-tests-mako.sh
 ```
 
-## Backing up the InfluxDB
+## Manually creating Knative Services
 ```bash
-export INFLUX_URL=http://influx.apps.rlehmann-ocp.serverless.devcluster.openshift.com
-influx backup --host=$INFLUX_URL backup
+kubectl create ns knative-performance
+for i in {1..1000}
+do
+   kn service create "hello-go-$i" --image=gcr.io/knative-samples/helloworld-go -n knative-performance &
+done
+```
+
+## Running the tests in the scenarios
+
+### Small
+
+**Cluster setup**
+```bash
+# Scale machines
+for name in $(oc get machineset -n openshift-machine-api -o name); do oc scale $name -n openshift-machine-api --replicas=2; done
+
+# Set resource scenario
+## TODO
+oc apply -f scenarios/minimal/knative-serving.yaml
+
+# hack to stop HPA from interfering - this is optional (depending on tests)
+oc scale deploy -n openshift-serverless knative-operator-webhook --replicas=0
+oc -n knative-serving patch hpa activator --patch '{"spec":{"minReplicas":1, "maxReplicas": 1}}'
+oc -n knative-serving patch hpa webhook --patch '{"spec":{"minReplicas":1, "maxReplicas": 1}}'
+```
+
+**Running the tests**
+```bash
+export INFLUX_URL=http://local-influx-influxdb2.influx:80
+export ARTIFACTS=$PWD/logs
+$SERVING/test/performance/performance-tests-mako.sh
+```
+
+### Limits
+This mode is just to find the limits of the system.
+
+**Cluster setup**
+```bash
+# Scale machines
+for name in $(oc get machineset -n openshift-machine-api -o name); do oc scale $name -n openshift-machine-api --replicas=4; done
+oc wait --for=jsonpath={.status.availableReplicas}=4 machineset --all -n openshift-machine-api --timeout=-1s
+
+# Set resource scenario
+oc apply -f scenarios/limits/knative-serving.yaml
+
+# hack to stop HPA from interfering - this is optional (depending on tests)
+oc scale deploy -n openshift-serverless knative-operator-webhook --replicas=0
+oc -n knative-serving patch hpa activator --patch '{"spec":{"minReplicas":10, "maxReplicas": 10}}'
+oc -n knative-serving patch hpa webhook --patch '{"spec":{"minReplicas":2, "maxReplicas": 2}}'
+
+# optional patch for reconciliation-delay
+oc patch cm config-autoscaler -n knative-serving -p '{"data": {"allow-zero-initial-scale": "true"}}'
+```
+
+**Running the tests**
+Running the tests needs some tweaks, because one calling pod is not enough:
+
+```bash
+# Environment
+export KO_DOCKER_REPO=quay.io/rlehmann
+export SYSTEM_NAMESPACE=knative-serving
+export KO_DEFAULTPLATFORMS=linux/amd64
+export SERVING=/Users/rlehmann/code/knative/serving
+export INFLUX_URL=http://local-influx-influxdb2.influx:80
+export ARTIFACTS=$PWD/logs
+
+# Run the tests individually
+./scripts/run-reconciliation-delay.sh limits
+
+
 ```

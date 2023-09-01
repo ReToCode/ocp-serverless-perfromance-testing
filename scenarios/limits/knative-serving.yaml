@@ -1,0 +1,79 @@
+apiVersion: operator.knative.dev/v1beta1
+kind: KnativeServing
+metadata:
+  annotations:
+    serverless.openshift.io/default-enable-http2: "true"
+  name: knative-serving
+  namespace: knative-serving
+spec:
+  ingress:
+    kourier:
+      enabled: true
+  high-availability:
+    replicas: 1
+  workloads:
+    - name: activator
+      replicas: 10
+      resources:
+        - container: activator
+          requests:
+            cpu: 500m       # default: 300m  (HPA on this target 100%)
+            memory: 500Mi   # default: 60Mi
+          limits:
+            cpu: 5000m      # default: 1000m
+            memory: 5000Mi  # default: 600Mi
+
+    - name: autoscaler
+      replicas: 10
+      resources:
+        - container: autoscaler
+          requests:
+            cpu: 500m       # default: 100m
+            memory: 500Mi   # default: 100Mi
+          limits:
+            cpu: 5000m      # default: 1000m
+            memory: 5000Mi  # default: 1000Mi
+
+    - name: autoscaler-hpa
+      replicas: 1           # we do not need this for the current tests
+
+    - name: controller
+      replicas: 1           # this does not scale, so does not matter
+      resources:
+        - container: controller
+          requests:
+            cpu: 1000m       # default: 100m
+            memory: 1000Mi   # default: 100Mi
+          limits:
+            cpu: 5000m       # default: 1000m
+            memory: 5000Mi   # default: 1000Mi
+
+    - name: domain-mapping
+      replicas: 1           # we do not need this for the current tests
+
+    - name: domainmapping-webhook
+      replicas: 1           # we do not need this for the current tests
+
+    - name: webhook
+      replicas: 2
+      resources:
+        - container: webhook
+          requests:
+            cpu: 500m        # default: 100m  (HPA on this target 100%)
+            memory: 500Mi    # default: 100Mi
+          limits:
+            cpu: 5000m       # default: 500m
+            memory: 5000Mi   # default: 1000Mi
+
+    - name: net-kourier-controller
+      replicas: 1            # this does not scale, so does not matter
+                             # also, this component has no limits
+
+    - name: 3scale-kourier-gateway
+      replicas: 10           # this component has no limits
+
+  podDisruptionBudgets:
+    - name: activator-pdb
+      minAvailable: 8
+    - name: webhook-pdb
+      minAvailable: 1
