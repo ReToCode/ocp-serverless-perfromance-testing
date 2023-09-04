@@ -1,0 +1,75 @@
+load-test-200-5qdxw load-test {"level":"info","ts":1693816729.8998322,"logger":"fallback","caller":"injection/injection.go:63","msg":"Starting informers..."}
+load-test-200-5qdxw load-test 2023/09/04 08:38:50 Starting the load test.
+load-test-200-nfw4q load-test {"level":"info","ts":1693816729.8205066,"logger":"fallback","caller":"injection/injection.go:63","msg":"Starting informers..."}
+load-test-200-nfw4q load-test 2023/09/04 08:38:50 Starting the load test.
+load-test-200-69nlz load-test {"level":"info","ts":1693816730.1107292,"logger":"fallback","caller":"injection/injection.go:63","msg":"Starting informers..."}
+load-test-200-69nlz load-test 2023/09/04 08:38:50 Starting the load test.
+load-test-200-qztpm load-test {"level":"info","ts":1693816730.0392637,"logger":"fallback","caller":"injection/injection.go:63","msg":"Starting informers..."}
+load-test-200-qztpm load-test 2023/09/04 08:38:50 Starting the load test.
+load-test-200-28vdp load-test {"level":"info","ts":1693816730.059672,"logger":"fallback","caller":"injection/injection.go:63","msg":"Starting informers..."}
+load-test-200-28vdp load-test 2023/09/04 08:38:50 Starting the load test.
+load-test-200-28vdp load-test Requests      [total, rate, throughput]         719998, 2000.00, 1999.43
+load-test-200-28vdp load-test Duration      [total, attack, wait]             6m0s, 6m0s, 101.603ms
+load-test-200-28vdp load-test Latencies     [min, mean, 50, 90, 95, 99, max]  100.47ms, 101.909ms, 101.703ms, 102.383ms, 102.636ms, 104.69ms, 471.901ms
+load-test-200-28vdp load-test Bytes In      [total, mean]                     17200102, 23.89
+load-test-200-69nlz load-test Requests      [total, rate, throughput]         719998, 2000.00, 1999.43
+load-test-200-69nlz load-test Duration      [total, attack, wait]             6m0s, 6m0s, 101.883ms
+load-test-200-69nlz load-test Latencies     [min, mean, 50, 90, 95, 99, max]  100.499ms, 101.904ms, 101.725ms, 102.429ms, 102.653ms, 104.584ms, 472.143ms
+load-test-200-69nlz load-test Bytes In      [total, mean]                     17200548, 23.89
+load-test-200-69nlz load-test Bytes Out     [total, mean]                     0, 0.00
+load-test-200-69nlz load-test Success       [ratio]                           100.00%
+load-test-200-69nlz load-test Status Codes  [code:count]                      200:719998  
+load-test-200-69nlz load-test Error Set:
+load-test-200-69nlz load-test 2023/09/04 08:44:52 SLA 1 passed. P95 latency is in 100-115ms time range
+load-test-200-69nlz load-test 2023/09/04 08:44:52 SLA 2 passed. Max latency is below 10s
+load-test-200-69nlz load-test 2023/09/04 08:44:52 SLA 3 passed. No errors occurred
+load-test-200-69nlz load-test 2023/09/04 08:44:52 Load test finished
+load-test-200-69nlz load-test 2023/09/04 08:44:52 Shutting down InfluxReporter
+load-test-200-nfw4q load-test Requests      [total, rate, throughput]         719997, 2000.00, 1999.43
+load-test-200-5qdxw load-test Requests      [total, rate, throughput]         719998, 2000.00, 1999.44
+load-test-200-28vdp load-test Bytes Out     [total, mean]                     0, 0.00
+load-test-200-nfw4q load-test Duration      [total, attack, wait]             6m0s, 6m0s, 101.991ms
+load-test-200-28vdp load-test Success       [ratio]                           100.00%
+load-test-200-qztpm load-test Requests      [total, rate, throughput]         719980, 1999.95, 1999.39
+load-test-200-nfw4q load-test Latencies     [min, mean, 50, 90, 95, 99, max]  100.493ms, 101.921ms, 101.718ms, 102.417ms, 102.648ms, 104.749ms, 470.285ms
+load-test-200-qztpm load-test Duration      [total, attack, wait]             6m0s, 6m0s, 102.163ms
+load-test-200-qztpm load-test Latencies     [min, mean, 50, 90, 95, 99, max]  100.496ms, 101.995ms, 101.751ms, 102.455ms, 102.75ms, 106.577ms, 465.506ms
+load-test-200-nfw4q load-test Bytes In      [total, mean]                     17200291, 23.89
+load-test-200-28vdp load-test Status Codes  [code:count]                      200:719998  
+load-test-200-5qdxw load-test Duration      [total, attack, wait]             6m0s, 6m0s, 101.243ms
+load-test-200-nfw4q load-test Bytes Out     [total, mean]                     0, 0.00
+load-test-200-5qdxw load-test Latencies     [min, mean, 50, 90, 95, 99, max]  100.489ms, 101.887ms, 101.683ms, 102.373ms, 102.594ms, 104.72ms, 468.619ms
+load-test-200-5qdxw load-test Bytes In      [total, mean]                     17200174, 23.89
+load-test-200-nfw4q load-test Success       [ratio]                           100.00%
+load-test-200-5qdxw load-test Bytes Out     [total, mean]                     0, 0.00
+load-test-200-nfw4q load-test Status Codes  [code:count]                      200:719997  
+load-test-200-5qdxw load-test Success       [ratio]                           100.00%
+load-test-200-nfw4q load-test Error Set:
+load-test-200-28vdp load-test Error Set:
+load-test-200-nfw4q load-test 2023/09/04 08:44:52 SLA 1 passed. P95 latency is in 100-115ms time range
+load-test-200-nfw4q load-test 2023/09/04 08:44:52 SLA 2 passed. Max latency is below 10s
+load-test-200-qztpm load-test Bytes In      [total, mean]                     17199274, 23.89
+load-test-200-28vdp load-test 2023/09/04 08:44:52 SLA 1 passed. P95 latency is in 100-115ms time range
+load-test-200-nfw4q load-test 2023/09/04 08:44:52 SLA 3 passed. No errors occurred
+load-test-200-28vdp load-test 2023/09/04 08:44:52 SLA 2 passed. Max latency is below 10s
+load-test-200-5qdxw load-test Status Codes  [code:count]                      200:719998  
+load-test-200-28vdp load-test 2023/09/04 08:44:52 SLA 3 passed. No errors occurred
+load-test-200-28vdp load-test 2023/09/04 08:44:52 Load test finished
+load-test-200-nfw4q load-test 2023/09/04 08:44:52 Load test finished
+load-test-200-28vdp load-test 2023/09/04 08:44:52 Shutting down InfluxReporter
+load-test-200-5qdxw load-test Error Set:
+load-test-200-qztpm load-test Bytes Out     [total, mean]                     0, 0.00
+load-test-200-5qdxw load-test 2023/09/04 08:44:52 SLA 1 passed. P95 latency is in 100-115ms time range
+load-test-200-nfw4q load-test 2023/09/04 08:44:52 Shutting down InfluxReporter
+load-test-200-5qdxw load-test 2023/09/04 08:44:52 SLA 2 passed. Max latency is below 10s
+load-test-200-5qdxw load-test 2023/09/04 08:44:52 SLA 3 passed. No errors occurred
+load-test-200-qztpm load-test Success       [ratio]                           100.00%
+load-test-200-5qdxw load-test 2023/09/04 08:44:52 Load test finished
+load-test-200-5qdxw load-test 2023/09/04 08:44:52 Shutting down InfluxReporter
+load-test-200-qztpm load-test Status Codes  [code:count]                      200:719980  
+load-test-200-qztpm load-test Error Set:
+load-test-200-qztpm load-test 2023/09/04 08:44:52 SLA 1 passed. P95 latency is in 100-115ms time range
+load-test-200-qztpm load-test 2023/09/04 08:44:52 SLA 2 passed. Max latency is below 10s
+load-test-200-qztpm load-test 2023/09/04 08:44:52 SLA 3 passed. No errors occurred
+load-test-200-qztpm load-test 2023/09/04 08:44:52 Load test finished
+load-test-200-qztpm load-test 2023/09/04 08:44:52 Shutting down InfluxReporter

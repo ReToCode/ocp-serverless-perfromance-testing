@@ -1,0 +1,69 @@
+load-test-always-5s5np load-test {"level":"info","ts":1693816247.1257126,"logger":"fallback","caller":"injection/injection.go:63","msg":"Starting informers..."}
+load-test-always-cq85b load-test {"level":"info","ts":1693816247.1112876,"logger":"fallback","caller":"injection/injection.go:63","msg":"Starting informers..."}
+load-test-always-cq85b load-test 2023/09/04 08:30:47 Starting the load test.
+load-test-always-5s5np load-test 2023/09/04 08:30:47 Starting the load test.
+load-test-always-vbcs5 load-test {"level":"info","ts":1693816247.9167235,"logger":"fallback","caller":"injection/injection.go:63","msg":"Starting informers..."}
+load-test-always-vbcs5 load-test 2023/09/04 08:30:48 Starting the load test.
+load-test-always-qcxrw load-test {"level":"info","ts":1693816247.5201805,"logger":"fallback","caller":"injection/injection.go:63","msg":"Starting informers..."}
+load-test-always-qcxrw load-test 2023/09/04 08:30:47 Starting the load test.
+load-test-always-82xnq load-test {"level":"info","ts":1693816251.4553602,"logger":"fallback","caller":"injection/injection.go:63","msg":"Starting informers..."}
+load-test-always-82xnq load-test 2023/09/04 08:30:51 Starting the load test.
+load-test-always-cq85b load-test Requests      [total, rate, throughput]         719997, 2000.00, 1999.43
+load-test-always-cq85b load-test Duration      [total, attack, wait]             6m0s, 6m0s, 101.743ms
+load-test-always-cq85b load-test Latencies     [min, mean, 50, 90, 95, 99, max]  100.707ms, 102.509ms, 102.255ms, 102.976ms, 103.24ms, 106.477ms, 590.12ms
+load-test-always-cq85b load-test Bytes In      [total, mean]                     17199523, 23.89
+load-test-always-vbcs5 load-test Requests      [total, rate, throughput]         719998, 2000.00, 1999.43
+load-test-always-vbcs5 load-test Duration      [total, attack, wait]             6m0s, 6m0s, 102.642ms
+load-test-always-vbcs5 load-test Latencies     [min, mean, 50, 90, 95, 99, max]  100.727ms, 102.504ms, 102.235ms, 102.959ms, 103.222ms, 106.487ms, 587.441ms
+load-test-always-vbcs5 load-test Bytes In      [total, mean]                     17199560, 23.89
+load-test-always-vbcs5 load-test Bytes Out     [total, mean]                     0, 0.00
+load-test-always-vbcs5 load-test Success       [ratio]                           100.00%
+load-test-always-vbcs5 load-test Status Codes  [code:count]                      200:719998  
+load-test-always-cq85b load-test Bytes Out     [total, mean]                     0, 0.00
+load-test-always-vbcs5 load-test Error Set:
+load-test-always-vbcs5 load-test 2023/09/04 08:36:50 SLA 1 passed. P95 latency is in 100-115ms time range
+load-test-always-cq85b load-test Success       [ratio]                           100.00%
+load-test-always-cq85b load-test Status Codes  [code:count]                      200:719997  
+load-test-always-cq85b load-test Error Set:
+load-test-always-cq85b load-test 2023/09/04 08:36:50 SLA 1 passed. P95 latency is in 100-115ms time range
+load-test-always-cq85b load-test 2023/09/04 08:36:50 SLA 2 passed. Max latency is below 10s
+load-test-always-cq85b load-test 2023/09/04 08:36:50 SLA 3 passed. No errors occurred
+load-test-always-cq85b load-test 2023/09/04 08:36:50 Load test finished
+load-test-always-cq85b load-test 2023/09/04 08:36:50 Shutting down InfluxReporter
+load-test-always-vbcs5 load-test 2023/09/04 08:36:50 SLA 2 passed. Max latency is below 10s
+load-test-always-vbcs5 load-test 2023/09/04 08:36:50 SLA 3 passed. No errors occurred
+load-test-always-qcxrw load-test Requests      [total, rate, throughput]         719998, 2000.00, 1999.43
+load-test-always-vbcs5 load-test 2023/09/04 08:36:50 Load test finished
+load-test-always-5s5np load-test Requests      [total, rate, throughput]         719998, 2000.00, 1999.43
+load-test-always-vbcs5 load-test 2023/09/04 08:36:50 Shutting down InfluxReporter
+load-test-always-5s5np load-test Duration      [total, attack, wait]             6m0s, 6m0s, 103.332ms
+load-test-always-qcxrw load-test Duration      [total, attack, wait]             6m0s, 6m0s, 102.299ms
+load-test-always-5s5np load-test Latencies     [min, mean, 50, 90, 95, 99, max]  100.762ms, 102.502ms, 102.238ms, 102.942ms, 103.207ms, 106.572ms, 608.718ms
+load-test-always-5s5np load-test Bytes In      [total, mean]                     17200038, 23.89
+load-test-always-qcxrw load-test Latencies     [min, mean, 50, 90, 95, 99, max]  100.719ms, 102.565ms, 102.244ms, 103.01ms, 103.335ms, 108.074ms, 608.674ms
+load-test-always-qcxrw load-test Bytes In      [total, mean]                     17200434, 23.89
+load-test-always-qcxrw load-test Bytes Out     [total, mean]                     0, 0.00
+load-test-always-qcxrw load-test Success       [ratio]                           100.00%
+load-test-always-qcxrw load-test Status Codes  [code:count]                      200:719998  
+load-test-always-5s5np load-test Bytes Out     [total, mean]                     0, 0.00
+load-test-always-qcxrw load-test Error Set:
+load-test-always-qcxrw load-test 2023/09/04 08:36:50 SLA 1 passed. P95 latency is in 100-115ms time range
+load-test-always-qcxrw load-test 2023/09/04 08:36:50 SLA 2 passed. Max latency is below 10s
+load-test-always-qcxrw load-test 2023/09/04 08:36:50 SLA 3 passed. No errors occurred
+load-test-always-qcxrw load-test 2023/09/04 08:36:50 Load test finished
+load-test-always-qcxrw load-test 2023/09/04 08:36:50 Shutting down InfluxReporter
+load-test-always-5s5np load-test Success       [ratio]                           100.00%
+load-test-always-5s5np load-test Status Codes  [code:count]                      200:719998  
+load-test-always-5s5np load-test Error Set:
+load-test-always-5s5np load-test 2023/09/04 08:36:50 SLA 1 passed. P95 latency is in 100-115ms time range
+load-test-always-5s5np load-test 2023/09/04 08:36:50 SLA 2 passed. Max latency is below 10s
+load-test-always-5s5np load-test 2023/09/04 08:36:50 SLA 3 passed. No errors occurred
+load-test-always-5s5np load-test 2023/09/04 08:36:50 Load test finished
+load-test-always-5s5np load-test 2023/09/04 08:36:50 Shutting down InfluxReporter
+load-test-always-82xnq load-test 2023/09/04 08:36:51 Shutting down InfluxReporter
+load-test-always-82xnq load-test panic: runtime error: invalid memory address or nil pointer dereference
+load-test-always-82xnq load-test [signal SIGSEGV: segmentation violation code=0x1 addr=0xd0 pc=0x18138b8]
+load-test-always-82xnq load-test 
+load-test-always-82xnq load-test goroutine 1 [running]:
+load-test-always-82xnq load-test main.main()
+load-test-always-82xnq load-test 	knative.dev/serving/test/performance/benchmarks/load-test/main.go:104 +0x778

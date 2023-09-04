@@ -35,18 +35,17 @@ influx backup --host=$INFLUX_URL backup
 oc apply -f yaml/grafana-subscription.yaml
 oc apply -f yaml/grafana.yaml
 echo $(kubectl get secret grafana-admin-credentials -o "jsonpath={.data['GF_SECURITY_ADMIN_PASSWORD']}" --namespace influx | base64 --decode)
-
-# https://grafana-route-influx.apps.rlehmann-ocp.serverless.devcluster.openshift.com/
-# Configure influx as DB with flux language: http://local-influx-influxdb2.influx:80
 ```
 
-## Running the tests
+Using influxDB as a datasource for Grafana
+* Navigate to Grafana UI and log in using the user from above (e.g. https://grafana-route-influx.apps.rlehmann-ocp.serverless.devcluster.openshift.com/)
+* Create a new datasource for InfluxDB
+* Select the flux query language
+* Server-URL: http://local-influx-influxdb2.influx:80
+* Organization: Knativetest
+* Bucket: knative-serving
+* Token: <your influx-db token>
 
-```bash
-export INFLUX_URL=http://local-influx-influxdb2.influx:80
-export ARTIFACTS=$PWD/logs
-$SERVING/test/performance/performance-tests-mako.sh
-```
 
 ## Manually creating Knative Services
 ```bash
@@ -59,9 +58,8 @@ done
 
 ## Running the tests in the scenarios
 
-### Small
+### Cluster setup: small
 
-**Cluster setup**
 ```bash
 # Scale machines
 for name in $(oc get machineset -n openshift-machine-api -o name); do oc scale $name -n openshift-machine-api --replicas=2; done
@@ -76,17 +74,14 @@ oc -n knative-serving patch hpa activator --patch '{"spec":{"minReplicas":1, "ma
 oc -n knative-serving patch hpa webhook --patch '{"spec":{"minReplicas":1, "maxReplicas": 1}}'
 ```
 
-**Running the tests**
-```bash
-export INFLUX_URL=http://local-influx-influxdb2.influx:80
-export ARTIFACTS=$PWD/logs
-$SERVING/test/performance/performance-tests-mako.sh
-```
+**Running the tests: Limits**
 
-### Limits
-This mode is just to find the limits of the system.
+TODO
 
-**Cluster setup**
+
+### Cluster setup: Limits
+This scenario is just to find the limits of the system.
+
 ```bash
 # Scale machines
 for name in $(oc get machineset -n openshift-machine-api -o name); do oc scale $name -n openshift-machine-api --replicas=4; done
@@ -104,7 +99,7 @@ oc -n knative-serving patch hpa webhook --patch '{"spec":{"minReplicas":2, "maxR
 oc patch cm config-autoscaler -n knative-serving -p '{"data": {"allow-zero-initial-scale": "true"}}'
 ```
 
-**Running the tests**
+**Running the tests: Limits**
 Running the tests needs some tweaks, because one calling pod is not enough:
 
 ```bash
@@ -122,8 +117,10 @@ export SERVING=/Users/rlehmann/code/knative/serving
 export INFLUX_URL=http://local-influx-influxdb2.influx:80
 export ARTIFACTS=$PWD/logs
 
-# Run the tests individually
-./scripts/run-reconciliation-delay.sh "1000ms"
+# You can run the tests individually
+./scripts/run-reconciliation-delay.sh "1000ms"  # frequency (default=5s)
 
-./scripts/run-dataplane-probe.sh 15
+./scripts/run-load-test.sh 5 # parallelism (default=1)
+
+./scripts/run-dataplane-probe.sh 15 # parallelism (default=1)
 ```

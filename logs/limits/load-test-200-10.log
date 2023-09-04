@@ -1,0 +1,144 @@
+load-test-200-qxdpn load-test {"level":"info","ts":1693824016.549327,"logger":"fallback","caller":"injection/injection.go:63","msg":"Starting informers..."}
+load-test-200-zvdhq load-test {"level":"info","ts":1693824016.0825424,"logger":"fallback","caller":"injection/injection.go:63","msg":"Starting informers..."}
+load-test-200-zvdhq load-test 2023/09/04 10:40:16 Starting the load test.
+load-test-200-qxdpn load-test 2023/09/04 10:40:16 Starting the load test.
+load-test-200-cp5kj load-test {"level":"info","ts":1693824016.177265,"logger":"fallback","caller":"injection/injection.go:63","msg":"Starting informers..."}
+load-test-200-cp5kj load-test 2023/09/04 10:40:16 Starting the load test.
+load-test-200-vwgpf load-test {"level":"info","ts":1693824016.2963452,"logger":"fallback","caller":"injection/injection.go:63","msg":"Starting informers..."}
+load-test-200-vwgpf load-test 2023/09/04 10:40:16 Starting the load test.
+load-test-200-wbrqd load-test {"level":"info","ts":1693824016.7713332,"logger":"fallback","caller":"injection/injection.go:63","msg":"Starting informers..."}
+load-test-200-wbrqd load-test 2023/09/04 10:40:16 Starting the load test.
+load-test-200-hq8c5 load-test {"level":"info","ts":1693824016.3734896,"logger":"fallback","caller":"injection/injection.go:63","msg":"Starting informers..."}
+load-test-200-hq8c5 load-test 2023/09/04 10:40:16 Starting the load test.
+load-test-200-59562 load-test {"level":"info","ts":1693824016.2856143,"logger":"fallback","caller":"injection/injection.go:63","msg":"Starting informers..."}
+load-test-200-59562 load-test 2023/09/04 10:40:16 Starting the load test.
+load-test-200-cb6b5 load-test {"level":"info","ts":1693824016.9372663,"logger":"fallback","caller":"injection/injection.go:63","msg":"Starting informers..."}
+load-test-200-cb6b5 load-test 2023/09/04 10:40:17 Starting the load test.
+load-test-200-nmps9 load-test {"level":"info","ts":1693824016.532723,"logger":"fallback","caller":"injection/injection.go:63","msg":"Starting informers..."}
+load-test-200-nmps9 load-test 2023/09/04 10:40:16 Starting the load test.
+load-test-200-qr2st load-test {"level":"info","ts":1693824016.9536302,"logger":"fallback","caller":"injection/injection.go:63","msg":"Starting informers..."}
+load-test-200-qr2st load-test 2023/09/04 10:40:17 Starting the load test.
+load-test-200-nmps9 load-test Requests      [total, rate, throughput]         719999, 2000.00, 1995.10
+load-test-200-nmps9 load-test Duration      [total, attack, wait]             6m0s, 6m0s, 364.73ms
+load-test-200-nmps9 load-test Latencies     [min, mean, 50, 90, 95, 99, max]  247.419µs, 119.034ms, 102.029ms, 104.932ms, 114.986ms, 275.664ms, 8.77s
+load-test-200-nmps9 load-test Bytes In      [total, mean]                     17259185, 23.97
+load-test-200-nmps9 load-test Bytes Out     [total, mean]                     0, 0.00
+load-test-200-nmps9 load-test Success       [ratio]                           99.86%
+load-test-200-nmps9 load-test Status Codes  [code:count]                      200:718961  503:1038  
+load-test-200-nmps9 load-test Error Set:
+load-test-200-nmps9 load-test 503 Service Unavailable
+load-test-200-nmps9 load-test 2023/09/04 10:46:19 SLA 1 passed. P95 latency is in 100-115ms time range
+load-test-200-nmps9 load-test 2023/09/04 10:46:19 SLA 2 passed. Max latency is below 10s
+load-test-200-nmps9 load-test 2023/09/04 10:46:19 Shutting down InfluxReporter
+load-test-200-nmps9 load-test 2023/09/04 10:46:19 SLA 3 failed. Errors occurred: 1
+load-test-200-wbrqd load-test Requests      [total, rate, throughput]         719997, 2000.00, 1995.03
+load-test-200-wbrqd load-test Duration      [total, attack, wait]             6m0s, 6m0s, 390.55ms
+load-test-200-wbrqd load-test Latencies     [min, mean, 50, 90, 95, 99, max]  585.096µs, 119.927ms, 101.979ms, 105.205ms, 117.512ms, 307.651ms, 8.58s
+load-test-200-wbrqd load-test Bytes In      [total, mean]                     17257603, 23.97
+load-test-200-wbrqd load-test Bytes Out     [total, mean]                     0, 0.00
+load-test-200-wbrqd load-test Success       [ratio]                           99.86%
+load-test-200-wbrqd load-test Status Codes  [code:count]                      200:718990  503:1007  
+load-test-200-wbrqd load-test Error Set:
+load-test-200-wbrqd load-test 503 Service Unavailable
+load-test-200-wbrqd load-test 2023/09/04 10:46:19 Shutting down InfluxReporter
+load-test-200-wbrqd load-test 2023/09/04 10:46:19 SLA 1 failed. P95 latency is not in 100-115ms time range: 117.512306ms
+load-test-200-cp5kj load-test Requests      [total, rate, throughput]         719999, 2000.00, 1994.55
+load-test-200-cp5kj load-test Duration      [total, attack, wait]             6m0s, 6m0s, 484.46ms
+load-test-200-cp5kj load-test Latencies     [min, mean, 50, 90, 95, 99, max]  168.08µs, 119.272ms, 102.008ms, 104.772ms, 114.205ms, 302.497ms, 8.504s
+load-test-200-cp5kj load-test Bytes In      [total, mean]                     17256510, 23.97
+load-test-200-cp5kj load-test Bytes Out     [total, mean]                     0, 0.00
+load-test-200-cp5kj load-test Success       [ratio]                           99.86%
+load-test-200-cp5kj load-test Status Codes  [code:count]                      200:719003  503:996  
+load-test-200-cp5kj load-test Error Set:
+load-test-200-cp5kj load-test 503 Service Unavailable
+load-test-200-cp5kj load-test 2023/09/04 10:46:19 SLA 1 passed. P95 latency is in 100-115ms time range
+load-test-200-cp5kj load-test 2023/09/04 10:46:19 SLA 2 passed. Max latency is below 10s
+load-test-200-cp5kj load-test 2023/09/04 10:46:19 Shutting down InfluxReporter
+load-test-200-cp5kj load-test 2023/09/04 10:46:19 SLA 3 failed. Errors occurred: 1
+load-test-200-59562 load-test Requests      [total, rate, throughput]         719996, 1999.99, 1994.08
+load-test-200-59562 load-test Duration      [total, attack, wait]             6m1s, 6m0s, 554.262ms
+load-test-200-59562 load-test Latencies     [min, mean, 50, 90, 95, 99, max]  146.854µs, 119.141ms, 102.024ms, 104.875ms, 114.868ms, 277.698ms, 8.57s
+load-test-200-59562 load-test Bytes In      [total, mean]                     17258441, 23.97
+load-test-200-59562 load-test Bytes Out     [total, mean]                     0, 0.00
+load-test-200-59562 load-test Success       [ratio]                           99.86%
+load-test-200-59562 load-test Status Codes  [code:count]                      200:718973  503:1023  
+load-test-200-59562 load-test Error Set:
+load-test-200-59562 load-test 503 Service Unavailable
+load-test-200-59562 load-test 2023/09/04 10:46:19 SLA 1 passed. P95 latency is in 100-115ms time range
+load-test-200-59562 load-test 2023/09/04 10:46:19 SLA 2 passed. Max latency is below 10s
+load-test-200-59562 load-test 2023/09/04 10:46:19 Shutting down InfluxReporter
+load-test-200-59562 load-test 2023/09/04 10:46:19 SLA 3 failed. Errors occurred: 1
+load-test-200-hq8c5 load-test Requests      [total, rate, throughput]         719997, 1999.99, 1993.93
+load-test-200-hq8c5 load-test Duration      [total, attack, wait]             6m1s, 6m0s, 586.282ms
+load-test-200-hq8c5 load-test Latencies     [min, mean, 50, 90, 95, 99, max]  287.509µs, 119.114ms, 101.964ms, 104.794ms, 114.751ms, 310.744ms, 8.393s
+load-test-200-hq8c5 load-test Bytes In      [total, mean]                     17258065, 23.97
+load-test-200-hq8c5 load-test Bytes Out     [total, mean]                     0, 0.00
+load-test-200-hq8c5 load-test Success       [ratio]                           99.86%
+load-test-200-hq8c5 load-test Status Codes  [code:count]                      200:718982  503:1015  
+load-test-200-hq8c5 load-test Error Set:
+load-test-200-hq8c5 load-test 503 Service Unavailable
+load-test-200-hq8c5 load-test 2023/09/04 10:46:19 SLA 1 passed. P95 latency is in 100-115ms time range
+load-test-200-hq8c5 load-test 2023/09/04 10:46:19 SLA 2 passed. Max latency is below 10s
+load-test-200-hq8c5 load-test 2023/09/04 10:46:19 Shutting down InfluxReporter
+load-test-200-hq8c5 load-test 2023/09/04 10:46:19 SLA 3 failed. Errors occurred: 1
+load-test-200-zvdhq load-test Requests      [total, rate, throughput]         719999, 2000.00, 1993.88
+load-test-200-zvdhq load-test Duration      [total, attack, wait]             6m1s, 6m0s, 594.041ms
+load-test-200-zvdhq load-test Latencies     [min, mean, 50, 90, 95, 99, max]  275.034µs, 118.936ms, 101.973ms, 104.698ms, 113.696ms, 270.809ms, 8.47s
+load-test-200-zvdhq load-test Bytes In      [total, mean]                     17257765, 23.97
+load-test-200-zvdhq load-test Bytes Out     [total, mean]                     0, 0.00
+load-test-200-zvdhq load-test Success       [ratio]                           99.86%
+load-test-200-zvdhq load-test Status Codes  [code:count]                      200:718980  503:1019  
+load-test-200-zvdhq load-test Error Set:
+load-test-200-zvdhq load-test 503 Service Unavailable
+load-test-200-zvdhq load-test 2023/09/04 10:46:19 SLA 1 passed. P95 latency is in 100-115ms time range
+load-test-200-zvdhq load-test 2023/09/04 10:46:19 SLA 2 passed. Max latency is below 10s
+load-test-200-zvdhq load-test 2023/09/04 10:46:19 Shutting down InfluxReporter
+load-test-200-zvdhq load-test 2023/09/04 10:46:19 SLA 3 failed. Errors occurred: 1
+load-test-200-qr2st load-test Requests      [total, rate, throughput]         719998, 2000.00, 1993.68
+load-test-200-qr2st load-test Duration      [total, attack, wait]             6m1s, 6m0s, 635.845ms
+load-test-200-qr2st load-test Latencies     [min, mean, 50, 90, 95, 99, max]  598.846µs, 119.728ms, 101.996ms, 105.702ms, 115.62ms, 312.567ms, 8.638s
+load-test-200-qr2st load-test Bytes In      [total, mean]                     17257407, 23.97
+load-test-200-qr2st load-test Bytes Out     [total, mean]                     0, 0.00
+load-test-200-qr2st load-test Success       [ratio]                           99.86%
+load-test-200-qr2st load-test Status Codes  [code:count]                      200:718990  503:1008  
+load-test-200-qr2st load-test Error Set:
+load-test-200-qr2st load-test 503 Service Unavailable
+load-test-200-qr2st load-test 2023/09/04 10:46:19 Shutting down InfluxReporter
+load-test-200-qr2st load-test 2023/09/04 10:46:19 SLA 1 failed. P95 latency is not in 100-115ms time range: 115.619861ms
+load-test-200-qxdpn load-test Requests      [total, rate, throughput]         719998, 2000.00, 1993.56
+load-test-200-qxdpn load-test Duration      [total, attack, wait]             6m1s, 6m0s, 657.304ms
+load-test-200-qxdpn load-test Latencies     [min, mean, 50, 90, 95, 99, max]  114.573µs, 119.48ms, 102.067ms, 104.718ms, 113.603ms, 307.888ms, 8.45s
+load-test-200-qxdpn load-test Bytes In      [total, mean]                     17257533, 23.97
+load-test-200-qxdpn load-test Bytes Out     [total, mean]                     0, 0.00
+load-test-200-qxdpn load-test Success       [ratio]                           99.86%
+load-test-200-qxdpn load-test Status Codes  [code:count]                      200:718991  503:1007  
+load-test-200-qxdpn load-test Error Set:
+load-test-200-qxdpn load-test 503 Service Unavailable
+load-test-200-qxdpn load-test 2023/09/04 10:46:19 SLA 1 passed. P95 latency is in 100-115ms time range
+load-test-200-qxdpn load-test 2023/09/04 10:46:19 SLA 2 passed. Max latency is below 10s
+load-test-200-qxdpn load-test 2023/09/04 10:46:19 Shutting down InfluxReporter
+load-test-200-qxdpn load-test 2023/09/04 10:46:19 SLA 3 failed. Errors occurred: 1
+load-test-200-cb6b5 load-test Requests      [total, rate, throughput]         719997, 1999.99, 1993.53
+load-test-200-cb6b5 load-test Duration      [total, attack, wait]             6m1s, 6m0s, 654.965ms
+load-test-200-cb6b5 load-test Latencies     [min, mean, 50, 90, 95, 99, max]  167.357µs, 119.937ms, 102.066ms, 106.696ms, 118.888ms, 297.382ms, 8.572s
+load-test-200-cb6b5 load-test Bytes In      [total, mean]                     17257799, 23.97
+load-test-200-cb6b5 load-test Bytes Out     [total, mean]                     0, 0.00
+load-test-200-cb6b5 load-test Success       [ratio]                           99.86%
+load-test-200-cb6b5 load-test Status Codes  [code:count]                      200:718976  503:1021  
+load-test-200-cb6b5 load-test Error Set:
+load-test-200-cb6b5 load-test 503 Service Unavailable
+load-test-200-cb6b5 load-test 2023/09/04 10:46:19 Shutting down InfluxReporter
+load-test-200-cb6b5 load-test 2023/09/04 10:46:19 SLA 1 failed. P95 latency is not in 100-115ms time range: 118.888215ms
+load-test-200-vwgpf load-test Requests      [total, rate, throughput]         719999, 2000.00, 1993.57
+load-test-200-vwgpf load-test Duration      [total, attack, wait]             6m1s, 6m0s, 655.181ms
+load-test-200-vwgpf load-test Latencies     [min, mean, 50, 90, 95, 99, max]  156.146µs, 119.658ms, 102.068ms, 104.862ms, 113.889ms, 325.215ms, 8.568s
+load-test-200-vwgpf load-test Bytes In      [total, mean]                     17257185, 23.97
+load-test-200-vwgpf load-test Bytes Out     [total, mean]                     0, 0.00
+load-test-200-vwgpf load-test Success       [ratio]                           99.86%
+load-test-200-vwgpf load-test Status Codes  [code:count]                      200:718990  503:1009  
+load-test-200-vwgpf load-test Error Set:
+load-test-200-vwgpf load-test 503 Service Unavailable
+load-test-200-vwgpf load-test 2023/09/04 10:46:19 SLA 1 passed. P95 latency is in 100-115ms time range
+load-test-200-vwgpf load-test 2023/09/04 10:46:19 SLA 2 passed. Max latency is below 10s
+load-test-200-vwgpf load-test 2023/09/04 10:46:19 Shutting down InfluxReporter
+load-test-200-vwgpf load-test 2023/09/04 10:46:19 SLA 3 failed. Errors occurred: 1

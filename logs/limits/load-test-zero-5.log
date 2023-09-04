@@ -1,0 +1,76 @@
+load-test-zero-n6tjh load-test 2023/09/04 08:20:25 Failed to wait for scale-to-0: timed out waiting for the condition
+load-test-zero-qdxnk load-test {"level":"info","ts":1693815744.073088,"logger":"fallback","caller":"injection/injection.go:63","msg":"Starting informers..."}
+load-test-zero-qdxnk load-test 2023/09/04 08:22:24 Starting the load test.
+load-test-zero-9v6f9 load-test {"level":"info","ts":1693815744.0922673,"logger":"fallback","caller":"injection/injection.go:63","msg":"Starting informers..."}
+load-test-zero-9v6f9 load-test 2023/09/04 08:22:24 Starting the load test.
+load-test-zero-rwslq load-test {"level":"info","ts":1693815744.1162102,"logger":"fallback","caller":"injection/injection.go:63","msg":"Starting informers..."}
+load-test-zero-rwslq load-test 2023/09/04 08:22:24 Starting the load test.
+load-test-zero-zdj76 load-test {"level":"info","ts":1693815744.0405788,"logger":"fallback","caller":"injection/injection.go:63","msg":"Starting informers..."}
+load-test-zero-zdj76 load-test 2023/09/04 08:22:24 Starting the load test.
+load-test-zero-djvj2 load-test {"level":"info","ts":1693815744.0417771,"logger":"fallback","caller":"injection/injection.go:63","msg":"Starting informers..."}
+load-test-zero-djvj2 load-test 2023/09/04 08:22:24 Starting the load test.
+load-test-zero-zdj76 load-test Requests      [total, rate, throughput]         719998, 2000.00, 1999.43
+load-test-zero-zdj76 load-test Duration      [total, attack, wait]             6m0s, 6m0s, 102.421ms
+load-test-zero-zdj76 load-test Latencies     [min, mean, 50, 90, 95, 99, max]  100.496ms, 101.912ms, 101.669ms, 102.316ms, 102.534ms, 104.878ms, 513.747ms
+load-test-zero-zdj76 load-test Bytes In      [total, mean]                     17199762, 23.89
+load-test-zero-zdj76 load-test Bytes Out     [total, mean]                     0, 0.00
+load-test-zero-zdj76 load-test Success       [ratio]                           100.00%
+load-test-zero-zdj76 load-test Status Codes  [code:count]                      200:719998  
+load-test-zero-zdj76 load-test Error Set:
+load-test-zero-zdj76 load-test 2023/09/04 08:28:24 SLA 1 passed. P95 latency is in 100-115ms time range
+load-test-zero-zdj76 load-test 2023/09/04 08:28:24 SLA 2 passed. Max latency is below 10s
+load-test-zero-zdj76 load-test 2023/09/04 08:28:24 SLA 3 passed. No errors occurred
+load-test-zero-zdj76 load-test 2023/09/04 08:28:24 Load test finished
+load-test-zero-zdj76 load-test 2023/09/04 08:28:24 Shutting down InfluxReporter
+load-test-zero-djvj2 load-test Requests      [total, rate, throughput]         719996, 1999.99, 1999.43
+load-test-zero-djvj2 load-test Duration      [total, attack, wait]             6m0s, 6m0s, 101.532ms
+load-test-zero-djvj2 load-test Latencies     [min, mean, 50, 90, 95, 99, max]  100.489ms, 101.892ms, 101.647ms, 102.279ms, 102.483ms, 104.881ms, 547.791ms
+load-test-zero-djvj2 load-test Bytes In      [total, mean]                     17199678, 23.89
+load-test-zero-djvj2 load-test Bytes Out     [total, mean]                     0, 0.00
+load-test-zero-djvj2 load-test Success       [ratio]                           100.00%
+load-test-zero-djvj2 load-test Status Codes  [code:count]                      200:719996  
+load-test-zero-djvj2 load-test Error Set:
+load-test-zero-djvj2 load-test 2023/09/04 08:28:24 SLA 1 passed. P95 latency is in 100-115ms time range
+load-test-zero-djvj2 load-test 2023/09/04 08:28:24 SLA 2 passed. Max latency is below 10s
+load-test-zero-djvj2 load-test 2023/09/04 08:28:24 SLA 3 passed. No errors occurred
+load-test-zero-djvj2 load-test 2023/09/04 08:28:24 Load test finished
+load-test-zero-djvj2 load-test 2023/09/04 08:28:24 Shutting down InfluxReporter
+load-test-zero-rwslq load-test Requests      [total, rate, throughput]         719998, 2000.00, 1999.43
+load-test-zero-rwslq load-test Duration      [total, attack, wait]             6m0s, 6m0s, 101.658ms
+load-test-zero-rwslq load-test Latencies     [min, mean, 50, 90, 95, 99, max]  100.484ms, 101.928ms, 101.681ms, 102.328ms, 102.54ms, 104.838ms, 514.861ms
+load-test-zero-rwslq load-test Bytes In      [total, mean]                     17200357, 23.89
+load-test-zero-rwslq load-test Bytes Out     [total, mean]                     0, 0.00
+load-test-zero-rwslq load-test Success       [ratio]                           100.00%
+load-test-zero-rwslq load-test Status Codes  [code:count]                      200:719998  
+load-test-zero-rwslq load-test Error Set:
+load-test-zero-rwslq load-test 2023/09/04 08:28:24 SLA 1 passed. P95 latency is in 100-115ms time range
+load-test-zero-rwslq load-test 2023/09/04 08:28:24 SLA 2 passed. Max latency is below 10s
+load-test-zero-rwslq load-test 2023/09/04 08:28:24 SLA 3 passed. No errors occurred
+load-test-zero-rwslq load-test 2023/09/04 08:28:24 Load test finished
+load-test-zero-rwslq load-test 2023/09/04 08:28:24 Shutting down InfluxReporter
+load-test-zero-qdxnk load-test Requests      [total, rate, throughput]         719999, 2000.00, 1999.43
+load-test-zero-qdxnk load-test Duration      [total, attack, wait]             6m0s, 6m0s, 102.393ms
+load-test-zero-qdxnk load-test Latencies     [min, mean, 50, 90, 95, 99, max]  100.497ms, 101.864ms, 101.643ms, 102.281ms, 102.475ms, 104.698ms, 513.875ms
+load-test-zero-qdxnk load-test Bytes In      [total, mean]                     17199500, 23.89
+load-test-zero-qdxnk load-test Bytes Out     [total, mean]                     0, 0.00
+load-test-zero-qdxnk load-test Success       [ratio]                           100.00%
+load-test-zero-qdxnk load-test Status Codes  [code:count]                      200:719999  
+load-test-zero-qdxnk load-test Error Set:
+load-test-zero-qdxnk load-test 2023/09/04 08:28:24 SLA 1 passed. P95 latency is in 100-115ms time range
+load-test-zero-qdxnk load-test 2023/09/04 08:28:24 SLA 2 passed. Max latency is below 10s
+load-test-zero-qdxnk load-test 2023/09/04 08:28:24 SLA 3 passed. No errors occurred
+load-test-zero-qdxnk load-test 2023/09/04 08:28:24 Load test finished
+load-test-zero-qdxnk load-test 2023/09/04 08:28:24 Shutting down InfluxReporter
+load-test-zero-9v6f9 load-test Requests      [total, rate, throughput]         719999, 2000.00, 1999.44
+load-test-zero-9v6f9 load-test Duration      [total, attack, wait]             6m0s, 6m0s, 101.43ms
+load-test-zero-9v6f9 load-test Latencies     [min, mean, 50, 90, 95, 99, max]  100.51ms, 101.986ms, 101.707ms, 102.361ms, 102.602ms, 106.705ms, 546.349ms
+load-test-zero-9v6f9 load-test Bytes In      [total, mean]                     17199625, 23.89
+load-test-zero-9v6f9 load-test Bytes Out     [total, mean]                     0, 0.00
+load-test-zero-9v6f9 load-test Success       [ratio]                           100.00%
+load-test-zero-9v6f9 load-test Status Codes  [code:count]                      200:719999  
+load-test-zero-9v6f9 load-test Error Set:
+load-test-zero-9v6f9 load-test 2023/09/04 08:28:24 SLA 1 passed. P95 latency is in 100-115ms time range
+load-test-zero-9v6f9 load-test 2023/09/04 08:28:24 SLA 2 passed. Max latency is below 10s
+load-test-zero-9v6f9 load-test 2023/09/04 08:28:24 SLA 3 passed. No errors occurred
+load-test-zero-9v6f9 load-test 2023/09/04 08:28:24 Load test finished
+load-test-zero-9v6f9 load-test 2023/09/04 08:28:24 Shutting down InfluxReporter
