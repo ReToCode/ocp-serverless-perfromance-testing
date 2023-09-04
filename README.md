@@ -74,7 +74,7 @@ oc -n knative-serving patch hpa activator --patch '{"spec":{"minReplicas":1, "ma
 oc -n knative-serving patch hpa webhook --patch '{"spec":{"minReplicas":1, "maxReplicas": 1}}'
 ```
 
-**Running the tests: Limits**
+**Running the tests: small**
 
 TODO
 
@@ -99,7 +99,7 @@ oc -n knative-serving patch hpa webhook --patch '{"spec":{"minReplicas":2, "maxR
 oc patch cm config-autoscaler -n knative-serving -p '{"data": {"allow-zero-initial-scale": "true"}}'
 ```
 
-**Running the tests: Limits**
+**Running the tests: limits**
 Running the tests needs some tweaks, because one calling pod is not enough:
 
 ```bash
@@ -121,6 +121,8 @@ export ARTIFACTS=$PWD/logs
 ./scripts/run-reconciliation-delay.sh "1000ms"  # frequency (default=5s)
 
 ./scripts/run-load-test.sh 5 # parallelism (default=1)
+
+./scripts/run-rollout-probe.sh 200 250 # min-replicas, max-replicas (defaults: 100, 150)
 
 ./scripts/run-dataplane-probe.sh 15 # parallelism (default=1)
 ```
