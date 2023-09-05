@@ -9,6 +9,11 @@ spec:
   ingress:
     kourier:
       enabled: true
+
+  config:
+    features:
+      kubernetes.podspec-init-containers: enabled  # this is only necessary for adding artificial startup-delays
+
   high-availability:
     replicas: 1
   workloads:

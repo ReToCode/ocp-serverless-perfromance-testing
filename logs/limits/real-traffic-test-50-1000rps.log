@@ -1,0 +1,64 @@
+2023/09/05 09:29:04 Creating 50 Knative Services
+2023/09/05 09:30:16 Created all the services in 1m12.142710673s
+2023/09/05 09:30:16 Creating vegeta targets
+2023/09/05 09:30:16 Name: perftest-00-moyolewt, startup-latency: 15s, latency: 25851ms, payload: 293Kb, activator-always-in-path: true
+2023/09/05 09:30:16 Name: perftest-01-nohqwqhc, startup-latency: 15s, latency: 20003ms, payload: 100Kb, activator-always-in-path: true
+2023/09/05 09:30:16 Name: perftest-02-vppofhsx, startup-latency: 3s, latency: 4540ms, payload: 433Kb, activator-always-in-path: false
+2023/09/05 09:30:16 Name: perftest-03-nhxbgigv, startup-latency: 15s, latency: 12826ms, payload: 322Kb, activator-always-in-path: true
+2023/09/05 09:30:16 Name: perftest-04-uqlppicc, startup-latency: 12s, latency: 22888ms, payload: 80Kb, activator-always-in-path: true
+2023/09/05 09:30:16 Name: perftest-05-fkbfewxj, startup-latency: 1s, latency: 24140ms, payload: 72Kb, activator-always-in-path: true
+2023/09/05 09:30:16 Name: perftest-06-ahzzimqr, startup-latency: 9s, latency: 27072ms, payload: 263Kb, activator-always-in-path: false
+2023/09/05 09:30:16 Name: perftest-07-gckdgtiu, startup-latency: 3s, latency: 7125ms, payload: 44Kb, activator-always-in-path: true
+2023/09/05 09:30:16 Name: perftest-08-aoppsnta, startup-latency: 16s, latency: 18512ms, payload: 108Kb, activator-always-in-path: false
+2023/09/05 09:30:16 Name: perftest-09-vytuwqqn, startup-latency: 7s, latency: 10721ms, payload: 126Kb, activator-always-in-path: true
+2023/09/05 09:30:16 Name: perftest-10-vpfxpwlm, startup-latency: 19s, latency: 13008ms, payload: 124Kb, activator-always-in-path: false
+2023/09/05 09:30:16 Name: perftest-11-zxajpzlt, startup-latency: 6s, latency: 5073ms, payload: 296Kb, activator-always-in-path: true
+2023/09/05 09:30:16 Name: perftest-12-nwdyopaz, startup-latency: 12s, latency: 3143ms, payload: 331Kb, activator-always-in-path: false
+2023/09/05 09:30:16 Name: perftest-13-uiiniywm, startup-latency: 6s, latency: 11936ms, payload: 229Kb, activator-always-in-path: true
+2023/09/05 09:30:16 Name: perftest-14-ttllceta, startup-latency: 16s, latency: 28807ms, payload: 298Kb, activator-always-in-path: true
+2023/09/05 09:30:16 Name: perftest-15-wiqifstl, startup-latency: 15s, latency: 23792ms, payload: 327Kb, activator-always-in-path: false
+2023/09/05 09:30:16 Name: perftest-16-mtfbydap, startup-latency: 10s, latency: 10077ms, payload: 90Kb, activator-always-in-path: false
+2023/09/05 09:30:16 Name: perftest-17-xhelrysr, startup-latency: 9s, latency: 19078ms, payload: 431Kb, activator-always-in-path: true
+2023/09/05 09:30:16 Name: perftest-18-ntwljjpu, startup-latency: 18s, latency: 26089ms, payload: 189Kb, activator-always-in-path: false
+2023/09/05 09:30:16 Name: perftest-19-nslujqaq, startup-latency: 17s, latency: 4362ms, payload: 434Kb, activator-always-in-path: false
+2023/09/05 09:30:16 Name: perftest-20-twoklada, startup-latency: 3s, latency: 28871ms, payload: 235Kb, activator-always-in-path: false
+2023/09/05 09:30:16 Name: perftest-21-uhuqrdkc, startup-latency: 11s, latency: 10708ms, payload: 357Kb, activator-always-in-path: true
+2023/09/05 09:30:16 Name: perftest-22-guycuugb, startup-latency: 10s, latency: 11703ms, payload: 166Kb, activator-always-in-path: false
+2023/09/05 09:30:16 Name: perftest-23-vwzbrtpu, startup-latency: 4s, latency: 2651ms, payload: 257Kb, activator-always-in-path: true
+2023/09/05 09:30:16 Name: perftest-24-bctqmexb, startup-latency: 12s, latency: 13997ms, payload: 451Kb, activator-always-in-path: false
+2023/09/05 09:30:16 Name: perftest-25-fpgmjaed, startup-latency: 19s, latency: 5395ms, payload: 395Kb, activator-always-in-path: false
+2023/09/05 09:30:16 Name: perftest-26-tvjgalzn, startup-latency: 4s, latency: 4926ms, payload: 302Kb, activator-always-in-path: false
+2023/09/05 09:30:16 Name: perftest-27-sdqycofr, startup-latency: 16s, latency: 27766ms, payload: 262Kb, activator-always-in-path: true
+2023/09/05 09:30:16 Name: perftest-28-ctuainsf, startup-latency: 17s, latency: 11730ms, payload: 309Kb, activator-always-in-path: true
+2023/09/05 09:30:16 Name: perftest-29-jdlumvpp, startup-latency: 16s, latency: 704ms, payload: 26Kb, activator-always-in-path: false
+2023/09/05 09:30:16 Name: perftest-30-jhleeino, startup-latency: 18s, latency: 24682ms, payload: 93Kb, activator-always-in-path: false
+2023/09/05 09:30:16 Name: perftest-31-qoubpsbo, startup-latency: 15s, latency: 15974ms, payload: 366Kb, activator-always-in-path: false
+2023/09/05 09:30:16 Name: perftest-32-brocuyog, startup-latency: 17s, latency: 7928ms, payload: 265Kb, activator-always-in-path: true
+2023/09/05 09:30:16 Name: perftest-33-buzvwbbp, startup-latency: 4s, latency: 15430ms, payload: 315Kb, activator-always-in-path: true
+2023/09/05 09:30:16 Name: perftest-34-tcgvaiwg, startup-latency: 1s, latency: 9437ms, payload: 269Kb, activator-always-in-path: false
+2023/09/05 09:30:16 Name: perftest-35-vujhhwgl, startup-latency: 3s, latency: 24706ms, payload: 245Kb, activator-always-in-path: false
+2023/09/05 09:30:16 Name: perftest-36-rxrhpacs, startup-latency: 19s, latency: 27956ms, payload: 2Kb, activator-always-in-path: false
+2023/09/05 09:30:16 Name: perftest-37-jkfqyqyt, startup-latency: 18s, latency: 1628ms, payload: 211Kb, activator-always-in-path: false
+2023/09/05 09:30:16 Name: perftest-38-sviccvxp, startup-latency: 4s, latency: 2851ms, payload: 214Kb, activator-always-in-path: false
+2023/09/05 09:30:16 Name: perftest-39-hclsxkhl, startup-latency: 19s, latency: 21317ms, payload: 125Kb, activator-always-in-path: true
+2023/09/05 09:30:16 Name: perftest-40-xvhshbnp, startup-latency: 5s, latency: 1623ms, payload: 400Kb, activator-always-in-path: true
+2023/09/05 09:30:16 Name: perftest-41-kjxfuxak, startup-latency: 3s, latency: 8935ms, payload: 73Kb, activator-always-in-path: false
+2023/09/05 09:30:16 Name: perftest-42-iubgsrsb, startup-latency: 15s, latency: 10636ms, payload: 466Kb, activator-always-in-path: true
+2023/09/05 09:30:16 Name: perftest-43-aipxhobn, startup-latency: 10s, latency: 29207ms, payload: 402Kb, activator-always-in-path: false
+2023/09/05 09:30:16 Name: perftest-44-vfvetxjm, startup-latency: 10s, latency: 16847ms, payload: 326Kb, activator-always-in-path: true
+2023/09/05 09:30:16 Name: perftest-45-mnxqjqav, startup-latency: 1s, latency: 17231ms, payload: 234Kb, activator-always-in-path: true
+2023/09/05 09:30:16 Name: perftest-46-uyeblhgx, startup-latency: 9s, latency: 27684ms, payload: 486Kb, activator-always-in-path: false
+2023/09/05 09:30:16 Name: perftest-47-nppxoges, startup-latency: 10s, latency: 19819ms, payload: 483Kb, activator-always-in-path: true
+2023/09/05 09:30:16 Name: perftest-48-ggdmowzh, startup-latency: 8s, latency: 20120ms, payload: 176Kb, activator-always-in-path: true
+2023/09/05 09:30:16 Name: perftest-49-kuwmvliy, startup-latency: 13s, latency: 14076ms, payload: 485Kb, activator-always-in-path: true
+2023/09/05 09:30:16 Starting vegeta attack for with 1000 RPS for duration: 5m0s
+Requests      [total, rate, throughput]         300000, 1000.00, 999.98
+Duration      [total, attack, wait]             5m0s, 5m0s, 7.008ms
+Latencies     [min, mean, 50, 90, 95, 99, max]  2.742ms, 13.239ms, 5.604ms, 9.38ms, 15.072ms, 157.527ms, 3.267s
+Bytes In      [total, mean]                     4436082137, 14786.94
+Bytes Out     [total, mean]                     78059190000, 260197.30
+Success       [ratio]                           100.00%
+Status Codes  [code:count]                      200:300000  
+Error Set:
+2023/09/05 09:35:16 Real traffic test finished
+2023/09/05 09:35:19 Shutting down InfluxReporter

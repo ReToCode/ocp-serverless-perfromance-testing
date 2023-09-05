@@ -97,6 +97,9 @@ oc -n knative-serving patch hpa webhook --patch '{"spec":{"minReplicas":2, "maxR
 
 # optional patch for reconciliation-delay
 oc patch cm config-autoscaler -n knative-serving -p '{"data": {"allow-zero-initial-scale": "true"}}'
+
+# optional if we have issues here
+oc scale deploy -n knative-serving-ingress 3scale-kourier-gateway --replicas=20
 ```
 
 **Running the tests: limits**
@@ -125,4 +128,6 @@ export ARTIFACTS=$PWD/logs
 ./scripts/run-rollout-probe.sh 200 250 # min-replicas, max-replicas (defaults: 100, 150)
 
 ./scripts/run-dataplane-probe.sh 15 # parallelism (default=1)
+
+./scripts/run-real-traffic-test.sh
 ```

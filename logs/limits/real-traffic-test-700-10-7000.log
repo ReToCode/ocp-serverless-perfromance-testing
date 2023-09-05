@@ -1,0 +1,434 @@
+real-traffic-test-ccwjc load-test 2023/09/05 11:26:24 Creating 70 Knative Services
+real-traffic-test-zzdn4 load-test 2023/09/05 11:26:24 Creating 70 Knative Services
+real-traffic-test-4d89c load-test 2023/09/05 11:26:24 Creating 70 Knative Services
+real-traffic-test-lsvvb load-test 2023/09/05 11:26:24 Creating 70 Knative Services
+real-traffic-test-rx7nw load-test 2023/09/05 11:26:24 Creating 70 Knative Services
+real-traffic-test-zz57n load-test 2023/09/05 11:26:24 Creating 70 Knative Services
+real-traffic-test-8tr82 load-test 2023/09/05 11:26:24 Creating 70 Knative Services
+real-traffic-test-cc4l9 load-test 2023/09/05 11:26:24 Creating 70 Knative Services
+real-traffic-test-hlqww load-test 2023/09/05 11:26:24 Creating 70 Knative Services
+real-traffic-test-h56zj load-test 2023/09/05 11:26:25 Creating 70 Knative Services
+real-traffic-test-knkws load-test 2023/09/05 11:26:24 Creating 70 Knative Services
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Created all the services in 3m7.231566549s
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Creating vegeta targets
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-00-iovlrngk, startup-latency: 16s, latency: 9676ms, payload: 17Kb, activator-always-in-path: false
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-01-wvltnloq, startup-latency: 12s, latency: 289ms, payload: 4Kb, activator-always-in-path: false
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-02-ztoqbrrg, startup-latency: 4s, latency: 3990ms, payload: 28Kb, activator-always-in-path: false
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-03-jzhzhuvb, startup-latency: 16s, latency: 6439ms, payload: 28Kb, activator-always-in-path: true
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-04-vdxkfqkb, startup-latency: 18s, latency: 3158ms, payload: 29Kb, activator-always-in-path: false
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-05-ybbeebkz, startup-latency: 1s, latency: 1727ms, payload: 53Kb, activator-always-in-path: true
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-06-paiawmsz, startup-latency: 1s, latency: 3380ms, payload: 21Kb, activator-always-in-path: true
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-07-llbmhtli, startup-latency: 6s, latency: 4219ms, payload: 7Kb, activator-always-in-path: true
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-08-juxjescx, startup-latency: 19s, latency: 3489ms, payload: 29Kb, activator-always-in-path: false
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-09-fxfhknlg, startup-latency: 18s, latency: 9424ms, payload: 88Kb, activator-always-in-path: false
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-10-isemvkkq, startup-latency: 11s, latency: 7996ms, payload: 79Kb, activator-always-in-path: false
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-11-qhtqepkd, startup-latency: 15s, latency: 5718ms, payload: 67Kb, activator-always-in-path: true
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-12-pkdioubz, startup-latency: 13s, latency: 1442ms, payload: 34Kb, activator-always-in-path: false
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-13-xwdlnybm, startup-latency: 15s, latency: 7753ms, payload: 43Kb, activator-always-in-path: true
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-14-sygzyoqp, startup-latency: 13s, latency: 3301ms, payload: 37Kb, activator-always-in-path: false
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-15-iciyezwi, startup-latency: 11s, latency: 1887ms, payload: 80Kb, activator-always-in-path: true
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-16-bbmcfibd, startup-latency: 6s, latency: 2781ms, payload: 66Kb, activator-always-in-path: false
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-17-otjseyuh, startup-latency: 2s, latency: 5308ms, payload: 10Kb, activator-always-in-path: false
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-18-rjpixyfv, startup-latency: 17s, latency: 3901ms, payload: 89Kb, activator-always-in-path: false
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-19-zmudqpps, startup-latency: 16s, latency: 4020ms, payload: 59Kb, activator-always-in-path: true
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-20-uqcjlzxy, startup-latency: 5s, latency: 6032ms, payload: 51Kb, activator-always-in-path: false
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-21-csswrkup, startup-latency: 17s, latency: 7960ms, payload: 91Kb, activator-always-in-path: true
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-22-tveaknxe, startup-latency: 14s, latency: 1862ms, payload: 56Kb, activator-always-in-path: true
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-23-blscsarl, startup-latency: 19s, latency: 3331ms, payload: 31Kb, activator-always-in-path: false
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-24-wdzfpjif, startup-latency: 4s, latency: 4912ms, payload: 47Kb, activator-always-in-path: false
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-25-ppbtldec, startup-latency: 6s, latency: 4954ms, payload: 35Kb, activator-always-in-path: false
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-26-msutsqmv, startup-latency: 4s, latency: 7495ms, payload: 17Kb, activator-always-in-path: false
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-27-egzenmax, startup-latency: 10s, latency: 137ms, payload: 51Kb, activator-always-in-path: false
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-28-vbomjunb, startup-latency: 0s, latency: 7789ms, payload: 54Kb, activator-always-in-path: true
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-29-ekrvmhof, startup-latency: 2s, latency: 8447ms, payload: 59Kb, activator-always-in-path: false
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-30-ckpqxqmb, startup-latency: 14s, latency: 3076ms, payload: 71Kb, activator-always-in-path: false
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-31-ybnwzkft, startup-latency: 4s, latency: 4928ms, payload: 85Kb, activator-always-in-path: true
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-32-nkgosqjc, startup-latency: 10s, latency: 3844ms, payload: 59Kb, activator-always-in-path: true
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-33-ifmwsbbw, startup-latency: 15s, latency: 1083ms, payload: 43Kb, activator-always-in-path: false
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-34-oyxoyncr, startup-latency: 13s, latency: 1586ms, payload: 29Kb, activator-always-in-path: false
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-35-dyhubazw, startup-latency: 3s, latency: 7539ms, payload: 92Kb, activator-always-in-path: true
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-36-niztrnjt, startup-latency: 14s, latency: 3535ms, payload: 95Kb, activator-always-in-path: false
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-37-dapsggyi, startup-latency: 8s, latency: 4329ms, payload: 76Kb, activator-always-in-path: true
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-38-pywjjgzx, startup-latency: 13s, latency: 1660ms, payload: 30Kb, activator-always-in-path: true
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-39-uqyjhduk, startup-latency: 9s, latency: 5221ms, payload: 12Kb, activator-always-in-path: false
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-40-bjwbiipf, startup-latency: 4s, latency: 3949ms, payload: 18Kb, activator-always-in-path: true
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-41-rbenmsij, startup-latency: 3s, latency: 9479ms, payload: 79Kb, activator-always-in-path: false
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-42-yryyaezt, startup-latency: 11s, latency: 4784ms, payload: 50Kb, activator-always-in-path: true
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-43-vjyzmwxb, startup-latency: 3s, latency: 9407ms, payload: 38Kb, activator-always-in-path: true
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-44-kzdgswiq, startup-latency: 11s, latency: 6951ms, payload: 98Kb, activator-always-in-path: true
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-45-wwmwhebj, startup-latency: 14s, latency: 8595ms, payload: 44Kb, activator-always-in-path: true
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-46-bztwinhf, startup-latency: 1s, latency: 6573ms, payload: 98Kb, activator-always-in-path: false
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-47-emofpbsg, startup-latency: 19s, latency: 5183ms, payload: 20Kb, activator-always-in-path: true
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-48-mwcrdlbq, startup-latency: 10s, latency: 6729ms, payload: 84Kb, activator-always-in-path: false
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-49-yfacagkq, startup-latency: 12s, latency: 7079ms, payload: 87Kb, activator-always-in-path: true
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-50-oigdtsqv, startup-latency: 14s, latency: 5361ms, payload: 44Kb, activator-always-in-path: false
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-51-qpgfwvkk, startup-latency: 13s, latency: 3796ms, payload: 70Kb, activator-always-in-path: false
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-52-vpyllyba, startup-latency: 2s, latency: 5302ms, payload: 50Kb, activator-always-in-path: false
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-53-mhhiieby, startup-latency: 15s, latency: 6501ms, payload: 36Kb, activator-always-in-path: false
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-54-oohiohhy, startup-latency: 11s, latency: 7442ms, payload: 80Kb, activator-always-in-path: false
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-55-hjbyvkee, startup-latency: 3s, latency: 5842ms, payload: 13Kb, activator-always-in-path: false
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-56-sbjidzsh, startup-latency: 19s, latency: 4348ms, payload: 49Kb, activator-always-in-path: false
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-57-kdlvdykc, startup-latency: 15s, latency: 8269ms, payload: 62Kb, activator-always-in-path: true
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-58-horpwoka, startup-latency: 13s, latency: 6620ms, payload: 51Kb, activator-always-in-path: false
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-59-kjcsxcsw, startup-latency: 8s, latency: 5713ms, payload: 6Kb, activator-always-in-path: false
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-60-aqsrrcwq, startup-latency: 7s, latency: 8945ms, payload: 61Kb, activator-always-in-path: true
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-61-ckcsvdqe, startup-latency: 1s, latency: 449ms, payload: 65Kb, activator-always-in-path: true
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-62-georibvl, startup-latency: 12s, latency: 5538ms, payload: 44Kb, activator-always-in-path: true
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-63-wmyfcikx, startup-latency: 14s, latency: 1219ms, payload: 41Kb, activator-always-in-path: false
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-64-avleqkiv, startup-latency: 6s, latency: 5856ms, payload: 83Kb, activator-always-in-path: false
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-65-ptejxekb, startup-latency: 10s, latency: 4265ms, payload: 82Kb, activator-always-in-path: true
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-66-yifuphlz, startup-latency: 14s, latency: 1276ms, payload: 17Kb, activator-always-in-path: false
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-67-zdawijgr, startup-latency: 5s, latency: 7300ms, payload: 23Kb, activator-always-in-path: false
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-68-zdqaqmxi, startup-latency: 18s, latency: 5123ms, payload: 45Kb, activator-always-in-path: true
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Name: perftest-69-lgypsjwc, startup-latency: 1s, latency: 6751ms, payload: 33Kb, activator-always-in-path: false
+real-traffic-test-zzdn4 load-test 2023/09/05 11:29:31 Starting vegeta attack for with 700 RPS for duration: 5m0s
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Created all the services in 4m8.322356613s
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Creating vegeta targets
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-00-meeyufiw, startup-latency: 14s, latency: 4075ms, payload: 54Kb, activator-always-in-path: false
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-01-yyjyznlz, startup-latency: 16s, latency: 8065ms, payload: 15Kb, activator-always-in-path: false
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-02-orlmctpu, startup-latency: 17s, latency: 9498ms, payload: 40Kb, activator-always-in-path: false
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-03-nttokvsc, startup-latency: 13s, latency: 7674ms, payload: 46Kb, activator-always-in-path: false
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-04-bcncmnwr, startup-latency: 12s, latency: 8899ms, payload: 38Kb, activator-always-in-path: true
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-05-eitigisz, startup-latency: 18s, latency: 6441ms, payload: 62Kb, activator-always-in-path: true
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-06-wgyvfkkz, startup-latency: 2s, latency: 5253ms, payload: 57Kb, activator-always-in-path: true
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-07-pvyqimvc, startup-latency: 14s, latency: 2260ms, payload: 40Kb, activator-always-in-path: false
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-08-ohrbczfo, startup-latency: 1s, latency: 1866ms, payload: 99Kb, activator-always-in-path: false
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-09-zcyuvvmp, startup-latency: 3s, latency: 293ms, payload: 33Kb, activator-always-in-path: true
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-10-pbtgeshb, startup-latency: 1s, latency: 269ms, payload: 92Kb, activator-always-in-path: false
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-11-yirxnfsl, startup-latency: 0s, latency: 1715ms, payload: 78Kb, activator-always-in-path: true
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-12-jywuxwnj, startup-latency: 15s, latency: 3302ms, payload: 60Kb, activator-always-in-path: true
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-13-vinvbljd, startup-latency: 2s, latency: 9562ms, payload: 26Kb, activator-always-in-path: true
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-14-jsbzharw, startup-latency: 13s, latency: 9166ms, payload: 13Kb, activator-always-in-path: true
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-15-ucvdcvhx, startup-latency: 3s, latency: 7049ms, payload: 19Kb, activator-always-in-path: true
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-16-fkzkfwil, startup-latency: 2s, latency: 6379ms, payload: 66Kb, activator-always-in-path: false
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-17-trqrfjfr, startup-latency: 11s, latency: 9434ms, payload: 95Kb, activator-always-in-path: true
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-18-bedggbfo, startup-latency: 2s, latency: 4746ms, payload: 71Kb, activator-always-in-path: false
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-19-sjwxluqo, startup-latency: 6s, latency: 3231ms, payload: 78Kb, activator-always-in-path: true
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-20-hqsanobu, startup-latency: 15s, latency: 6837ms, payload: 77Kb, activator-always-in-path: true
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-21-oqyibifj, startup-latency: 7s, latency: 6296ms, payload: 54Kb, activator-always-in-path: true
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-22-jukqmygi, startup-latency: 10s, latency: 3834ms, payload: 40Kb, activator-always-in-path: true
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-23-irjslohl, startup-latency: 4s, latency: 6170ms, payload: 86Kb, activator-always-in-path: true
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-24-weklntsl, startup-latency: 9s, latency: 247ms, payload: 81Kb, activator-always-in-path: false
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-25-plmjsbla, startup-latency: 19s, latency: 2949ms, payload: 88Kb, activator-always-in-path: false
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-26-sepdakrg, startup-latency: 16s, latency: 5691ms, payload: 85Kb, activator-always-in-path: true
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-27-dfktouwz, startup-latency: 17s, latency: 4797ms, payload: 4Kb, activator-always-in-path: false
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-28-wzuidqwk, startup-latency: 2s, latency: 6804ms, payload: 34Kb, activator-always-in-path: false
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-29-chfsgnpo, startup-latency: 8s, latency: 2419ms, payload: 30Kb, activator-always-in-path: false
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-30-domofgle, startup-latency: 17s, latency: 4239ms, payload: 3Kb, activator-always-in-path: true
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-31-yprggtpx, startup-latency: 15s, latency: 25ms, payload: 10Kb, activator-always-in-path: false
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-32-kqkxzduz, startup-latency: 17s, latency: 4114ms, payload: 91Kb, activator-always-in-path: false
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-33-wzfpbdyq, startup-latency: 10s, latency: 8649ms, payload: 67Kb, activator-always-in-path: false
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-34-jdryhnlz, startup-latency: 0s, latency: 9326ms, payload: 60Kb, activator-always-in-path: true
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-35-vukstzjx, startup-latency: 8s, latency: 2265ms, payload: 64Kb, activator-always-in-path: false
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-36-nynptctg, startup-latency: 4s, latency: 50ms, payload: 77Kb, activator-always-in-path: false
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-37-igmeiozy, startup-latency: 5s, latency: 9138ms, payload: 39Kb, activator-always-in-path: true
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-38-nzikwole, startup-latency: 2s, latency: 5904ms, payload: 42Kb, activator-always-in-path: true
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-39-phcnsixy, startup-latency: 17s, latency: 1098ms, payload: 75Kb, activator-always-in-path: false
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-40-suwndqad, startup-latency: 8s, latency: 5835ms, payload: 74Kb, activator-always-in-path: true
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-41-wjxovlyu, startup-latency: 3s, latency: 2138ms, payload: 94Kb, activator-always-in-path: false
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-42-uenllnnz, startup-latency: 5s, latency: 3848ms, payload: 24Kb, activator-always-in-path: true
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-43-orobtvad, startup-latency: 4s, latency: 9112ms, payload: 56Kb, activator-always-in-path: true
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-44-kosysbkr, startup-latency: 15s, latency: 6997ms, payload: 70Kb, activator-always-in-path: false
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-45-bszrgqld, startup-latency: 14s, latency: 9364ms, payload: 17Kb, activator-always-in-path: false
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-46-mmexidwg, startup-latency: 5s, latency: 6496ms, payload: 32Kb, activator-always-in-path: false
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-47-aavyactq, startup-latency: 13s, latency: 8369ms, payload: 76Kb, activator-always-in-path: false
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-48-tornnjub, startup-latency: 15s, latency: 7569ms, payload: 14Kb, activator-always-in-path: false
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-49-mkpivzuv, startup-latency: 6s, latency: 7480ms, payload: 25Kb, activator-always-in-path: true
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-50-gwxtqkgg, startup-latency: 12s, latency: 6664ms, payload: 2Kb, activator-always-in-path: false
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-51-profzlyz, startup-latency: 12s, latency: 1173ms, payload: 40Kb, activator-always-in-path: false
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-52-xfxqcpeh, startup-latency: 19s, latency: 5987ms, payload: 32Kb, activator-always-in-path: true
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-53-lqliiljp, startup-latency: 18s, latency: 1689ms, payload: 15Kb, activator-always-in-path: false
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-54-bqkouncn, startup-latency: 17s, latency: 7709ms, payload: 1Kb, activator-always-in-path: true
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-55-gjquhuqn, startup-latency: 16s, latency: 3641ms, payload: 95Kb, activator-always-in-path: false
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-56-sgswvzpa, startup-latency: 4s, latency: 3173ms, payload: 93Kb, activator-always-in-path: true
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-57-xyoafarp, startup-latency: 14s, latency: 777ms, payload: 19Kb, activator-always-in-path: false
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-58-qtpslugf, startup-latency: 0s, latency: 9210ms, payload: 70Kb, activator-always-in-path: true
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-59-cazkoygq, startup-latency: 4s, latency: 8494ms, payload: 79Kb, activator-always-in-path: false
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-60-flnllhau, startup-latency: 3s, latency: 9310ms, payload: 66Kb, activator-always-in-path: true
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-61-udsflhub, startup-latency: 10s, latency: 2953ms, payload: 11Kb, activator-always-in-path: true
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-62-iqfwhnkp, startup-latency: 16s, latency: 1165ms, payload: 14Kb, activator-always-in-path: true
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-63-rmoxgxxm, startup-latency: 2s, latency: 9759ms, payload: 64Kb, activator-always-in-path: false
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-64-njpohfjj, startup-latency: 10s, latency: 5232ms, payload: 94Kb, activator-always-in-path: true
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-65-vigordqo, startup-latency: 2s, latency: 2857ms, payload: 72Kb, activator-always-in-path: false
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-66-txbhcrio, startup-latency: 5s, latency: 955ms, payload: 52Kb, activator-always-in-path: true
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-67-vbfaiocu, startup-latency: 17s, latency: 7681ms, payload: 69Kb, activator-always-in-path: false
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-68-zvksgzvh, startup-latency: 14s, latency: 9005ms, payload: 88Kb, activator-always-in-path: false
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Name: perftest-69-ffsgtamr, startup-latency: 5s, latency: 5595ms, payload: 50Kb, activator-always-in-path: false
+real-traffic-test-ccwjc load-test 2023/09/05 11:30:32 Starting vegeta attack for with 700 RPS for duration: 5m0s
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Created all the services in 4m12.450685858s
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Creating vegeta targets
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-00-ulmaqeor, startup-latency: 11s, latency: 8770ms, payload: 41Kb, activator-always-in-path: true
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-01-buybeqvf, startup-latency: 1s, latency: 5677ms, payload: 35Kb, activator-always-in-path: true
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-02-rwubxlpg, startup-latency: 7s, latency: 7161ms, payload: 3Kb, activator-always-in-path: false
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-03-vfzltoqu, startup-latency: 5s, latency: 1125ms, payload: 66Kb, activator-always-in-path: false
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-04-csuiafgz, startup-latency: 12s, latency: 6731ms, payload: 57Kb, activator-always-in-path: true
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-05-gvinppzr, startup-latency: 4s, latency: 8030ms, payload: 49Kb, activator-always-in-path: false
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-06-hyxbixde, startup-latency: 5s, latency: 8480ms, payload: 48Kb, activator-always-in-path: false
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-07-itfinzoo, startup-latency: 13s, latency: 3545ms, payload: 58Kb, activator-always-in-path: true
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-08-sarmoeks, startup-latency: 18s, latency: 5800ms, payload: 16Kb, activator-always-in-path: true
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-09-swpfifxm, startup-latency: 18s, latency: 4005ms, payload: 47Kb, activator-always-in-path: true
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-10-zpzirnrt, startup-latency: 8s, latency: 6221ms, payload: 18Kb, activator-always-in-path: true
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-11-tvyvmkdp, startup-latency: 5s, latency: 8423ms, payload: 59Kb, activator-always-in-path: false
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-12-ubkgwyie, startup-latency: 7s, latency: 8439ms, payload: 31Kb, activator-always-in-path: true
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-13-qphzpyfe, startup-latency: 3s, latency: 5905ms, payload: 76Kb, activator-always-in-path: false
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-14-zqxpgjew, startup-latency: 7s, latency: 3247ms, payload: 37Kb, activator-always-in-path: true
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-15-pranezlv, startup-latency: 5s, latency: 4365ms, payload: 30Kb, activator-always-in-path: false
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-16-jzxxuhpq, startup-latency: 15s, latency: 7858ms, payload: 58Kb, activator-always-in-path: false
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-17-gbvgvvfw, startup-latency: 6s, latency: 7884ms, payload: 7Kb, activator-always-in-path: false
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-18-lumfhbmy, startup-latency: 7s, latency: 9227ms, payload: 85Kb, activator-always-in-path: false
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-19-mbaxbbbn, startup-latency: 14s, latency: 5738ms, payload: 97Kb, activator-always-in-path: true
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-20-lggbsiqd, startup-latency: 2s, latency: 2070ms, payload: 52Kb, activator-always-in-path: false
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-21-fidkhmdm, startup-latency: 10s, latency: 6008ms, payload: 43Kb, activator-always-in-path: true
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-22-erfkzxuy, startup-latency: 2s, latency: 8318ms, payload: 37Kb, activator-always-in-path: true
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-23-cveyrhvw, startup-latency: 7s, latency: 8499ms, payload: 73Kb, activator-always-in-path: false
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-24-ivmtgesf, startup-latency: 11s, latency: 3406ms, payload: 27Kb, activator-always-in-path: true
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-25-hczlviof, startup-latency: 6s, latency: 6563ms, payload: 24Kb, activator-always-in-path: true
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-26-bhtkzezq, startup-latency: 2s, latency: 2739ms, payload: 13Kb, activator-always-in-path: false
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-27-wizrhkck, startup-latency: 1s, latency: 5883ms, payload: 25Kb, activator-always-in-path: true
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-28-kznkoxae, startup-latency: 13s, latency: 439ms, payload: 44Kb, activator-always-in-path: true
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-29-mawvqxzy, startup-latency: 14s, latency: 6252ms, payload: 49Kb, activator-always-in-path: true
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-30-jeazhvai, startup-latency: 2s, latency: 5054ms, payload: 9Kb, activator-always-in-path: false
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-31-uzkfcrxe, startup-latency: 4s, latency: 4956ms, payload: 58Kb, activator-always-in-path: true
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-32-pmagtvbi, startup-latency: 7s, latency: 8197ms, payload: 41Kb, activator-always-in-path: false
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-33-pladprmn, startup-latency: 8s, latency: 6162ms, payload: 57Kb, activator-always-in-path: false
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-34-tfcuwoyy, startup-latency: 11s, latency: 5460ms, payload: 11Kb, activator-always-in-path: true
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-35-gavhoheq, startup-latency: 8s, latency: 3386ms, payload: 49Kb, activator-always-in-path: false
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-36-eatszoqq, startup-latency: 17s, latency: 9913ms, payload: 82Kb, activator-always-in-path: false
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-37-vaplwqmv, startup-latency: 10s, latency: 8229ms, payload: 14Kb, activator-always-in-path: false
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-38-jxwmfaua, startup-latency: 10s, latency: 1992ms, payload: 53Kb, activator-always-in-path: true
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-39-tvghpilo, startup-latency: 18s, latency: 1283ms, payload: 16Kb, activator-always-in-path: false
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-40-jbkdbvjn, startup-latency: 12s, latency: 4248ms, payload: 50Kb, activator-always-in-path: false
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-41-uxxxfngh, startup-latency: 9s, latency: 5508ms, payload: 88Kb, activator-always-in-path: true
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-42-pibgztkp, startup-latency: 15s, latency: 5219ms, payload: 69Kb, activator-always-in-path: false
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-43-szmetxqd, startup-latency: 10s, latency: 2906ms, payload: 65Kb, activator-always-in-path: false
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-44-ugnlaljb, startup-latency: 7s, latency: 9466ms, payload: 37Kb, activator-always-in-path: true
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-45-wmjljyin, startup-latency: 16s, latency: 5625ms, payload: 80Kb, activator-always-in-path: false
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-46-jqjidoqe, startup-latency: 7s, latency: 3319ms, payload: 20Kb, activator-always-in-path: true
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-47-ebztmakc, startup-latency: 6s, latency: 2747ms, payload: 57Kb, activator-always-in-path: false
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-48-ktointfq, startup-latency: 9s, latency: 9474ms, payload: 52Kb, activator-always-in-path: false
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-49-eomxmbmm, startup-latency: 14s, latency: 5927ms, payload: 16Kb, activator-always-in-path: false
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-50-uoaewlcg, startup-latency: 16s, latency: 1106ms, payload: 47Kb, activator-always-in-path: true
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-51-fkcwcckc, startup-latency: 14s, latency: 315ms, payload: 54Kb, activator-always-in-path: true
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-52-fdzyrjmw, startup-latency: 18s, latency: 500ms, payload: 53Kb, activator-always-in-path: true
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-53-yuxorzct, startup-latency: 15s, latency: 5396ms, payload: 1Kb, activator-always-in-path: true
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-54-yuyzrmtn, startup-latency: 6s, latency: 628ms, payload: 45Kb, activator-always-in-path: true
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-55-yuwalhof, startup-latency: 15s, latency: 9494ms, payload: 32Kb, activator-always-in-path: true
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-56-tcmbyifi, startup-latency: 9s, latency: 8943ms, payload: 79Kb, activator-always-in-path: false
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-57-npqeeocp, startup-latency: 0s, latency: 4175ms, payload: 19Kb, activator-always-in-path: true
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-58-zvjnyoth, startup-latency: 18s, latency: 1071ms, payload: 71Kb, activator-always-in-path: false
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-59-pxtijekz, startup-latency: 5s, latency: 2857ms, payload: 29Kb, activator-always-in-path: false
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-60-vgpegjdg, startup-latency: 5s, latency: 7206ms, payload: 86Kb, activator-always-in-path: true
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-61-hzecoqkp, startup-latency: 7s, latency: 7557ms, payload: 94Kb, activator-always-in-path: false
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-62-fzjvxtls, startup-latency: 6s, latency: 4977ms, payload: 68Kb, activator-always-in-path: true
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-63-arfxtoxm, startup-latency: 6s, latency: 881ms, payload: 4Kb, activator-always-in-path: true
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-64-kavguczg, startup-latency: 18s, latency: 5296ms, payload: 67Kb, activator-always-in-path: false
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-65-frohucgc, startup-latency: 17s, latency: 405ms, payload: 2Kb, activator-always-in-path: true
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-66-giknbnzh, startup-latency: 1s, latency: 6864ms, payload: 92Kb, activator-always-in-path: true
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-67-omfujnpp, startup-latency: 16s, latency: 9175ms, payload: 53Kb, activator-always-in-path: false
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-68-whmmmgtz, startup-latency: 11s, latency: 7380ms, payload: 89Kb, activator-always-in-path: true
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Name: perftest-69-nujjwhbn, startup-latency: 9s, latency: 677ms, payload: 82Kb, activator-always-in-path: true
+real-traffic-test-zz57n load-test 2023/09/05 11:30:36 Starting vegeta attack for with 700 RPS for duration: 5m0s
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Created all the services in 6m50.647114926s
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Creating vegeta targets
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-00-tivjasrj, startup-latency: 14s, latency: 2882ms, payload: 67Kb, activator-always-in-path: true
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-01-ubgqoxjy, startup-latency: 16s, latency: 6268ms, payload: 44Kb, activator-always-in-path: true
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-02-jdocnyrr, startup-latency: 0s, latency: 3494ms, payload: 50Kb, activator-always-in-path: false
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-03-fwoiszjm, startup-latency: 10s, latency: 4263ms, payload: 47Kb, activator-always-in-path: false
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-04-ueslbpqu, startup-latency: 5s, latency: 6451ms, payload: 64Kb, activator-always-in-path: true
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-05-miklifcv, startup-latency: 4s, latency: 3841ms, payload: 83Kb, activator-always-in-path: true
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-06-zamlwwrn, startup-latency: 9s, latency: 2009ms, payload: 9Kb, activator-always-in-path: true
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-07-ytwkemeq, startup-latency: 13s, latency: 915ms, payload: 74Kb, activator-always-in-path: false
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-08-eypozrgt, startup-latency: 8s, latency: 2784ms, payload: 3Kb, activator-always-in-path: true
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-09-eudodxad, startup-latency: 12s, latency: 1361ms, payload: 91Kb, activator-always-in-path: true
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-10-nzucowjo, startup-latency: 13s, latency: 7526ms, payload: 14Kb, activator-always-in-path: false
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-11-wysoddlb, startup-latency: 1s, latency: 9134ms, payload: 13Kb, activator-always-in-path: true
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-12-saazcale, startup-latency: 17s, latency: 4142ms, payload: 53Kb, activator-always-in-path: true
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-13-rqpdrfdx, startup-latency: 18s, latency: 9559ms, payload: 33Kb, activator-always-in-path: false
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-14-dmrvnlse, startup-latency: 2s, latency: 6827ms, payload: 53Kb, activator-always-in-path: false
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-15-dfrilvqm, startup-latency: 2s, latency: 6041ms, payload: 73Kb, activator-always-in-path: false
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-16-swvxpdsl, startup-latency: 3s, latency: 6051ms, payload: 65Kb, activator-always-in-path: true
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-17-jzfeokcz, startup-latency: 19s, latency: 2388ms, payload: 52Kb, activator-always-in-path: true
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-18-qzxyjsbn, startup-latency: 12s, latency: 6645ms, payload: 47Kb, activator-always-in-path: true
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-19-uajpfuwj, startup-latency: 0s, latency: 2129ms, payload: 30Kb, activator-always-in-path: false
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-20-vlbycvdx, startup-latency: 11s, latency: 37ms, payload: 44Kb, activator-always-in-path: false
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-21-jdljchuu, startup-latency: 6s, latency: 9533ms, payload: 20Kb, activator-always-in-path: true
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-22-qctmzgwh, startup-latency: 4s, latency: 3065ms, payload: 5Kb, activator-always-in-path: false
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-23-wkuuifes, startup-latency: 3s, latency: 2864ms, payload: 67Kb, activator-always-in-path: true
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-24-cceuaxiu, startup-latency: 15s, latency: 6562ms, payload: 11Kb, activator-always-in-path: false
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-25-bdoqkevi, startup-latency: 3s, latency: 79ms, payload: 99Kb, activator-always-in-path: true
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-26-wfmgwkks, startup-latency: 4s, latency: 3607ms, payload: 53Kb, activator-always-in-path: false
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-27-lpbesfjt, startup-latency: 19s, latency: 8442ms, payload: 29Kb, activator-always-in-path: true
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-28-nebblmeg, startup-latency: 1s, latency: 5011ms, payload: 99Kb, activator-always-in-path: false
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-29-ajbueqie, startup-latency: 19s, latency: 2048ms, payload: 32Kb, activator-always-in-path: true
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-30-glojmdwm, startup-latency: 16s, latency: 3360ms, payload: 54Kb, activator-always-in-path: true
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-31-necqgzjg, startup-latency: 2s, latency: 4614ms, payload: 35Kb, activator-always-in-path: false
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-32-faosmkuz, startup-latency: 3s, latency: 7967ms, payload: 45Kb, activator-always-in-path: true
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-33-vhodxvvg, startup-latency: 0s, latency: 293ms, payload: 21Kb, activator-always-in-path: false
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-34-ehngumar, startup-latency: 7s, latency: 607ms, payload: 54Kb, activator-always-in-path: false
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-35-hclfszmo, startup-latency: 3s, latency: 564ms, payload: 38Kb, activator-always-in-path: false
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-36-vadnifpm, startup-latency: 16s, latency: 7521ms, payload: 58Kb, activator-always-in-path: false
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-37-rixqedin, startup-latency: 18s, latency: 1011ms, payload: 10Kb, activator-always-in-path: true
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-38-tmbfizgk, startup-latency: 10s, latency: 6669ms, payload: 0Kb, activator-always-in-path: true
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-39-pkubozdr, startup-latency: 7s, latency: 2525ms, payload: 13Kb, activator-always-in-path: true
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-40-zbhdcfeg, startup-latency: 13s, latency: 9053ms, payload: 73Kb, activator-always-in-path: false
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-41-vxpmplia, startup-latency: 19s, latency: 3456ms, payload: 92Kb, activator-always-in-path: false
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-42-fmeykzwo, startup-latency: 11s, latency: 3920ms, payload: 48Kb, activator-always-in-path: false
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-43-hflphvpm, startup-latency: 7s, latency: 2285ms, payload: 50Kb, activator-always-in-path: false
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-44-woakencr, startup-latency: 6s, latency: 4643ms, payload: 63Kb, activator-always-in-path: true
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-45-vpxbrjfq, startup-latency: 8s, latency: 5742ms, payload: 91Kb, activator-always-in-path: false
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-46-bgtmgihc, startup-latency: 4s, latency: 4679ms, payload: 39Kb, activator-always-in-path: true
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-47-cognkyme, startup-latency: 9s, latency: 4492ms, payload: 94Kb, activator-always-in-path: true
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-48-jccqljqt, startup-latency: 7s, latency: 4663ms, payload: 75Kb, activator-always-in-path: false
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-49-imnvqehz, startup-latency: 8s, latency: 2008ms, payload: 36Kb, activator-always-in-path: false
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-50-ksnavxhx, startup-latency: 8s, latency: 907ms, payload: 20Kb, activator-always-in-path: true
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-51-nijducle, startup-latency: 4s, latency: 2347ms, payload: 28Kb, activator-always-in-path: true
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-52-righwypk, startup-latency: 7s, latency: 8074ms, payload: 95Kb, activator-always-in-path: false
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-53-owbskfcc, startup-latency: 10s, latency: 6034ms, payload: 57Kb, activator-always-in-path: false
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-54-ucvjsahc, startup-latency: 1s, latency: 1953ms, payload: 11Kb, activator-always-in-path: true
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-55-xkxizmna, startup-latency: 17s, latency: 1097ms, payload: 51Kb, activator-always-in-path: true
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-56-airtktow, startup-latency: 0s, latency: 8823ms, payload: 38Kb, activator-always-in-path: true
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-57-ilfwwshz, startup-latency: 13s, latency: 6606ms, payload: 51Kb, activator-always-in-path: false
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-58-nbmuyibg, startup-latency: 12s, latency: 3913ms, payload: 97Kb, activator-always-in-path: true
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-59-sitripvo, startup-latency: 6s, latency: 6652ms, payload: 80Kb, activator-always-in-path: false
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-60-likiorzv, startup-latency: 6s, latency: 9826ms, payload: 53Kb, activator-always-in-path: true
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-61-epcazrua, startup-latency: 11s, latency: 4587ms, payload: 72Kb, activator-always-in-path: false
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-62-cpvbwgpj, startup-latency: 6s, latency: 785ms, payload: 32Kb, activator-always-in-path: false
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-63-akslrswq, startup-latency: 16s, latency: 4154ms, payload: 54Kb, activator-always-in-path: false
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-64-ijtsekqz, startup-latency: 13s, latency: 4871ms, payload: 76Kb, activator-always-in-path: false
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-65-gksxqyib, startup-latency: 14s, latency: 8304ms, payload: 24Kb, activator-always-in-path: false
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-66-gpgqzgdr, startup-latency: 5s, latency: 7201ms, payload: 56Kb, activator-always-in-path: false
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-67-icxbmbca, startup-latency: 0s, latency: 9741ms, payload: 63Kb, activator-always-in-path: true
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-68-jrkekxmf, startup-latency: 19s, latency: 7557ms, payload: 88Kb, activator-always-in-path: true
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Name: perftest-69-abcjysbk, startup-latency: 9s, latency: 8751ms, payload: 57Kb, activator-always-in-path: true
+real-traffic-test-4d89c load-test 2023/09/05 11:33:15 Starting vegeta attack for with 700 RPS for duration: 5m0s
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Created all the services in 8m0.431435865s
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Creating vegeta targets
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-00-texurzzl, startup-latency: 2s, latency: 7674ms, payload: 12Kb, activator-always-in-path: false
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-01-dhngjirb, startup-latency: 16s, latency: 4996ms, payload: 27Kb, activator-always-in-path: false
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-02-pnqzlbpd, startup-latency: 11s, latency: 7182ms, payload: 33Kb, activator-always-in-path: false
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-03-xdwsdgxa, startup-latency: 9s, latency: 2119ms, payload: 39Kb, activator-always-in-path: false
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-04-gzsgarbf, startup-latency: 1s, latency: 1839ms, payload: 10Kb, activator-always-in-path: false
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-05-iymnlsqm, startup-latency: 12s, latency: 2065ms, payload: 28Kb, activator-always-in-path: false
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-06-jjnrpyzn, startup-latency: 13s, latency: 2582ms, payload: 5Kb, activator-always-in-path: false
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-07-zxsqoszm, startup-latency: 2s, latency: 199ms, payload: 98Kb, activator-always-in-path: false
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-08-cndtrskz, startup-latency: 4s, latency: 6577ms, payload: 54Kb, activator-always-in-path: true
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-09-mfgjhktb, startup-latency: 18s, latency: 5093ms, payload: 61Kb, activator-always-in-path: false
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-10-htiyndic, startup-latency: 15s, latency: 7142ms, payload: 12Kb, activator-always-in-path: true
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-11-ppkhrxzp, startup-latency: 18s, latency: 9423ms, payload: 21Kb, activator-always-in-path: true
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-12-hmhdkkrs, startup-latency: 10s, latency: 8379ms, payload: 86Kb, activator-always-in-path: true
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-13-ubjohudt, startup-latency: 2s, latency: 4641ms, payload: 18Kb, activator-always-in-path: true
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-14-tdtroudv, startup-latency: 16s, latency: 4261ms, payload: 0Kb, activator-always-in-path: false
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-15-xcujddjm, startup-latency: 19s, latency: 4625ms, payload: 67Kb, activator-always-in-path: true
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-16-tiexewrj, startup-latency: 18s, latency: 6648ms, payload: 4Kb, activator-always-in-path: true
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-17-nnlztehr, startup-latency: 18s, latency: 8320ms, payload: 21Kb, activator-always-in-path: false
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-18-jgtsqvkb, startup-latency: 11s, latency: 4651ms, payload: 58Kb, activator-always-in-path: false
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-19-wvekckyv, startup-latency: 13s, latency: 2805ms, payload: 58Kb, activator-always-in-path: false
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-20-obgcgiom, startup-latency: 7s, latency: 9879ms, payload: 5Kb, activator-always-in-path: false
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-21-tdxmbdtg, startup-latency: 11s, latency: 3438ms, payload: 57Kb, activator-always-in-path: true
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-22-bmbfhbzq, startup-latency: 2s, latency: 9192ms, payload: 36Kb, activator-always-in-path: false
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-23-xvlxgirq, startup-latency: 9s, latency: 2580ms, payload: 14Kb, activator-always-in-path: true
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-24-dtgjxndj, startup-latency: 11s, latency: 4075ms, payload: 97Kb, activator-always-in-path: false
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-25-zaclmcyv, startup-latency: 7s, latency: 655ms, payload: 63Kb, activator-always-in-path: true
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-26-dsfzicrx, startup-latency: 5s, latency: 3543ms, payload: 35Kb, activator-always-in-path: true
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-27-nlsjhprb, startup-latency: 15s, latency: 2249ms, payload: 59Kb, activator-always-in-path: true
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-28-hegzkceu, startup-latency: 3s, latency: 3286ms, payload: 34Kb, activator-always-in-path: true
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-29-gyhkvsbt, startup-latency: 11s, latency: 2038ms, payload: 51Kb, activator-always-in-path: false
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-30-rkurhlnc, startup-latency: 14s, latency: 2132ms, payload: 23Kb, activator-always-in-path: true
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-31-mirducbd, startup-latency: 9s, latency: 8977ms, payload: 90Kb, activator-always-in-path: true
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-32-hpvonxdn, startup-latency: 12s, latency: 8293ms, payload: 68Kb, activator-always-in-path: false
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-33-borvetkw, startup-latency: 2s, latency: 7094ms, payload: 78Kb, activator-always-in-path: false
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-34-gkvlqjee, startup-latency: 11s, latency: 4364ms, payload: 5Kb, activator-always-in-path: false
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-35-tinunhrx, startup-latency: 12s, latency: 453ms, payload: 90Kb, activator-always-in-path: false
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-36-wsnxsmjq, startup-latency: 3s, latency: 1557ms, payload: 64Kb, activator-always-in-path: false
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-37-ongjolvo, startup-latency: 18s, latency: 5436ms, payload: 28Kb, activator-always-in-path: true
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-38-jiawwwcd, startup-latency: 3s, latency: 6598ms, payload: 92Kb, activator-always-in-path: false
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-39-iyefmyyi, startup-latency: 2s, latency: 4430ms, payload: 82Kb, activator-always-in-path: true
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-40-rzhlznbs, startup-latency: 6s, latency: 4287ms, payload: 51Kb, activator-always-in-path: true
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-41-ehdegglg, startup-latency: 3s, latency: 2159ms, payload: 55Kb, activator-always-in-path: false
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-42-gquhlqeo, startup-latency: 14s, latency: 6ms, payload: 87Kb, activator-always-in-path: false
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-43-ywjgychx, startup-latency: 5s, latency: 1467ms, payload: 48Kb, activator-always-in-path: false
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-44-mfvledpe, startup-latency: 4s, latency: 6161ms, payload: 42Kb, activator-always-in-path: false
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-45-rcsrrpxk, startup-latency: 10s, latency: 7969ms, payload: 17Kb, activator-always-in-path: true
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-46-leatwzry, startup-latency: 11s, latency: 7300ms, payload: 67Kb, activator-always-in-path: false
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-47-vggkvmfa, startup-latency: 0s, latency: 5572ms, payload: 40Kb, activator-always-in-path: true
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-48-phvlhdnz, startup-latency: 5s, latency: 2211ms, payload: 27Kb, activator-always-in-path: true
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-49-biebtzug, startup-latency: 18s, latency: 604ms, payload: 12Kb, activator-always-in-path: false
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-50-ejzvnagl, startup-latency: 9s, latency: 2730ms, payload: 45Kb, activator-always-in-path: true
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-51-kmmtxxmy, startup-latency: 10s, latency: 6852ms, payload: 65Kb, activator-always-in-path: false
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-52-kajwhavl, startup-latency: 14s, latency: 6236ms, payload: 87Kb, activator-always-in-path: true
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-53-ejardlwt, startup-latency: 15s, latency: 4855ms, payload: 46Kb, activator-always-in-path: false
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-54-bfbotssa, startup-latency: 0s, latency: 7899ms, payload: 19Kb, activator-always-in-path: true
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-55-dfsqgfun, startup-latency: 12s, latency: 349ms, payload: 30Kb, activator-always-in-path: true
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-56-omqjnmcl, startup-latency: 13s, latency: 6833ms, payload: 93Kb, activator-always-in-path: true
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-57-imdmfaxc, startup-latency: 16s, latency: 2028ms, payload: 2Kb, activator-always-in-path: true
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-58-glrkywnm, startup-latency: 16s, latency: 2340ms, payload: 82Kb, activator-always-in-path: false
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-59-zmdcvfxr, startup-latency: 3s, latency: 6971ms, payload: 51Kb, activator-always-in-path: true
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-60-ixlwuovl, startup-latency: 12s, latency: 7ms, payload: 34Kb, activator-always-in-path: true
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-61-jrgimblm, startup-latency: 4s, latency: 1815ms, payload: 42Kb, activator-always-in-path: true
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-62-bwaimign, startup-latency: 8s, latency: 7581ms, payload: 8Kb, activator-always-in-path: false
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-63-gkscexpx, startup-latency: 14s, latency: 3361ms, payload: 14Kb, activator-always-in-path: false
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-64-xfupbqwz, startup-latency: 5s, latency: 4337ms, payload: 29Kb, activator-always-in-path: true
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-65-uvehahim, startup-latency: 8s, latency: 2674ms, payload: 74Kb, activator-always-in-path: true
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-66-cuaezhja, startup-latency: 2s, latency: 6414ms, payload: 90Kb, activator-always-in-path: true
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-67-xligyovu, startup-latency: 17s, latency: 8379ms, payload: 8Kb, activator-always-in-path: true
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-68-zmokvgvi, startup-latency: 19s, latency: 9180ms, payload: 4Kb, activator-always-in-path: false
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Name: perftest-69-ceyvfqok, startup-latency: 4s, latency: 2239ms, payload: 83Kb, activator-always-in-path: true
+real-traffic-test-lsvvb load-test 2023/09/05 11:34:25 Starting vegeta attack for with 700 RPS for duration: 5m0s
+real-traffic-test-zzdn4 load-test Requests      [total, rate, throughput]         210000, 700.00, 601.45
+real-traffic-test-zzdn4 load-test Duration      [total, attack, wait]             5m49s, 5m0s, 49.154s
+real-traffic-test-zzdn4 load-test Latencies     [min, mean, 50, 90, 95, 99, max]  2.635ms, 1.284s, 8.251ms, 252.537ms, 11.699s, 26.256s, 50.001s
+real-traffic-test-zzdn4 load-test Bytes In      [total, mean]                     3104700872, 14784.29
+real-traffic-test-zzdn4 load-test Bytes Out     [total, mean]                     10681546670, 50864.51
+real-traffic-test-zzdn4 load-test Success       [ratio]                           100.00%
+real-traffic-test-zzdn4 load-test Status Codes  [code:count]                      0:2  200:209998  
+real-traffic-test-zzdn4 load-test Error Set:
+real-traffic-test-zzdn4 load-test 2023/09/05 11:35:20 Real traffic test finished
+real-traffic-test-zzdn4 load-test 2023/09/05 11:35:28 Shutting down InfluxReporter
+real-traffic-test-ccwjc load-test Requests      [total, rate, throughput]         210001, 700.00, 555.46
+real-traffic-test-ccwjc load-test Duration      [total, attack, wait]             5m50s, 5m0s, 49.992s
+real-traffic-test-ccwjc load-test Latencies     [min, mean, 50, 90, 95, 99, max]  1.858ms, 5.287s, 9.248ms, 25.781s, 50s, 50.001s, 50.042s
+real-traffic-test-ccwjc load-test Bytes In      [total, mean]                     2874613234, 13688.57
+real-traffic-test-ccwjc load-test Bytes Out     [total, mean]                     10267723114, 48893.69
+real-traffic-test-ccwjc load-test Success       [ratio]                           92.57%
+real-traffic-test-ccwjc load-test Status Codes  [code:count]                      0:15593  200:194408  
+real-traffic-test-ccwjc load-test Error Set:
+real-traffic-test-ccwjc load-test 2023/09/05 11:36:22 Real traffic test finished
+real-traffic-test-zz57n load-test Requests      [total, rate, throughput]         210000, 700.00, 542.86
+real-traffic-test-zz57n load-test Duration      [total, attack, wait]             5m50s, 5m0s, 49.932s
+real-traffic-test-zz57n load-test Latencies     [min, mean, 50, 90, 95, 99, max]  1.847ms, 5.065s, 9.229ms, 25.119s, 50s, 50.004s, 50.118s
+real-traffic-test-zz57n load-test Bytes In      [total, mean]                     2808564672, 13374.12
+real-traffic-test-zz57n load-test Bytes Out     [total, mean]                     8927280478, 42510.86
+real-traffic-test-zz57n load-test Success       [ratio]                           90.46%
+real-traffic-test-zz57n load-test Status Codes  [code:count]                      0:20037  200:189963  
+real-traffic-test-zz57n load-test Error Set:
+real-traffic-test-zz57n load-test 2023/09/05 11:36:26 Real traffic test finished
+real-traffic-test-8tr82 load-test 2023/09/05 11:36:36 Failed to create services: 04: failed to create Ready service: service "perftest-04-dmaiqnup" is not in desired state, got: &v1.Service{TypeMeta:v1.TypeMeta{Kind:"", APIVersion:""}, ObjectMeta:v1.ObjectMeta{Name:"", GenerateName:"", Namespace:"", SelfLink:"", UID:"", ResourceVersion:"", Generation:0, CreationTimestamp:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), DeletionTimestamp:<nil>, DeletionGracePeriodSeconds:(*int64)(nil), Labels:map[string]string(nil), Annotations:map[string]string(nil), OwnerReferences:[]v1.OwnerReference(nil), Finalizers:[]string(nil), ManagedFields:[]v1.ManagedFieldsEntry(nil)}, Spec:v1.ServiceSpec{ConfigurationSpec:v1.ConfigurationSpec{Template:v1.RevisionTemplateSpec{ObjectMeta:v1.ObjectMeta{Name:"", GenerateName:"", Namespace:"", SelfLink:"", UID:"", ResourceVersion:"", Generation:0, CreationTimestamp:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), DeletionTimestamp:<nil>, DeletionGracePeriodSeconds:(*int64)(nil), Labels:map[string]string(nil), Annotations:map[string]string(nil), OwnerReferences:[]v1.OwnerReference(nil), Finalizers:[]string(nil), ManagedFields:[]v1.ManagedFieldsEntry(nil)}, Spec:v1.RevisionSpec{PodSpec:v1.PodSpec{Volumes:[]v1.Volume(nil), InitContainers:[]v1.Container(nil), Containers:[]v1.Container(nil), EphemeralContainers:[]v1.EphemeralContainer(nil), RestartPolicy:"", TerminationGracePeriodSeconds:(*int64)(nil), ActiveDeadlineSeconds:(*int64)(nil), DNSPolicy:"", NodeSelector:map[string]string(nil), ServiceAccountName:"", DeprecatedServiceAccount:"", AutomountServiceAccountToken:(*bool)(nil), NodeName:"", HostNetwork:false, HostPID:false, HostIPC:false, ShareProcessNamespace:(*bool)(nil), SecurityContext:(*v1.PodSecurityContext)(nil), ImagePullSecrets:[]v1.LocalObjectReference(nil), Hostname:"", Subdomain:"", Affinity:(*v1.Affinity)(nil), SchedulerName:"", Tolerations:[]v1.Toleration(nil), HostAliases:[]v1.HostAlias(nil), PriorityClassName:"", Priority:(*int32)(nil), DNSConfig:(*v1.PodDNSConfig)(nil), ReadinessGates:[]v1.PodReadinessGate(nil), RuntimeClassName:(*string)(nil), EnableServiceLinks:(*bool)(nil), PreemptionPolicy:(*v1.PreemptionPolicy)(nil), Overhead:v1.ResourceList(nil), TopologySpreadConstraints:[]v1.TopologySpreadConstraint(nil), SetHostnameAsFQDN:(*bool)(nil), OS:(*v1.PodOS)(nil), HostUsers:(*bool)(nil), SchedulingGates:[]v1.PodSchedulingGate(nil), ResourceClaims:[]v1.PodResourceClaim(nil)}, ContainerConcurrency:(*int64)(nil), TimeoutSeconds:(*int64)(nil), ResponseStartTimeoutSeconds:(*int64)(nil), IdleTimeoutSeconds:(*int64)(nil)}}}, RouteSpec:v1.RouteSpec{Traffic:[]v1.TrafficTarget(nil)}}, Status:v1.ServiceStatus{Status:v1.Status{ObservedGeneration:0, Conditions:v1.Conditions(nil), Annotations:map[string]string(nil)}, ConfigurationStatusFields:v1.ConfigurationStatusFields{LatestReadyRevisionName:"", LatestCreatedRevisionName:""}, RouteStatusFields:v1.RouteStatusFields{URL:(*apis.URL)(nil), Address:(*v1.Addressable)(nil), Traffic:[]v1.TrafficTarget(nil)}}}: Get "https://172.30.0.1:443/apis/serving.knative.dev/v1/namespaces/default/services/perftest-04-dmaiqnup": http2: client connection lost
+real-traffic-test-knkws load-test 2023/09/05 11:36:42 Failed to create services: 63: failed to create Ready service: service "perftest-63-owbjcokr" is not in desired state, got: &v1.Service{TypeMeta:v1.TypeMeta{Kind:"", APIVersion:""}, ObjectMeta:v1.ObjectMeta{Name:"", GenerateName:"", Namespace:"", SelfLink:"", UID:"", ResourceVersion:"", Generation:0, CreationTimestamp:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), DeletionTimestamp:<nil>, DeletionGracePeriodSeconds:(*int64)(nil), Labels:map[string]string(nil), Annotations:map[string]string(nil), OwnerReferences:[]v1.OwnerReference(nil), Finalizers:[]string(nil), ManagedFields:[]v1.ManagedFieldsEntry(nil)}, Spec:v1.ServiceSpec{ConfigurationSpec:v1.ConfigurationSpec{Template:v1.RevisionTemplateSpec{ObjectMeta:v1.ObjectMeta{Name:"", GenerateName:"", Namespace:"", SelfLink:"", UID:"", ResourceVersion:"", Generation:0, CreationTimestamp:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), DeletionTimestamp:<nil>, DeletionGracePeriodSeconds:(*int64)(nil), Labels:map[string]string(nil), Annotations:map[string]string(nil), OwnerReferences:[]v1.OwnerReference(nil), Finalizers:[]string(nil), ManagedFields:[]v1.ManagedFieldsEntry(nil)}, Spec:v1.RevisionSpec{PodSpec:v1.PodSpec{Volumes:[]v1.Volume(nil), InitContainers:[]v1.Container(nil), Containers:[]v1.Container(nil), EphemeralContainers:[]v1.EphemeralContainer(nil), RestartPolicy:"", TerminationGracePeriodSeconds:(*int64)(nil), ActiveDeadlineSeconds:(*int64)(nil), DNSPolicy:"", NodeSelector:map[string]string(nil), ServiceAccountName:"", DeprecatedServiceAccount:"", AutomountServiceAccountToken:(*bool)(nil), NodeName:"", HostNetwork:false, HostPID:false, HostIPC:false, ShareProcessNamespace:(*bool)(nil), SecurityContext:(*v1.PodSecurityContext)(nil), ImagePullSecrets:[]v1.LocalObjectReference(nil), Hostname:"", Subdomain:"", Affinity:(*v1.Affinity)(nil), SchedulerName:"", Tolerations:[]v1.Toleration(nil), HostAliases:[]v1.HostAlias(nil), PriorityClassName:"", Priority:(*int32)(nil), DNSConfig:(*v1.PodDNSConfig)(nil), ReadinessGates:[]v1.PodReadinessGate(nil), RuntimeClassName:(*string)(nil), EnableServiceLinks:(*bool)(nil), PreemptionPolicy:(*v1.PreemptionPolicy)(nil), Overhead:v1.ResourceList(nil), TopologySpreadConstraints:[]v1.TopologySpreadConstraint(nil), SetHostnameAsFQDN:(*bool)(nil), OS:(*v1.PodOS)(nil), HostUsers:(*bool)(nil), SchedulingGates:[]v1.PodSchedulingGate(nil), ResourceClaims:[]v1.PodResourceClaim(nil)}, ContainerConcurrency:(*int64)(nil), TimeoutSeconds:(*int64)(nil), ResponseStartTimeoutSeconds:(*int64)(nil), IdleTimeoutSeconds:(*int64)(nil)}}}, RouteSpec:v1.RouteSpec{Traffic:[]v1.TrafficTarget(nil)}}, Status:v1.ServiceStatus{Status:v1.Status{ObservedGeneration:0, Conditions:v1.Conditions(nil), Annotations:map[string]string(nil)}, ConfigurationStatusFields:v1.ConfigurationStatusFields{LatestReadyRevisionName:"", LatestCreatedRevisionName:""}, RouteStatusFields:v1.RouteStatusFields{URL:(*apis.URL)(nil), Address:(*v1.Addressable)(nil), Traffic:[]v1.TrafficTarget(nil)}}}: Get "https://172.30.0.1:443/apis/serving.knative.dev/v1/namespaces/default/services/perftest-63-owbjcokr": http2: client connection lost
+real-traffic-test-h56zj load-test 2023/09/05 11:36:57 Failed to create services: 40: failed to create Ready service: service "perftest-40-aawxhtyf" is not in desired state, got: &v1.Service{TypeMeta:v1.TypeMeta{Kind:"", APIVersion:""}, ObjectMeta:v1.ObjectMeta{Name:"", GenerateName:"", Namespace:"", SelfLink:"", UID:"", ResourceVersion:"", Generation:0, CreationTimestamp:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), DeletionTimestamp:<nil>, DeletionGracePeriodSeconds:(*int64)(nil), Labels:map[string]string(nil), Annotations:map[string]string(nil), OwnerReferences:[]v1.OwnerReference(nil), Finalizers:[]string(nil), ManagedFields:[]v1.ManagedFieldsEntry(nil)}, Spec:v1.ServiceSpec{ConfigurationSpec:v1.ConfigurationSpec{Template:v1.RevisionTemplateSpec{ObjectMeta:v1.ObjectMeta{Name:"", GenerateName:"", Namespace:"", SelfLink:"", UID:"", ResourceVersion:"", Generation:0, CreationTimestamp:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), DeletionTimestamp:<nil>, DeletionGracePeriodSeconds:(*int64)(nil), Labels:map[string]string(nil), Annotations:map[string]string(nil), OwnerReferences:[]v1.OwnerReference(nil), Finalizers:[]string(nil), ManagedFields:[]v1.ManagedFieldsEntry(nil)}, Spec:v1.RevisionSpec{PodSpec:v1.PodSpec{Volumes:[]v1.Volume(nil), InitContainers:[]v1.Container(nil), Containers:[]v1.Container(nil), EphemeralContainers:[]v1.EphemeralContainer(nil), RestartPolicy:"", TerminationGracePeriodSeconds:(*int64)(nil), ActiveDeadlineSeconds:(*int64)(nil), DNSPolicy:"", NodeSelector:map[string]string(nil), ServiceAccountName:"", DeprecatedServiceAccount:"", AutomountServiceAccountToken:(*bool)(nil), NodeName:"", HostNetwork:false, HostPID:false, HostIPC:false, ShareProcessNamespace:(*bool)(nil), SecurityContext:(*v1.PodSecurityContext)(nil), ImagePullSecrets:[]v1.LocalObjectReference(nil), Hostname:"", Subdomain:"", Affinity:(*v1.Affinity)(nil), SchedulerName:"", Tolerations:[]v1.Toleration(nil), HostAliases:[]v1.HostAlias(nil), PriorityClassName:"", Priority:(*int32)(nil), DNSConfig:(*v1.PodDNSConfig)(nil), ReadinessGates:[]v1.PodReadinessGate(nil), RuntimeClassName:(*string)(nil), EnableServiceLinks:(*bool)(nil), PreemptionPolicy:(*v1.PreemptionPolicy)(nil), Overhead:v1.ResourceList(nil), TopologySpreadConstraints:[]v1.TopologySpreadConstraint(nil), SetHostnameAsFQDN:(*bool)(nil), OS:(*v1.PodOS)(nil), HostUsers:(*bool)(nil), SchedulingGates:[]v1.PodSchedulingGate(nil), ResourceClaims:[]v1.PodResourceClaim(nil)}, ContainerConcurrency:(*int64)(nil), TimeoutSeconds:(*int64)(nil), ResponseStartTimeoutSeconds:(*int64)(nil), IdleTimeoutSeconds:(*int64)(nil)}}}, RouteSpec:v1.RouteSpec{Traffic:[]v1.TrafficTarget(nil)}}, Status:v1.ServiceStatus{Status:v1.Status{ObservedGeneration:0, Conditions:v1.Conditions(nil), Annotations:map[string]string(nil)}, ConfigurationStatusFields:v1.ConfigurationStatusFields{LatestReadyRevisionName:"", LatestCreatedRevisionName:""}, RouteStatusFields:v1.RouteStatusFields{URL:(*apis.URL)(nil), Address:(*v1.Addressable)(nil), Traffic:[]v1.TrafficTarget(nil)}}}: the server was unable to return a response in the time allotted, but may still be processing the request (get services.serving.knative.dev perftest-40-aawxhtyf)
+real-traffic-test-rx7nw load-test 2023/09/05 11:36:57 Failed to create services: 36: failed to create Ready service: service "perftest-36-hwkwagvw" is not in desired state, got: &v1.Service{TypeMeta:v1.TypeMeta{Kind:"", APIVersion:""}, ObjectMeta:v1.ObjectMeta{Name:"", GenerateName:"", Namespace:"", SelfLink:"", UID:"", ResourceVersion:"", Generation:0, CreationTimestamp:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), DeletionTimestamp:<nil>, DeletionGracePeriodSeconds:(*int64)(nil), Labels:map[string]string(nil), Annotations:map[string]string(nil), OwnerReferences:[]v1.OwnerReference(nil), Finalizers:[]string(nil), ManagedFields:[]v1.ManagedFieldsEntry(nil)}, Spec:v1.ServiceSpec{ConfigurationSpec:v1.ConfigurationSpec{Template:v1.RevisionTemplateSpec{ObjectMeta:v1.ObjectMeta{Name:"", GenerateName:"", Namespace:"", SelfLink:"", UID:"", ResourceVersion:"", Generation:0, CreationTimestamp:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), DeletionTimestamp:<nil>, DeletionGracePeriodSeconds:(*int64)(nil), Labels:map[string]string(nil), Annotations:map[string]string(nil), OwnerReferences:[]v1.OwnerReference(nil), Finalizers:[]string(nil), ManagedFields:[]v1.ManagedFieldsEntry(nil)}, Spec:v1.RevisionSpec{PodSpec:v1.PodSpec{Volumes:[]v1.Volume(nil), InitContainers:[]v1.Container(nil), Containers:[]v1.Container(nil), EphemeralContainers:[]v1.EphemeralContainer(nil), RestartPolicy:"", TerminationGracePeriodSeconds:(*int64)(nil), ActiveDeadlineSeconds:(*int64)(nil), DNSPolicy:"", NodeSelector:map[string]string(nil), ServiceAccountName:"", DeprecatedServiceAccount:"", AutomountServiceAccountToken:(*bool)(nil), NodeName:"", HostNetwork:false, HostPID:false, HostIPC:false, ShareProcessNamespace:(*bool)(nil), SecurityContext:(*v1.PodSecurityContext)(nil), ImagePullSecrets:[]v1.LocalObjectReference(nil), Hostname:"", Subdomain:"", Affinity:(*v1.Affinity)(nil), SchedulerName:"", Tolerations:[]v1.Toleration(nil), HostAliases:[]v1.HostAlias(nil), PriorityClassName:"", Priority:(*int32)(nil), DNSConfig:(*v1.PodDNSConfig)(nil), ReadinessGates:[]v1.PodReadinessGate(nil), RuntimeClassName:(*string)(nil), EnableServiceLinks:(*bool)(nil), PreemptionPolicy:(*v1.PreemptionPolicy)(nil), Overhead:v1.ResourceList(nil), TopologySpreadConstraints:[]v1.TopologySpreadConstraint(nil), SetHostnameAsFQDN:(*bool)(nil), OS:(*v1.PodOS)(nil), HostUsers:(*bool)(nil), SchedulingGates:[]v1.PodSchedulingGate(nil), ResourceClaims:[]v1.PodResourceClaim(nil)}, ContainerConcurrency:(*int64)(nil), TimeoutSeconds:(*int64)(nil), ResponseStartTimeoutSeconds:(*int64)(nil), IdleTimeoutSeconds:(*int64)(nil)}}}, RouteSpec:v1.RouteSpec{Traffic:[]v1.TrafficTarget(nil)}}, Status:v1.ServiceStatus{Status:v1.Status{ObservedGeneration:0, Conditions:v1.Conditions(nil), Annotations:map[string]string(nil)}, ConfigurationStatusFields:v1.ConfigurationStatusFields{LatestReadyRevisionName:"", LatestCreatedRevisionName:""}, RouteStatusFields:v1.RouteStatusFields{URL:(*apis.URL)(nil), Address:(*v1.Addressable)(nil), Traffic:[]v1.TrafficTarget(nil)}}}: the server was unable to return a response in the time allotted, but may still be processing the request (get services.serving.knative.dev perftest-36-hwkwagvw)
+real-traffic-test-cc4l9 load-test 2023/09/05 11:37:09 Failed to create services: 21: failed to create Ready service: service "perftest-21-crhhmpcc" is not in desired state, got: &v1.Service{TypeMeta:v1.TypeMeta{Kind:"", APIVersion:""}, ObjectMeta:v1.ObjectMeta{Name:"", GenerateName:"", Namespace:"", SelfLink:"", UID:"", ResourceVersion:"", Generation:0, CreationTimestamp:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), DeletionTimestamp:<nil>, DeletionGracePeriodSeconds:(*int64)(nil), Labels:map[string]string(nil), Annotations:map[string]string(nil), OwnerReferences:[]v1.OwnerReference(nil), Finalizers:[]string(nil), ManagedFields:[]v1.ManagedFieldsEntry(nil)}, Spec:v1.ServiceSpec{ConfigurationSpec:v1.ConfigurationSpec{Template:v1.RevisionTemplateSpec{ObjectMeta:v1.ObjectMeta{Name:"", GenerateName:"", Namespace:"", SelfLink:"", UID:"", ResourceVersion:"", Generation:0, CreationTimestamp:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), DeletionTimestamp:<nil>, DeletionGracePeriodSeconds:(*int64)(nil), Labels:map[string]string(nil), Annotations:map[string]string(nil), OwnerReferences:[]v1.OwnerReference(nil), Finalizers:[]string(nil), ManagedFields:[]v1.ManagedFieldsEntry(nil)}, Spec:v1.RevisionSpec{PodSpec:v1.PodSpec{Volumes:[]v1.Volume(nil), InitContainers:[]v1.Container(nil), Containers:[]v1.Container(nil), EphemeralContainers:[]v1.EphemeralContainer(nil), RestartPolicy:"", TerminationGracePeriodSeconds:(*int64)(nil), ActiveDeadlineSeconds:(*int64)(nil), DNSPolicy:"", NodeSelector:map[string]string(nil), ServiceAccountName:"", DeprecatedServiceAccount:"", AutomountServiceAccountToken:(*bool)(nil), NodeName:"", HostNetwork:false, HostPID:false, HostIPC:false, ShareProcessNamespace:(*bool)(nil), SecurityContext:(*v1.PodSecurityContext)(nil), ImagePullSecrets:[]v1.LocalObjectReference(nil), Hostname:"", Subdomain:"", Affinity:(*v1.Affinity)(nil), SchedulerName:"", Tolerations:[]v1.Toleration(nil), HostAliases:[]v1.HostAlias(nil), PriorityClassName:"", Priority:(*int32)(nil), DNSConfig:(*v1.PodDNSConfig)(nil), ReadinessGates:[]v1.PodReadinessGate(nil), RuntimeClassName:(*string)(nil), EnableServiceLinks:(*bool)(nil), PreemptionPolicy:(*v1.PreemptionPolicy)(nil), Overhead:v1.ResourceList(nil), TopologySpreadConstraints:[]v1.TopologySpreadConstraint(nil), SetHostnameAsFQDN:(*bool)(nil), OS:(*v1.PodOS)(nil), HostUsers:(*bool)(nil), SchedulingGates:[]v1.PodSchedulingGate(nil), ResourceClaims:[]v1.PodResourceClaim(nil)}, ContainerConcurrency:(*int64)(nil), TimeoutSeconds:(*int64)(nil), ResponseStartTimeoutSeconds:(*int64)(nil), IdleTimeoutSeconds:(*int64)(nil)}}}, RouteSpec:v1.RouteSpec{Traffic:[]v1.TrafficTarget(nil)}}, Status:v1.ServiceStatus{Status:v1.Status{ObservedGeneration:0, Conditions:v1.Conditions(nil), Annotations:map[string]string(nil)}, ConfigurationStatusFields:v1.ConfigurationStatusFields{LatestReadyRevisionName:"", LatestCreatedRevisionName:""}, RouteStatusFields:v1.RouteStatusFields{URL:(*apis.URL)(nil), Address:(*v1.Addressable)(nil), Traffic:[]v1.TrafficTarget(nil)}}}: the server was unable to return a response in the time allotted, but may still be processing the request (get services.serving.knative.dev perftest-21-crhhmpcc)
+real-traffic-test-hlqww load-test 2023/09/05 11:37:15 Failed to create services: 07: failed to create Ready service: service "perftest-07-vuhnxswo" is not in desired state, got: &v1.Service{TypeMeta:v1.TypeMeta{Kind:"", APIVersion:""}, ObjectMeta:v1.ObjectMeta{Name:"", GenerateName:"", Namespace:"", SelfLink:"", UID:"", ResourceVersion:"", Generation:0, CreationTimestamp:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), DeletionTimestamp:<nil>, DeletionGracePeriodSeconds:(*int64)(nil), Labels:map[string]string(nil), Annotations:map[string]string(nil), OwnerReferences:[]v1.OwnerReference(nil), Finalizers:[]string(nil), ManagedFields:[]v1.ManagedFieldsEntry(nil)}, Spec:v1.ServiceSpec{ConfigurationSpec:v1.ConfigurationSpec{Template:v1.RevisionTemplateSpec{ObjectMeta:v1.ObjectMeta{Name:"", GenerateName:"", Namespace:"", SelfLink:"", UID:"", ResourceVersion:"", Generation:0, CreationTimestamp:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), DeletionTimestamp:<nil>, DeletionGracePeriodSeconds:(*int64)(nil), Labels:map[string]string(nil), Annotations:map[string]string(nil), OwnerReferences:[]v1.OwnerReference(nil), Finalizers:[]string(nil), ManagedFields:[]v1.ManagedFieldsEntry(nil)}, Spec:v1.RevisionSpec{PodSpec:v1.PodSpec{Volumes:[]v1.Volume(nil), InitContainers:[]v1.Container(nil), Containers:[]v1.Container(nil), EphemeralContainers:[]v1.EphemeralContainer(nil), RestartPolicy:"", TerminationGracePeriodSeconds:(*int64)(nil), ActiveDeadlineSeconds:(*int64)(nil), DNSPolicy:"", NodeSelector:map[string]string(nil), ServiceAccountName:"", DeprecatedServiceAccount:"", AutomountServiceAccountToken:(*bool)(nil), NodeName:"", HostNetwork:false, HostPID:false, HostIPC:false, ShareProcessNamespace:(*bool)(nil), SecurityContext:(*v1.PodSecurityContext)(nil), ImagePullSecrets:[]v1.LocalObjectReference(nil), Hostname:"", Subdomain:"", Affinity:(*v1.Affinity)(nil), SchedulerName:"", Tolerations:[]v1.Toleration(nil), HostAliases:[]v1.HostAlias(nil), PriorityClassName:"", Priority:(*int32)(nil), DNSConfig:(*v1.PodDNSConfig)(nil), ReadinessGates:[]v1.PodReadinessGate(nil), RuntimeClassName:(*string)(nil), EnableServiceLinks:(*bool)(nil), PreemptionPolicy:(*v1.PreemptionPolicy)(nil), Overhead:v1.ResourceList(nil), TopologySpreadConstraints:[]v1.TopologySpreadConstraint(nil), SetHostnameAsFQDN:(*bool)(nil), OS:(*v1.PodOS)(nil), HostUsers:(*bool)(nil), SchedulingGates:[]v1.PodSchedulingGate(nil), ResourceClaims:[]v1.PodResourceClaim(nil)}, ContainerConcurrency:(*int64)(nil), TimeoutSeconds:(*int64)(nil), ResponseStartTimeoutSeconds:(*int64)(nil), IdleTimeoutSeconds:(*int64)(nil)}}}, RouteSpec:v1.RouteSpec{Traffic:[]v1.TrafficTarget(nil)}}, Status:v1.ServiceStatus{Status:v1.Status{ObservedGeneration:0, Conditions:v1.Conditions(nil), Annotations:map[string]string(nil)}, ConfigurationStatusFields:v1.ConfigurationStatusFields{LatestReadyRevisionName:"", LatestCreatedRevisionName:""}, RouteStatusFields:v1.RouteStatusFields{URL:(*apis.URL)(nil), Address:(*v1.Addressable)(nil), Traffic:[]v1.TrafficTarget(nil)}}}: the server was unable to return a response in the time allotted, but may still be processing the request (get services.serving.knative.dev perftest-07-vuhnxswo)
+real-traffic-test-9nxds load-test 2023/09/05 11:37:44 Creating 70 Knative Services
+real-traffic-test-4d89c load-test Requests      [total, rate, throughput]         199387, 664.62, 237.12
+real-traffic-test-4d89c load-test Duration      [total, attack, wait]             5m5s, 5m0s, 5.486s
+real-traffic-test-4d89c load-test Latencies     [min, mean, 50, 90, 95, 99, max]  1.936ms, 15.743s, 9.692ms, 50.001s, 50.002s, 50.012s, 50.142s
+real-traffic-test-4d89c load-test Bytes In      [total, mean]                     1070988123, 5371.40
+real-traffic-test-4d89c load-test Bytes Out     [total, mean]                     3507539066, 17591.61
+real-traffic-test-4d89c load-test Success       [ratio]                           36.33%
+real-traffic-test-4d89c load-test Status Codes  [code:count]                      0:126951  200:72436  
+real-traffic-test-4d89c load-test Error Set:
+real-traffic-test-4d89c load-test Post "http://perftest-38-tmbfizgk.default.svc.cluster.local?sleep=6669": dial tcp 0.0.0.0:2023/09/05 11:38:20 Real traffic test finished
+real-traffic-test-lsvvb load-test Requests      [total, rate, throughput]         158874, 674.85, 362.41
+real-traffic-test-lsvvb load-test Duration      [total, attack, wait]             3m55s, 3m55s, 4.668ms
+real-traffic-test-lsvvb load-test Latencies     [min, mean, 50, 90, 95, 99, max]  2.029ms, 16.478s, 4.727ms, 50s, 50.001s, 50.002s, 50.048s
+real-traffic-test-lsvvb load-test Bytes In      [total, mean]                     1261613181, 7940.97
+real-traffic-test-lsvvb load-test Bytes Out     [total, mean]                     3880843996, 24427.18
+real-traffic-test-lsvvb load-test Success       [ratio]                           53.70%
+real-traffic-test-lsvvb load-test Status Codes  [code:count]                      0:73553  200:85321  
+real-traffic-test-lsvvb load-test Error Set:
+real-traffic-test-lsvvb load-test 2023/09/05 11:38:20 Real traffic test finished
+real-traffic-test-4d89c load-test 2023/09/05 11:38:21 Shutting down InfluxReporter
+real-traffic-test-4d89c load-test 2023/09/05 11:38:21 influxdb2client E! Write error: Post "http://local-influx-influxdb2.influx:80/api/v2/write?bucket=knative-serving&org=Knativetest&precision=ns": dial tcp 172.30.177.115:80: connect: cannot assign requested address
+real-traffic-test-4d89c load-test Batch kept for retrying
+real-traffic-test-ccwjc load-test 2023/09/05 11:38:47 Shutting down InfluxReporter
+real-traffic-test-zz57n load-test 2023/09/05 11:38:49 Shutting down InfluxReporter

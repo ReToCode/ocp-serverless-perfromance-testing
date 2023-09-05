@@ -73,5 +73,6 @@ echo ">> Upload the test images"
 pushd "$SERVING"
 ko resolve --sbom=none -RBf test/test_images/autoscale > /dev/null
 ko resolve --sbom=none -RBf test/test_images/helloworld > /dev/null
+ko resolve --sbom=none -RBf test/test_images/slowstart > /dev/null
 popd
 
