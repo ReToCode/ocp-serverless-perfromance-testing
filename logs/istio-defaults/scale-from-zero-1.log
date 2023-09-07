@@ -1,0 +1,18 @@
+2023/09/06 13:51:57 Starting scale from zero test
+2023/09/06 13:52:09 Created all the services in 12.035975534s
+2023/09/06 13:52:09 00: waiting for deployment to scale to zero
+2023/09/06 13:52:09 All pods are done (scaled to zero) or terminating after 4.885µs
+2023/09/06 13:52:09 00: waiting for endpoint to serve request
+2023/09/06 13:52:09 Spoofing perftest-scalefromzero-00-yinruhta.default.svc.cluster.local -> perftest-scalefromzero-00-yinruhta.default.svc.cluster.local
+2023/09/06 13:52:09 Service is ready after: name: perftest-scalefromzero-00-yinruhta, deployment-updated: 0ms, service-ready-since-deployment: 16ms, service-ready-total: 16ms
+2023/09/06 13:52:09 Shutting down VegetaReporter
+Requests      [total, rate, throughput]         1, 1.00, 0.00
+Duration      [total, attack, wait]             16.014ms, 0s, 16.014ms
+Latencies     [min, mean, 50, 90, 95, 99, max]  16.014ms, 16.014ms, 16.014ms, 16.014ms, 16.014ms, 16.014ms, 16.014ms
+Bytes In      [total, mean]                     0, 0.00
+Bytes Out     [total, mean]                     0, 0.00
+Success       [ratio]                           0.00%
+Status Codes  [code:count]                      0:1  
+Error Set:
+2023/09/06 13:52:09 Shutting down InfluxReporter
+2023/09/06 13:52:09 SLA 1 failed. P95 latency is not in 0-15000000ms time range: 16.014392ms

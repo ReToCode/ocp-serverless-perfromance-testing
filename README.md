@@ -3,6 +3,8 @@
 ## Setup
 
 ### Environment
+
+The scripts expect the following environment to be set
 ```bash
 export KO_DOCKER_REPO=quay.io/rlehmann
 export SYSTEM_NAMESPACE=knative-serving
@@ -48,6 +50,8 @@ Using influxDB as a datasource for Grafana
 
 
 ## Manually creating Knative Services
+
+This is only relevant for manual testing
 ```bash
 kubectl create ns knative-performance
 for i in {1..1000}
@@ -58,14 +62,13 @@ done
 
 ## Running the tests in the scenarios
 
-### Cluster setup: small
+### Cluster setup: scenario small
 
 ```bash
 # Scale machines
 for name in $(oc get machineset -n openshift-machine-api -o name); do oc scale $name -n openshift-machine-api --replicas=2; done
 
 # Set resource scenario
-## TODO
 oc apply -f scenarios/knative-serving-minimal.yaml
 
 # hack to stop HPA from interfering - this is optional (depending on tests)
@@ -74,12 +77,7 @@ oc -n knative-serving patch hpa activator --patch '{"spec":{"minReplicas":1, "ma
 oc -n knative-serving patch hpa webhook --patch '{"spec":{"minReplicas":1, "maxReplicas": 1}}'
 ```
 
-**Running the tests: small**
-
-TODO
-
-
-### Cluster setup: Limits
+### Cluster setup: scenario limits
 This scenario is just to find the limits of the system.
 
 ```bash
@@ -130,4 +128,64 @@ export ARTIFACTS=$PWD/logs
 ./scripts/run-dataplane-probe.sh 15 # parallelism (default=1)
 
 ./scripts/run-real-traffic-test.sh
+```
+
+### Cluster setup: Kourier with KnativeServing defaults
+
+```bash
+# Cluster setup
+# Scale machines
+for name in $(oc get machineset -n openshift-machine-api -o name); do oc scale $name -n openshift-machine-api --replicas=4; done
+oc wait --for=jsonpath={.status.availableReplicas}=4 machineset --all -n openshift-machine-api --timeout=-1s
+
+# Set resource scenario
+oc apply -f scenarios/knative-serving-kourier-defaults.yaml
+
+# Environment
+export KO_DOCKER_REPO=quay.io/rlehmann
+export SYSTEM_NAMESPACE=knative-serving
+export KO_DEFAULTPLATFORMS=linux/amd64
+export SERVING=/Users/rlehmann/code/knative/serving
+export INFLUX_URL=http://local-influx-influxdb2.influx:80
+export ARTIFACTS=$PWD/logs
+
+./scripts/run-all-performance-tests.sh
+```
+
+### Cluster setup: Istio with KnativeServing defaults
+
+```bash
+# Cluster setup
+# > Install Istio + Serverless, SMCP, SMMR and gateways as per S-O script 
+# > Scale machines
+for name in $(oc get machineset -n openshift-machine-api -o name); do oc scale $name -n openshift-machine-api --replicas=4; done
+oc wait --for=jsonpath={.status.availableReplicas}=4 machineset --all -n openshift-machine-api --timeout=-1s
+
+# Set resource scenario
+oc apply -f scenarios/knative-serving-istio-defaults.yaml
+
+# Deploy the testing webhook, that injects istio annotations to ksvc
+export SERVERLESS_OPERATOR=/Users/rlehmann/code/openshift-knative/serverless-operator
+oc apply -f $SERVERLESS_OPERATOR/serving/metadata-webhook/config
+sed "s|registry.ci.openshift.org/knative/openshift-serverless-nightly:metadata-webhook|quay.io/openshift-knative/metadata-webhook:latest|g" $SERVERLESS_OPERATOR/serving/metadata-webhook/config/webhook.yaml | oc apply -f - 
+
+# Environment
+export KO_DOCKER_REPO=quay.io/rlehmann
+export SYSTEM_NAMESPACE=knative-serving
+export KO_DEFAULTPLATFORMS=linux/amd64
+export SERVING=/Users/rlehmann/code/knative/serving
+export INFLUX_URL=http://local-influx-influxdb2.influx:80
+export ARTIFACTS=$PWD/logs
+
+# Manually (for now) make sure to add istio-inject annotations to all jobs in $SERVING and the deployment in dataplane-probe-setup.yaml
+#   metadata:
+#     annotations:
+#       sidecar.istio.io/inject: "true"
+#       proxy.istio.io/config: { "holdApplicationUntilProxyStarts": true }
+
+# rollout-probe/jobs also need the following to not get OOMKilled
+# sidecar.istio.io/proxyMemoryRequests: "2Gi"
+# spec.memory: 6Gi
+
+./scripts/run-all-performance-tests.sh
 ```

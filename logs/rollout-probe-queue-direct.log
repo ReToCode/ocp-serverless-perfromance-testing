@@ -1,0 +1,9 @@
+{"level":"info","ts":1694077037.1458688,"logger":"fallback","caller":"injection/injection.go:63","msg":"Starting informers..."}
+2023/09/07 08:57:17 Running rollout probe test with selector: serving.knative.dev/service=queue-proxy-with-cc
+2023/09/07 08:57:18 Inferred first revision = queue-proxy-with-cc-00001
+2023/09/07 08:57:36 influxdb2client E! Write error: Post "http://local-influx-influxdb2.influx:80/api/v2/write?bucket=knative-serving&org=Knativetest&precision=ns": EOF
+Batch kept for retrying
+2023/09/07 08:57:41 influxdb2client E! Write error: Post "http://local-influx-influxdb2.influx:80/api/v2/write?bucket=knative-serving&org=Knativetest&precision=ns": dial tcp: lookup local-influx-influxdb2.influx: i/o timeout
+Batch kept for retrying
+2023/09/07 08:57:47 Updating the service: queue-proxy-with-cc
+2023/09/07 08:57:47 Error getting ksvc queue-proxy-with-cc: Get "https://172.30.0.1:443/apis/serving.knative.dev/v1/namespaces/default/services/queue-proxy-with-cc": dial tcp 172.30.0.1:443: connect: connection refused

@@ -1,0 +1,74 @@
+2023/09/06 13:17:19 Creating 50 Knative Services
+2023/09/06 13:17:56 Created all the services in 37.463123736s
+2023/09/06 13:17:56 Creating vegeta targets
+2023/09/06 13:17:56 Name: perftest-00-ggqqdaok, startup-latency: 0s, latency: 1524ms, payload: 30Kb, activator-always-in-path: false
+2023/09/06 13:17:56 Name: perftest-01-zptnnhea, startup-latency: 1s, latency: 2143ms, payload: 35Kb, activator-always-in-path: false
+2023/09/06 13:17:56 Name: perftest-02-tgusrqjg, startup-latency: 3s, latency: 1206ms, payload: 41Kb, activator-always-in-path: true
+2023/09/06 13:17:56 Name: perftest-03-gtaecwbo, startup-latency: 5s, latency: 823ms, payload: 40Kb, activator-always-in-path: false
+2023/09/06 13:17:56 Name: perftest-04-mvksimqh, startup-latency: 8s, latency: 20ms, payload: 7Kb, activator-always-in-path: true
+2023/09/06 13:17:56 Name: perftest-05-mhtlsbdl, startup-latency: 5s, latency: 1942ms, payload: 3Kb, activator-always-in-path: true
+2023/09/06 13:17:56 Name: perftest-06-slgfktmg, startup-latency: 3s, latency: 4156ms, payload: 46Kb, activator-always-in-path: false
+2023/09/06 13:17:56 Name: perftest-07-dqxivgsm, startup-latency: 4s, latency: 2258ms, payload: 39Kb, activator-always-in-path: false
+2023/09/06 13:17:56 Name: perftest-08-gswoihle, startup-latency: 8s, latency: 4227ms, payload: 24Kb, activator-always-in-path: true
+2023/09/06 13:17:56 Name: perftest-09-mgjmdpcs, startup-latency: 0s, latency: 380ms, payload: 34Kb, activator-always-in-path: false
+2023/09/06 13:17:56 Name: perftest-10-fzobgekp, startup-latency: 5s, latency: 4799ms, payload: 11Kb, activator-always-in-path: true
+2023/09/06 13:17:56 Name: perftest-11-mgzvwywl, startup-latency: 5s, latency: 3026ms, payload: 49Kb, activator-always-in-path: false
+2023/09/06 13:17:56 Name: perftest-12-gyixlxmc, startup-latency: 9s, latency: 1001ms, payload: 2Kb, activator-always-in-path: false
+2023/09/06 13:17:56 Name: perftest-13-srvbdgkp, startup-latency: 7s, latency: 251ms, payload: 45Kb, activator-always-in-path: false
+2023/09/06 13:17:56 Name: perftest-14-sgmevtvh, startup-latency: 4s, latency: 3316ms, payload: 20Kb, activator-always-in-path: true
+2023/09/06 13:17:56 Name: perftest-15-cmcldlnc, startup-latency: 2s, latency: 4651ms, payload: 0Kb, activator-always-in-path: false
+2023/09/06 13:17:56 Name: perftest-16-ohatpenr, startup-latency: 6s, latency: 4840ms, payload: 8Kb, activator-always-in-path: false
+2023/09/06 13:17:56 Name: perftest-17-madjtzjf, startup-latency: 4s, latency: 354ms, payload: 4Kb, activator-always-in-path: false
+2023/09/06 13:17:56 Name: perftest-18-iuqsvayn, startup-latency: 2s, latency: 271ms, payload: 41Kb, activator-always-in-path: false
+2023/09/06 13:17:56 Name: perftest-19-mtrvbipw, startup-latency: 2s, latency: 1189ms, payload: 48Kb, activator-always-in-path: false
+2023/09/06 13:17:56 Name: perftest-20-wmvvncgd, startup-latency: 8s, latency: 3036ms, payload: 36Kb, activator-always-in-path: true
+2023/09/06 13:17:56 Name: perftest-21-blbxwrdn, startup-latency: 4s, latency: 4535ms, payload: 47Kb, activator-always-in-path: false
+2023/09/06 13:17:56 Name: perftest-22-dcmokzev, startup-latency: 9s, latency: 1085ms, payload: 39Kb, activator-always-in-path: false
+2023/09/06 13:17:56 Name: perftest-23-hwtsjqeb, startup-latency: 8s, latency: 2187ms, payload: 0Kb, activator-always-in-path: false
+2023/09/06 13:17:56 Name: perftest-24-sspremyj, startup-latency: 3s, latency: 4028ms, payload: 46Kb, activator-always-in-path: false
+2023/09/06 13:17:56 Name: perftest-25-rtrqulyd, startup-latency: 9s, latency: 4413ms, payload: 35Kb, activator-always-in-path: true
+2023/09/06 13:17:56 Name: perftest-26-nefmktpa, startup-latency: 4s, latency: 607ms, payload: 15Kb, activator-always-in-path: false
+2023/09/06 13:17:56 Name: perftest-27-wtcuchgc, startup-latency: 7s, latency: 351ms, payload: 29Kb, activator-always-in-path: false
+2023/09/06 13:17:56 Name: perftest-28-ktucucav, startup-latency: 6s, latency: 2287ms, payload: 17Kb, activator-always-in-path: true
+2023/09/06 13:17:56 Name: perftest-29-uluvwgrr, startup-latency: 4s, latency: 1157ms, payload: 29Kb, activator-always-in-path: false
+2023/09/06 13:17:56 Name: perftest-30-jgnhqoqi, startup-latency: 5s, latency: 3271ms, payload: 21Kb, activator-always-in-path: true
+2023/09/06 13:17:56 Name: perftest-31-tlhjkrkw, startup-latency: 4s, latency: 1834ms, payload: 28Kb, activator-always-in-path: false
+2023/09/06 13:17:56 Name: perftest-32-kuwyusgm, startup-latency: 8s, latency: 1926ms, payload: 49Kb, activator-always-in-path: false
+2023/09/06 13:17:56 Name: perftest-33-ocslfung, startup-latency: 9s, latency: 2474ms, payload: 40Kb, activator-always-in-path: false
+2023/09/06 13:17:56 Name: perftest-34-vufehrie, startup-latency: 2s, latency: 1387ms, payload: 22Kb, activator-always-in-path: false
+2023/09/06 13:17:56 Name: perftest-35-wkjvopyd, startup-latency: 1s, latency: 3767ms, payload: 22Kb, activator-always-in-path: true
+2023/09/06 13:17:56 Name: perftest-36-cgzbaikn, startup-latency: 2s, latency: 125ms, payload: 48Kb, activator-always-in-path: false
+2023/09/06 13:17:56 Name: perftest-37-zakqshbb, startup-latency: 6s, latency: 4659ms, payload: 44Kb, activator-always-in-path: false
+2023/09/06 13:17:56 Name: perftest-38-hsugpovz, startup-latency: 0s, latency: 1683ms, payload: 10Kb, activator-always-in-path: true
+2023/09/06 13:17:56 Name: perftest-39-iveodmmw, startup-latency: 0s, latency: 1074ms, payload: 29Kb, activator-always-in-path: true
+2023/09/06 13:17:56 Name: perftest-40-iwejwnpx, startup-latency: 8s, latency: 4576ms, payload: 38Kb, activator-always-in-path: true
+2023/09/06 13:17:56 Name: perftest-41-vjdvqxwt, startup-latency: 5s, latency: 2258ms, payload: 6Kb, activator-always-in-path: false
+2023/09/06 13:17:56 Name: perftest-42-oyvatiut, startup-latency: 5s, latency: 2228ms, payload: 45Kb, activator-always-in-path: true
+2023/09/06 13:17:56 Name: perftest-43-dswuqcin, startup-latency: 2s, latency: 4490ms, payload: 35Kb, activator-always-in-path: false
+2023/09/06 13:17:56 Name: perftest-44-debsbgnd, startup-latency: 1s, latency: 415ms, payload: 17Kb, activator-always-in-path: true
+2023/09/06 13:17:56 Name: perftest-45-rgpkafky, startup-latency: 3s, latency: 3239ms, payload: 31Kb, activator-always-in-path: false
+2023/09/06 13:17:56 Name: perftest-46-racminfn, startup-latency: 1s, latency: 29ms, payload: 3Kb, activator-always-in-path: false
+2023/09/06 13:17:56 Name: perftest-47-mqoiopir, startup-latency: 9s, latency: 4754ms, payload: 21Kb, activator-always-in-path: true
+2023/09/06 13:17:56 Name: perftest-48-ikkhfryy, startup-latency: 0s, latency: 4156ms, payload: 48Kb, activator-always-in-path: false
+2023/09/06 13:17:56 Name: perftest-49-qwiloxza, startup-latency: 9s, latency: 2074ms, payload: 22Kb, activator-always-in-path: true
+2023/09/06 13:17:56 Starting vegeta attack for with 2000 RPS for duration: 5m0s
+2023/09/06 13:17:56 error occurred calling target. Err: Post "http://perftest-37-zakqshbb.default.svc.cluster.local?sleep=4659": dial tcp: lookup perftest-37-zakqshbb.default.svc.cluster.local on 172.30.0.10:53: no such host, url: http://perftest-37-zakqshbb.default.svc.cluster.local?sleep=4659, method: POST
+2023/09/06 13:17:56 error occurred calling target. Err: Post "http://perftest-37-zakqshbb.default.svc.cluster.local?sleep=4659": dial tcp: lookup perftest-37-zakqshbb.default.svc.cluster.local on 172.30.0.10:53: no such host, url: http://perftest-37-zakqshbb.default.svc.cluster.local?sleep=4659, method: POST
+2023/09/06 13:17:56 error occurred calling target. Err: Post "http://perftest-37-zakqshbb.default.svc.cluster.local?sleep=4659": dial tcp: lookup perftest-37-zakqshbb.default.svc.cluster.local on 172.30.0.10:53: no such host, url: http://perftest-37-zakqshbb.default.svc.cluster.local?sleep=4659, method: POST
+2023/09/06 13:17:56 error occurred calling target. Err: Post "http://perftest-37-zakqshbb.default.svc.cluster.local?sleep=4659": dial tcp: lookup perftest-37-zakqshbb.default.svc.cluster.local on 172.30.0.10:53: no such host, url: http://perftest-37-zakqshbb.default.svc.cluster.local?sleep=4659, method: POST
+2023/09/06 13:17:56 error occurred calling target. Err: Post "http://perftest-37-zakqshbb.default.svc.cluster.local?sleep=4659": dial tcp: lookup perftest-37-zakqshbb.default.svc.cluster.local on 172.30.0.10:53: no such host, url: http://perftest-37-zakqshbb.default.svc.cluster.local?sleep=4659, method: POST
+2023/09/06 13:17:56 error occurred calling target. Err: Post "http://perftest-37-zakqshbb.default.svc.cluster.local?sleep=4659": dial tcp: lookup perftest-37-zakqshbb.default.svc.cluster.local on 172.30.0.10:53: no such host, url: http://perftest-37-zakqshbb.default.svc.cluster.local?sleep=4659, method: POST
+2023/09/06 13:17:56 error occurred calling target. Err: Post "http://perftest-37-zakqshbb.default.svc.cluster.local?sleep=4659": dial tcp: lookup perftest-37-zakqshbb.default.svc.cluster.local on 172.30.0.10:53: no such host, url: http://perftest-37-zakqshbb.default.svc.cluster.local?sleep=4659, method: POST
+2023/09/06 13:17:56 error occurred calling target. Err: Post "http://perftest-37-zakqshbb.default.svc.cluster.local?sleep=4659": dial tcp: lookup perftest-37-zakqshbb.default.svc.cluster.local on 172.30.0.10:53: no such host, url: http://perftest-37-zakqshbb.default.svc.cluster.local?sleep=4659, method: POST
+Requests      [total, rate, throughput]         600000, 2000.00, 1999.95
+Duration      [total, attack, wait]             5m0s, 5m0s, 4.432ms
+Latencies     [min, mean, 50, 90, 95, 99, max]  2.654ms, 119.146ms, 5.133ms, 34.123ms, 67.583ms, 3.911s, 5.769s
+Bytes In      [total, mean]                     9156832773, 15261.39
+Bytes Out     [total, mean]                     17133336776, 28555.56
+Success       [ratio]                           100.00%
+Status Codes  [code:count]                      0:8  200:599992  
+Error Set:
+Post "http://perftest-37-zakqshbb.default.svc.cluster.local?sleep=4659": dial tcp: lookup perftest-37-zakqshbb.default.svc.cluster.local on 172.30.0.10:53: no such host
+2023/09/06 13:22:56 Cleaning up all created services
+2023/09/06 13:23:00 Shutting down InfluxReporter
+2023/09/06 13:23:00 SLA 1 failed. Errors occurred: 1

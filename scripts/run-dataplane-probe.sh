@@ -5,7 +5,7 @@ set -o nounset
 set -o pipefail
 declare ns
 
-source "$(dirname "$0")/setup.sh"
+
 
 # Customization
 parallelism=$1

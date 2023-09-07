@@ -26,9 +26,6 @@ function run_job() {
   kubectl delete job "$name" -n "$ns" --ignore-not-found=true
 
   # start the load test and get the logs
-  # todo: check if we can add envsubst to build image to make this easier
-  # using kapp seems like a massive overhead just to replace two variables
-  # envsubst < "$file" | ko apply --sbom=none -Bf -
   pushd "$SERVING"
   sed "s|@SYSTEM_NAMESPACE@|$SYSTEM_NAMESPACE|g" "$file" | sed "s|@KO_DOCKER_REPO@|$KO_DOCKER_REPO|g" | ko apply --sbom=none -Bf -
   popd
