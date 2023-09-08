@@ -1,0 +1,21 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: autoscale
+  namespace: default
+spec:
+  template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/min-scale: "30"
+        autoscaling.knative.dev/target-burst-capacity: "0" # activator only in path when scaled to zero
+    spec:
+      containers:
+        - image: ghcr.io/knative/autoscale-go:latest
+          resources:
+            requests:
+              cpu: 10m
+              memory: 50Mi
+            limits:
+              cpu: 100m
+              memory: 100Mi

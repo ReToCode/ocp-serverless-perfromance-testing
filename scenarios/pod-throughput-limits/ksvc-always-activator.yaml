@@ -1,0 +1,36 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: autoscale-always
+  namespace: default
+spec:
+  template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/min-scale: "30"
+        autoscaling.knative.dev/target-burst-capacity: "-1" # activator always in path
+    spec:
+      containers:
+        - image: ghcr.io/knative/autoscale-go:latest
+          resources:
+            requests:
+              cpu: 10m
+              memory: 50Mi
+            limits:
+              cpu: 100m
+              memory: 100Mi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: autoscale-always-activator
+  namespace: default
+spec:
+  externalName: activator-service.knative-serving.svc.cluster.local
+  ports:
+    - name: http2
+      port: 80
+      protocol: TCP
+      targetPort: 80
+  sessionAffinity: None
+  type: ExternalName

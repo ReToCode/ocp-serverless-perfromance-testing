@@ -1,0 +1,34 @@
+apiVersion: operator.knative.dev/v1beta1
+kind: KnativeServing
+metadata:
+  annotations:
+    serverless.openshift.io/default-enable-http2: "true"
+  name: knative-serving
+  namespace: knative-serving
+spec:
+
+  ingress:
+    kourier:
+      enabled: true
+
+  high-availability:
+    replicas: 1
+
+  workloads:
+    - name: activator
+      replicas: 1
+      resources:
+        - container: activator
+          requests:
+            cpu: 500m       # default: 300m  (HPA on this target 100%)
+            memory: 500Mi   # default: 60Mi
+          limits:
+            cpu: 5000m      # default: 1000m
+            memory: 5000Mi  # default: 600Mi
+
+    - name: 3scale-kourier-gateway
+      replicas: 1           # this component has no limits
+
+  config:
+    features:
+      kubernetes.podspec-init-containers: enabled # this is only necessary for adding artificial startup-delays

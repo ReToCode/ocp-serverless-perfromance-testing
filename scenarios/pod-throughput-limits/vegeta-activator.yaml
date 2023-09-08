@@ -1,0 +1,40 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: vegeta-payload
+data:
+  payload: |
+    GET http://activator-service.knative-serving.svc.cluster.local?sleep=100
+    Knative-Serving-Namespace: default
+    Knative-Serving-Revision: autoscale-always-00001
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: load-test
+  namespace: default
+spec:
+  parallelism: 1
+  template:
+    metadata:
+      labels:
+        app: load-test
+    spec:
+      containers:
+        - name: vegeta
+          image: quay.io/rlehmann/vegeta/v12
+          command: ["/bin/bash", "-c"]
+          args:
+            - "/ko-app/v12 -cpus=1 attack -duration=4m -rate=3000/1s -targets=/var/vegeta/payload | /ko-app/v12 report -type=text"
+          resources:
+            requests:
+              cpu: 1000m
+              memory: 3Gi
+          volumeMounts:
+            - name: vegeta-payload
+              mountPath: /var/vegeta
+      volumes:
+        - name: vegeta-payload
+          configMap:
+            name: vegeta-payload
+      restartPolicy: Never

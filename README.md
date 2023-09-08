@@ -198,8 +198,7 @@ export ARTIFACTS=$PWD/logs
 ### Setup
 ```bash
 # Setup OSS with Kourier
-
-# Make sure we only have one 3scale-kourier-gateway
+# Make sure we only have one 3scale-kourier-gateway and one activator
 oc apply -f scenarios/pod-throughput-limits/knative-serving-kourier.yaml
 ```
 
@@ -207,12 +206,33 @@ oc apply -f scenarios/pod-throughput-limits/knative-serving-kourier.yaml
 
 ```bash
 oc apply -f scenarios/pod-throughput-limits/ksvc-no-activator.yaml
+
+# No payload
 oc apply -f scenarios/pod-throughput-limits/vegeta-3scale-kourier-gateway.yaml
+
+# With payload
+oc apply -f scenarios/pod-throughput-limits/vegeta-3scale-kourier-gateway-body.yaml
+
+# Dump the logs
+oc logs -f -n default "job.batch/load-test" >"$ARTIFACTS/load-test-kourier.log"
 ```
 
 ### Activator
 
 ```bash
+# Stop HPA from interfering
+oc scale deploy -n openshift-serverless knative-operator-webhook --replicas=0
+oc -n knative-serving patch hpa activator --patch '{"spec":{"minReplicas":1, "maxReplicas": 1}}'
+
+# Deploy backing pod
 oc apply -f scenarios/pod-throughput-limits/ksvc-always-activator.yaml
+
+# No payload
 oc apply -f scenarios/pod-throughput-limits/vegeta-activator.yaml
+
+# With payload
+oc apply -f scenarios/pod-throughput-limits/vegeta-activator-boyd.yaml
+
+# Dump the logs
+oc logs -f -n default "job.batch/load-test" >"$ARTIFACTS/load-test-activator.log"
 ```
