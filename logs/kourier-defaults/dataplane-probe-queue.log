@@ -1,0 +1,13 @@
+{"level":"info","ts":1694151620.549774,"logger":"fallback","caller":"injection/injection.go:63","msg":"Starting informers..."}
+2023/09/08 05:40:20 Starting dataplane probe for target: queue
+Requests      [total, rate, throughput]         180000, 1000.00, 999.44
+Duration      [total, attack, wait]             3m0s, 3m0s, 101.881ms
+Latencies     [min, mean, 50, 90, 95, 99, max]  100.804ms, 102.229ms, 101.887ms, 102.453ms, 102.558ms, 103.337ms, 482.168ms
+Bytes In      [total, mean]                     4300150, 23.89
+Bytes Out     [total, mean]                     0, 0.00
+Success       [ratio]                           100.00%
+Status Codes  [code:count]                      200:180000  
+Error Set:
+2023/09/08 05:43:20 SLA 1 passed. P95 latency is in 100000000-110000000ms time range
+2023/09/08 05:43:20 Dataplane probe test finished
+2023/09/08 05:43:20 Shutting down InfluxReporter

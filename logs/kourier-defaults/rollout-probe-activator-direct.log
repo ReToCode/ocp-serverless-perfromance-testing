@@ -1,0 +1,16 @@
+{"level":"info","ts":1694154850.010219,"logger":"fallback","caller":"injection/injection.go:63","msg":"Starting informers..."}
+2023/09/08 06:34:10 Running rollout probe test with selector: serving.knative.dev/service=activator-with-cc
+2023/09/08 06:34:11 Inferred first revision = activator-with-cc-00001
+2023/09/08 06:34:40 Updating the service: activator-with-cc
+2023/09/08 06:34:40 Successfully updated the service.
+Requests      [total, rate, throughput]         180000, 1000.01, 502.28
+Duration      [total, attack, wait]             3m9s, 3m0s, 8.548s
+Latencies     [min, mean, 50, 90, 95, 99, max]  159.453µs, 3.943s, 3.999s, 8.598s, 8.851s, 9.403s, 17.335s
+Bytes In      [total, mean]                     9171338, 50.95
+Bytes Out     [total, mean]                     0, 0.00
+Success       [ratio]                           52.61%
+Status Codes  [code:count]                      200:94704  503:85296  
+Error Set:
+503 Service Unavailable
+2023/09/08 06:37:18 Shutting down InfluxReporter
+2023/09/08 06:37:18 SLA 1 failed. P95 latency is not in 100-110ms time range: 8.850668685s

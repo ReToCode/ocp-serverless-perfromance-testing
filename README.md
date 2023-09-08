@@ -184,8 +184,35 @@ export ARTIFACTS=$PWD/logs
 #       proxy.istio.io/config: { "holdApplicationUntilProxyStarts": true }
 
 # rollout-probe/jobs also need the following to not get OOMKilled
-# sidecar.istio.io/proxyMemoryRequests: "2Gi"
-# spec.memory: 6Gi
-
+#   metadata:
+#     annotations:
+#       sidecar.istio.io/inject: "true"
+#       proxy.istio.io/config: { "holdApplicationUntilProxyStarts": true }
+#       sidecar.istio.io/proxyCPULimit: "1" # setting this, removes the memory limit of istio-proxy
+        
 ./scripts/run-all-performance-tests.sh
+```
+
+## Testing throughput and resources of datapath components
+
+### Setup
+```bash
+# Setup OSS with Kourier
+
+# Make sure we only have one 3scale-kourier-gateway
+oc apply -f scenarios/pod-throughput-limits/knative-serving-kourier.yaml
+```
+
+### 3scale-kourier-gateway
+
+```bash
+oc apply -f scenarios/pod-throughput-limits/ksvc-no-activator.yaml
+oc apply -f scenarios/pod-throughput-limits/vegeta-3scale-kourier-gateway.yaml
+```
+
+### Activator
+
+```bash
+oc apply -f scenarios/pod-throughput-limits/ksvc-always-activator.yaml
+oc apply -f scenarios/pod-throughput-limits/vegeta-activator.yaml
 ```

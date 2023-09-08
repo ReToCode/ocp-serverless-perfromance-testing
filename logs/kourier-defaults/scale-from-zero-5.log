@@ -1,0 +1,40 @@
+2023/09/08 06:00:49 Starting scale from zero test
+2023/09/08 06:00:58 Created all the services in 9.048670755s
+2023/09/08 06:00:58 04: waiting for deployment to scale to zero
+2023/09/08 06:00:58 01: waiting for deployment to scale to zero
+2023/09/08 06:00:58 All pods are done (scaled to zero) or terminating after 5.473µs
+2023/09/08 06:00:58 02: waiting for deployment to scale to zero
+2023/09/08 06:00:58 03: waiting for deployment to scale to zero
+2023/09/08 06:00:58 All pods are done (scaled to zero) or terminating after 823ns
+2023/09/08 06:00:58 All pods are done (scaled to zero) or terminating after 4.307µs
+2023/09/08 06:00:58 00: waiting for deployment to scale to zero
+2023/09/08 06:00:58 All pods are done (scaled to zero) or terminating after 1.82µs
+2023/09/08 06:00:58 All pods are done (scaled to zero) or terminating after 553ns
+2023/09/08 06:00:58 04: waiting for endpoint to serve request
+2023/09/08 06:00:58 Spoofing perftest-scalefromzero-04-lnpofyzn.default.svc.cluster.local -> perftest-scalefromzero-04-lnpofyzn.default.svc.cluster.local
+2023/09/08 06:00:58 02: waiting for endpoint to serve request
+2023/09/08 06:00:58 Spoofing perftest-scalefromzero-02-iqrgrhun.default.svc.cluster.local -> perftest-scalefromzero-02-iqrgrhun.default.svc.cluster.local
+2023/09/08 06:00:58 01: waiting for endpoint to serve request
+2023/09/08 06:00:58 Spoofing perftest-scalefromzero-01-ruxmwssa.default.svc.cluster.local -> perftest-scalefromzero-01-ruxmwssa.default.svc.cluster.local
+2023/09/08 06:00:58 03: waiting for endpoint to serve request
+2023/09/08 06:00:58 Spoofing perftest-scalefromzero-03-ukrnggun.default.svc.cluster.local -> perftest-scalefromzero-03-ukrnggun.default.svc.cluster.local
+2023/09/08 06:00:58 00: waiting for endpoint to serve request
+2023/09/08 06:00:58 Spoofing perftest-scalefromzero-00-vvzrajcu.default.svc.cluster.local -> perftest-scalefromzero-00-vvzrajcu.default.svc.cluster.local
+2023/09/08 06:00:58 Service is ready after: name: perftest-scalefromzero-04-lnpofyzn, deployment-updated: 0ms, service-ready-since-deployment: 10ms, service-ready-total: 10ms
+2023/09/08 06:00:58 Service is ready after: name: perftest-scalefromzero-00-vvzrajcu, deployment-updated: 0ms, service-ready-since-deployment: 9ms, service-ready-total: 9ms
+2023/09/08 06:00:58 Service is ready after: name: perftest-scalefromzero-03-ukrnggun, deployment-updated: 0ms, service-ready-since-deployment: 10ms, service-ready-total: 10ms
+2023/09/08 06:00:58 Service is ready after: name: perftest-scalefromzero-01-ruxmwssa, deployment-updated: 0ms, service-ready-since-deployment: 11ms, service-ready-total: 11ms
+2023/09/08 06:00:58 Service is ready after: name: perftest-scalefromzero-02-iqrgrhun, deployment-updated: 0ms, service-ready-since-deployment: 12ms, service-ready-total: 12ms
+2023/09/08 06:00:58 Shutting down VegetaReporter
+Requests      [total, rate, throughput]         5, 5.00, 0.00
+Duration      [total, attack, wait]             12.377ms, 0s, 12.377ms
+Latencies     [min, mean, 50, 90, 95, 99, max]  9.552ms, 10.912ms, 10.866ms, 12.377ms, 12.377ms, 12.377ms, 12.377ms
+Bytes In      [total, mean]                     0, 0.00
+Bytes Out     [total, mean]                     0, 0.00
+Success       [ratio]                           0.00%
+Status Codes  [code:count]                      0:5  
+Error Set:
+2023/09/08 06:00:58 SLA 1 passed. P95 latency is in 0-15000000ms time range
+2023/09/08 06:00:58 SLA 2 passed. Max latency is below or equal to 20000000ms
+2023/09/08 06:00:58 Scale from zero test completed
+2023/09/08 06:00:58 Shutting down InfluxReporter

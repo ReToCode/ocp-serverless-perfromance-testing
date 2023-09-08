@@ -1,0 +1,140 @@
+2023/09/08 06:01:33 Starting scale from zero test
+2023/09/08 06:01:48 Created all the services in 15.088422478s
+2023/09/08 06:01:48 24: waiting for deployment to scale to zero
+2023/09/08 06:01:48 All pods are done (scaled to zero) or terminating after 7.032µs
+2023/09/08 06:01:48 00: waiting for deployment to scale to zero
+2023/09/08 06:01:48 All pods are done (scaled to zero) or terminating after 671ns
+2023/09/08 06:01:48 01: waiting for deployment to scale to zero
+2023/09/08 06:01:48 All pods are done (scaled to zero) or terminating after 861ns
+2023/09/08 06:01:48 02: waiting for deployment to scale to zero
+2023/09/08 06:01:48 All pods are done (scaled to zero) or terminating after 596ns
+2023/09/08 06:01:48 03: waiting for deployment to scale to zero
+2023/09/08 06:01:48 All pods are done (scaled to zero) or terminating after 1.389µs
+2023/09/08 06:01:48 04: waiting for deployment to scale to zero
+2023/09/08 06:01:48 All pods are done (scaled to zero) or terminating after 568ns
+2023/09/08 06:01:48 05: waiting for deployment to scale to zero
+2023/09/08 06:01:48 All pods are done (scaled to zero) or terminating after 554ns
+2023/09/08 06:01:48 06: waiting for deployment to scale to zero
+2023/09/08 06:01:48 All pods are done (scaled to zero) or terminating after 463ns
+2023/09/08 06:01:48 07: waiting for deployment to scale to zero
+2023/09/08 06:01:48 All pods are done (scaled to zero) or terminating after 549ns
+2023/09/08 06:01:48 08: waiting for deployment to scale to zero
+2023/09/08 06:01:48 All pods are done (scaled to zero) or terminating after 441ns
+2023/09/08 06:01:48 09: waiting for deployment to scale to zero
+2023/09/08 06:01:48 All pods are done (scaled to zero) or terminating after 439ns
+2023/09/08 06:01:48 10: waiting for deployment to scale to zero
+2023/09/08 06:01:48 All pods are done (scaled to zero) or terminating after 491ns
+2023/09/08 06:01:48 11: waiting for deployment to scale to zero
+2023/09/08 06:01:48 All pods are done (scaled to zero) or terminating after 594ns
+2023/09/08 06:01:48 12: waiting for deployment to scale to zero
+2023/09/08 06:01:48 All pods are done (scaled to zero) or terminating after 526ns
+2023/09/08 06:01:48 13: waiting for deployment to scale to zero
+2023/09/08 06:01:48 All pods are done (scaled to zero) or terminating after 599ns
+2023/09/08 06:01:48 14: waiting for deployment to scale to zero
+2023/09/08 06:01:48 All pods are done (scaled to zero) or terminating after 502ns
+2023/09/08 06:01:48 15: waiting for deployment to scale to zero
+2023/09/08 06:01:48 All pods are done (scaled to zero) or terminating after 580ns
+2023/09/08 06:01:48 16: waiting for deployment to scale to zero
+2023/09/08 06:01:48 All pods are done (scaled to zero) or terminating after 475ns
+2023/09/08 06:01:48 17: waiting for deployment to scale to zero
+2023/09/08 06:01:48 All pods are done (scaled to zero) or terminating after 1.2µs
+2023/09/08 06:01:48 21: waiting for deployment to scale to zero
+2023/09/08 06:01:48 All pods are done (scaled to zero) or terminating after 426ns
+2023/09/08 06:01:48 22: waiting for deployment to scale to zero
+2023/09/08 06:01:48 20: waiting for deployment to scale to zero
+2023/09/08 06:01:48 23: waiting for deployment to scale to zero
+2023/09/08 06:01:48 All pods are done (scaled to zero) or terminating after 557ns
+2023/09/08 06:01:48 18: waiting for deployment to scale to zero
+2023/09/08 06:01:48 All pods are done (scaled to zero) or terminating after 455ns
+2023/09/08 06:01:48 19: waiting for deployment to scale to zero
+2023/09/08 06:01:48 All pods are done (scaled to zero) or terminating after 398ns
+2023/09/08 06:01:48 All pods are done (scaled to zero) or terminating after 14.104µs
+2023/09/08 06:01:48 All pods are done (scaled to zero) or terminating after 804ns
+2023/09/08 06:01:48 00: waiting for endpoint to serve request
+2023/09/08 06:01:48 Spoofing perftest-scalefromzero-00-zpsiywnh.default.svc.cluster.local -> perftest-scalefromzero-00-zpsiywnh.default.svc.cluster.local
+2023/09/08 06:01:48 02: waiting for endpoint to serve request
+2023/09/08 06:01:48 Spoofing perftest-scalefromzero-02-pasqsnmr.default.svc.cluster.local -> perftest-scalefromzero-02-pasqsnmr.default.svc.cluster.local
+2023/09/08 06:01:48 01: waiting for endpoint to serve request
+2023/09/08 06:01:48 Spoofing perftest-scalefromzero-01-dkqjadsy.default.svc.cluster.local -> perftest-scalefromzero-01-dkqjadsy.default.svc.cluster.local
+2023/09/08 06:01:48 11: waiting for endpoint to serve request
+2023/09/08 06:01:48 Spoofing perftest-scalefromzero-11-zdghgsux.default.svc.cluster.local -> perftest-scalefromzero-11-zdghgsux.default.svc.cluster.local
+2023/09/08 06:01:48 06: waiting for endpoint to serve request
+2023/09/08 06:01:48 Spoofing perftest-scalefromzero-06-rgmrxpdl.default.svc.cluster.local -> perftest-scalefromzero-06-rgmrxpdl.default.svc.cluster.local
+2023/09/08 06:01:48 03: waiting for endpoint to serve request
+2023/09/08 06:01:48 Spoofing perftest-scalefromzero-03-afxuucse.default.svc.cluster.local -> perftest-scalefromzero-03-afxuucse.default.svc.cluster.local
+2023/09/08 06:01:48 24: waiting for endpoint to serve request
+2023/09/08 06:01:48 Spoofing perftest-scalefromzero-24-vocwcqlo.default.svc.cluster.local -> perftest-scalefromzero-24-vocwcqlo.default.svc.cluster.local
+2023/09/08 06:01:48 19: waiting for endpoint to serve request
+2023/09/08 06:01:48 Spoofing perftest-scalefromzero-19-gtgsuuuw.default.svc.cluster.local -> perftest-scalefromzero-19-gtgsuuuw.default.svc.cluster.local
+2023/09/08 06:01:48 04: waiting for endpoint to serve request
+2023/09/08 06:01:48 Spoofing perftest-scalefromzero-04-ihmpigbn.default.svc.cluster.local -> perftest-scalefromzero-04-ihmpigbn.default.svc.cluster.local
+2023/09/08 06:01:48 13: waiting for endpoint to serve request
+2023/09/08 06:01:48 Spoofing perftest-scalefromzero-13-omjivffk.default.svc.cluster.local -> perftest-scalefromzero-13-omjivffk.default.svc.cluster.local
+2023/09/08 06:01:48 10: waiting for endpoint to serve request
+2023/09/08 06:01:48 Spoofing perftest-scalefromzero-10-igedbgnx.default.svc.cluster.local -> perftest-scalefromzero-10-igedbgnx.default.svc.cluster.local
+2023/09/08 06:01:48 08: waiting for endpoint to serve request
+2023/09/08 06:01:48 Spoofing perftest-scalefromzero-08-uytszeqj.default.svc.cluster.local -> perftest-scalefromzero-08-uytszeqj.default.svc.cluster.local
+2023/09/08 06:01:48 12: waiting for endpoint to serve request
+2023/09/08 06:01:48 Spoofing perftest-scalefromzero-12-ojoexhli.default.svc.cluster.local -> perftest-scalefromzero-12-ojoexhli.default.svc.cluster.local
+2023/09/08 06:01:48 16: waiting for endpoint to serve request
+2023/09/08 06:01:48 Spoofing perftest-scalefromzero-16-cpbjlhbt.default.svc.cluster.local -> perftest-scalefromzero-16-cpbjlhbt.default.svc.cluster.local
+2023/09/08 06:01:48 22: waiting for endpoint to serve request
+2023/09/08 06:01:48 Spoofing perftest-scalefromzero-22-unlfuchi.default.svc.cluster.local -> perftest-scalefromzero-22-unlfuchi.default.svc.cluster.local
+2023/09/08 06:01:48 14: waiting for endpoint to serve request
+2023/09/08 06:01:48 Spoofing perftest-scalefromzero-14-sqzihhgb.default.svc.cluster.local -> perftest-scalefromzero-14-sqzihhgb.default.svc.cluster.local
+2023/09/08 06:01:48 05: waiting for endpoint to serve request
+2023/09/08 06:01:48 Spoofing perftest-scalefromzero-05-pibdpfvt.default.svc.cluster.local -> perftest-scalefromzero-05-pibdpfvt.default.svc.cluster.local
+2023/09/08 06:01:48 07: waiting for endpoint to serve request
+2023/09/08 06:01:48 Spoofing perftest-scalefromzero-07-wocqsbaq.default.svc.cluster.local -> perftest-scalefromzero-07-wocqsbaq.default.svc.cluster.local
+2023/09/08 06:01:48 18: waiting for endpoint to serve request
+2023/09/08 06:01:48 Spoofing perftest-scalefromzero-18-kabpwuyd.default.svc.cluster.local -> perftest-scalefromzero-18-kabpwuyd.default.svc.cluster.local
+2023/09/08 06:01:48 09: waiting for endpoint to serve request
+2023/09/08 06:01:48 Spoofing perftest-scalefromzero-09-dtpskrbl.default.svc.cluster.local -> perftest-scalefromzero-09-dtpskrbl.default.svc.cluster.local
+2023/09/08 06:01:48 21: waiting for endpoint to serve request
+2023/09/08 06:01:48 Spoofing perftest-scalefromzero-21-qlvtvcjj.default.svc.cluster.local -> perftest-scalefromzero-21-qlvtvcjj.default.svc.cluster.local
+2023/09/08 06:01:48 23: waiting for endpoint to serve request
+2023/09/08 06:01:48 Spoofing perftest-scalefromzero-23-ttirkfst.default.svc.cluster.local -> perftest-scalefromzero-23-ttirkfst.default.svc.cluster.local
+2023/09/08 06:01:48 17: waiting for endpoint to serve request
+2023/09/08 06:01:48 Spoofing perftest-scalefromzero-17-ogupxjpy.default.svc.cluster.local -> perftest-scalefromzero-17-ogupxjpy.default.svc.cluster.local
+2023/09/08 06:01:48 15: waiting for endpoint to serve request
+2023/09/08 06:01:48 Spoofing perftest-scalefromzero-15-vltxpugl.default.svc.cluster.local -> perftest-scalefromzero-15-vltxpugl.default.svc.cluster.local
+2023/09/08 06:01:48 20: waiting for endpoint to serve request
+2023/09/08 06:01:48 Spoofing perftest-scalefromzero-20-pagnnfcs.default.svc.cluster.local -> perftest-scalefromzero-20-pagnnfcs.default.svc.cluster.local
+2023/09/08 06:01:48 Service is ready after: name: perftest-scalefromzero-11-zdghgsux, deployment-updated: 0ms, service-ready-since-deployment: 27ms, service-ready-total: 27ms
+2023/09/08 06:01:48 Service is ready after: name: perftest-scalefromzero-09-dtpskrbl, deployment-updated: 0ms, service-ready-since-deployment: 21ms, service-ready-total: 21ms
+2023/09/08 06:01:48 Service is ready after: name: perftest-scalefromzero-00-zpsiywnh, deployment-updated: 0ms, service-ready-since-deployment: 28ms, service-ready-total: 28ms
+2023/09/08 06:01:48 Service is ready after: name: perftest-scalefromzero-06-rgmrxpdl, deployment-updated: 0ms, service-ready-since-deployment: 26ms, service-ready-total: 26ms
+2023/09/08 06:01:48 Service is ready after: name: perftest-scalefromzero-01-dkqjadsy, deployment-updated: 0ms, service-ready-since-deployment: 28ms, service-ready-total: 28ms
+2023/09/08 06:01:48 Service is ready after: name: perftest-scalefromzero-05-pibdpfvt, deployment-updated: 0ms, service-ready-since-deployment: 22ms, service-ready-total: 22ms
+2023/09/08 06:01:48 Service is ready after: name: perftest-scalefromzero-04-ihmpigbn, deployment-updated: 0ms, service-ready-since-deployment: 26ms, service-ready-total: 26ms
+2023/09/08 06:01:48 Service is ready after: name: perftest-scalefromzero-08-uytszeqj, deployment-updated: 0ms, service-ready-since-deployment: 25ms, service-ready-total: 25ms
+2023/09/08 06:01:48 Service is ready after: name: perftest-scalefromzero-18-kabpwuyd, deployment-updated: 0ms, service-ready-since-deployment: 22ms, service-ready-total: 22ms
+2023/09/08 06:01:48 Service is ready after: name: perftest-scalefromzero-22-unlfuchi, deployment-updated: 0ms, service-ready-since-deployment: 23ms, service-ready-total: 23ms
+2023/09/08 06:01:48 Service is ready after: name: perftest-scalefromzero-02-pasqsnmr, deployment-updated: 0ms, service-ready-since-deployment: 28ms, service-ready-total: 28ms
+2023/09/08 06:01:48 Service is ready after: name: perftest-scalefromzero-13-omjivffk, deployment-updated: 0ms, service-ready-since-deployment: 26ms, service-ready-total: 26ms
+2023/09/08 06:01:48 Service is ready after: name: perftest-scalefromzero-19-gtgsuuuw, deployment-updated: 0ms, service-ready-since-deployment: 26ms, service-ready-total: 26ms
+2023/09/08 06:01:48 Service is ready after: name: perftest-scalefromzero-17-ogupxjpy, deployment-updated: 0ms, service-ready-since-deployment: 18ms, service-ready-total: 18ms
+2023/09/08 06:01:48 Service is ready after: name: perftest-scalefromzero-16-cpbjlhbt, deployment-updated: 0ms, service-ready-since-deployment: 24ms, service-ready-total: 24ms
+2023/09/08 06:01:48 Service is ready after: name: perftest-scalefromzero-07-wocqsbaq, deployment-updated: 0ms, service-ready-since-deployment: 23ms, service-ready-total: 23ms
+2023/09/08 06:01:48 Service is ready after: name: perftest-scalefromzero-14-sqzihhgb, deployment-updated: 0ms, service-ready-since-deployment: 23ms, service-ready-total: 23ms
+2023/09/08 06:01:48 Service is ready after: name: perftest-scalefromzero-21-qlvtvcjj, deployment-updated: 0ms, service-ready-since-deployment: 23ms, service-ready-total: 23ms
+2023/09/08 06:01:48 Service is ready after: name: perftest-scalefromzero-03-afxuucse, deployment-updated: 0ms, service-ready-since-deployment: 27ms, service-ready-total: 27ms
+2023/09/08 06:01:48 Service is ready after: name: perftest-scalefromzero-23-ttirkfst, deployment-updated: 0ms, service-ready-since-deployment: 23ms, service-ready-total: 23ms
+2023/09/08 06:01:48 Service is ready after: name: perftest-scalefromzero-24-vocwcqlo, deployment-updated: 0ms, service-ready-since-deployment: 27ms, service-ready-total: 27ms
+2023/09/08 06:01:48 Service is ready after: name: perftest-scalefromzero-12-ojoexhli, deployment-updated: 0ms, service-ready-since-deployment: 26ms, service-ready-total: 26ms
+2023/09/08 06:01:48 Service is ready after: name: perftest-scalefromzero-10-igedbgnx, deployment-updated: 0ms, service-ready-since-deployment: 27ms, service-ready-total: 27ms
+2023/09/08 06:01:48 Service is ready after: name: perftest-scalefromzero-15-vltxpugl, deployment-updated: 0ms, service-ready-since-deployment: 17ms, service-ready-total: 17ms
+2023/09/08 06:01:48 Service is ready after: name: perftest-scalefromzero-20-pagnnfcs, deployment-updated: 0ms, service-ready-since-deployment: 17ms, service-ready-total: 17ms
+2023/09/08 06:01:48 Shutting down VegetaReporter
+Requests      [total, rate, throughput]         25, 25.00, 0.00
+Duration      [total, attack, wait]             28.688ms, 0s, 28.688ms
+Latencies     [min, mean, 50, 90, 95, 99, max]  17.644ms, 24.604ms, 25.501ms, 28.181ms, 28.392ms, 28.688ms, 28.688ms
+Bytes In      [total, mean]                     0, 0.00
+Bytes Out     [total, mean]                     0, 0.00
+Success       [ratio]                           0.00%
+Status Codes  [code:count]                      0:25  
+Error Set:
+2023/09/08 06:01:48 SLA 1 passed. P95 latency is in 0-2000000000ms time range
+2023/09/08 06:01:48 SLA 2 passed. Max latency is below or equal to 5000000000ms
+2023/09/08 06:01:48 Scale from zero test completed
+2023/09/08 06:01:51 Shutting down InfluxReporter

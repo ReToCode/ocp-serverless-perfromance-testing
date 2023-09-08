@@ -1,0 +1,17 @@
+{"level":"info","ts":1694155273.068444,"logger":"fallback","caller":"injection/injection.go:63","msg":"Starting informers..."}
+2023/09/08 06:41:13 Running rollout probe test with selector: serving.knative.dev/service=queue-proxy-with-cc
+2023/09/08 06:41:14 Inferred first revision = queue-proxy-with-cc-00001
+2023/09/08 06:41:43 Updating the service: queue-proxy-with-cc
+2023/09/08 06:41:43 Successfully updated the service.
+Requests      [total, rate, throughput]         180000, 1000.00, 982.66
+Duration      [total, attack, wait]             3m0s, 3m0s, 104.03ms
+Latencies     [min, mean, 50, 90, 95, 99, max]  516.054µs, 139.352ms, 101.839ms, 102.641ms, 106.43ms, 940.769ms, 5.774s
+Bytes In      [total, mean]                     4309569, 23.94
+Bytes Out     [total, mean]                     0, 0.00
+Success       [ratio]                           98.32%
+Status Codes  [code:count]                      200:176980  503:3020  
+Error Set:
+503 Service Unavailable
+2023/09/08 06:44:13 SLA 1 passed. P95 latency is in 100-110ms time range
+2023/09/08 06:44:13 Load test finished
+2023/09/08 06:44:13 Shutting down InfluxReporter

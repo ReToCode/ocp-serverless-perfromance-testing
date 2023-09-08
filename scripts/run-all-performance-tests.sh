@@ -8,13 +8,13 @@ declare ns
 
 source "$(dirname "$0")/setup.sh"
 
-###############################################################################################
+################################################################################################
 header "Real traffic test"
 
 run_job real-traffic-test "${SERVING}/test/performance/benchmarks/real-traffic-test/real-traffic-test.yaml"
 sleep 100 # wait a bit for the cleanup to be done
 
-##############################################################################################
+###############################################################################################
 header "Dataplane probe: Setup"
 
 pushd "$SERVING"
@@ -23,7 +23,7 @@ popd
 kubectl wait --timeout=60s --for=condition=ready ksvc -n "$ns" --all
 kubectl wait --timeout=60s --for=condition=available deploy -n "$ns" deployment
 
-#############################################################################################
+##############################################################################################
 header "Dataplane probe: deployment"
 
 run_job dataplane-probe-deployment "${SERVING}/test/performance/benchmarks/dataplane-probe/dataplane-probe-deployment.yaml"
@@ -34,7 +34,7 @@ kubectl delete svc deployment -n "$ns" --ignore-not-found=true
 kubectl wait --for=delete deploy/deployment --timeout=60s -n "$ns"
 kubectl wait --for=delete svc/deployment --timeout=60s -n "$ns"
 
-#############################################################################################
+##############################################################################################
 header "Dataplane probe: activator"
 
 run_job dataplane-probe-activator "${SERVING}/test/performance/benchmarks/dataplane-probe/dataplane-probe-activator.yaml"
@@ -43,7 +43,7 @@ run_job dataplane-probe-activator "${SERVING}/test/performance/benchmarks/datapl
 kubectl delete ksvc activator -n "$ns" --ignore-not-found=true
 kubectl wait --for=delete ksvc/activator --timeout=60s -n "$ns"
 
-##############################################################################################
+###############################################################################################
 header "Dataplane probe: queue proxy"
 
 run_job dataplane-probe-queue "${SERVING}/test/performance/benchmarks/dataplane-probe/dataplane-probe-queue.yaml"
@@ -52,11 +52,11 @@ run_job dataplane-probe-queue "${SERVING}/test/performance/benchmarks/dataplane-
 kubectl delete ksvc queue-proxy -n "$ns" --ignore-not-found=true
 kubectl wait --for=delete ksvc/queue-proxy --timeout=60s -n "$ns"
 
-##############################################################################################
+###############################################################################################
 header "Reconciliation delay test"
 
 run_job reconciliation-delay "${SERVING}/test/performance/benchmarks/reconciliation-delay/reconciliation-delay.yaml"
-##############################################################################################
+###############################################################################################
 header "Scale from Zero test"
 
 run_job scale-from-zero-1 "${SERVING}/test/performance/benchmarks/scale-from-zero/scale-from-zero-1.yaml"
@@ -88,11 +88,11 @@ header "Load test: zero"
 
 run_job load-test-zero "${SERVING}/test/performance/benchmarks/load-test/load-test-0-direct.yaml"
 
- additional clean up
+# additional clean up
 kubectl delete ksvc load-test-zero -n "$ns"  --ignore-not-found=true
 kubectl wait --for=delete ksvc/load-test-zero --timeout=60s -n "$ns"
 
-#################################################################################################
+##################################################################################################
 header "Load test: always direct"
 
 run_job load-test-always "${SERVING}/test/performance/benchmarks/load-test/load-test-always-direct.yaml"
@@ -101,7 +101,7 @@ run_job load-test-always "${SERVING}/test/performance/benchmarks/load-test/load-
 kubectl delete ksvc load-test-always -n "$ns"  --ignore-not-found=true
 kubectl wait --for=delete ksvc/load-test-always --timeout=60s -n "$ns"
 
-################################################################################################
+#################################################################################################
 header "Load test: 200 direct"
 
 run_job load-test-200 "${SERVING}/test/performance/benchmarks/load-test/load-test-200-direct.yaml"
@@ -109,6 +109,7 @@ run_job load-test-200 "${SERVING}/test/performance/benchmarks/load-test/load-tes
 # additional clean up
 kubectl delete ksvc load-test-200 -n "$ns"  --ignore-not-found=true
 kubectl wait --for=delete ksvc/load-test-200 --timeout=60s -n "$ns"
+
 ###############################################################################################
 header "Rollout probe: activator direct"
 

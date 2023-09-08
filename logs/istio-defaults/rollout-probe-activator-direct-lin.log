@@ -1,0 +1,9 @@
+{"level":"info","ts":1694085777.2828152,"logger":"fallback","caller":"injection/injection.go:63","msg":"Starting informers..."}
+2023/09/07 11:22:57 Running rollout probe test with selector: serving.knative.dev/service=activator-with-cc-lin
+2023/09/07 11:22:58 Inferred first revision = activator-with-cc-lin-00001
+2023/09/07 11:23:16 influxdb2client E! Write error: Post "http://local-influx-influxdb2.influx:80/api/v2/write?bucket=knative-serving&org=Knativetest&precision=ns": write tcp 10.128.5.86:57282->172.30.176.110:80: write: connection reset by peer
+Batch kept for retrying
+2023/09/07 11:23:29 influxdb2client E! Write error: Post "http://local-influx-influxdb2.influx:80/api/v2/write?bucket=knative-serving&org=Knativetest&precision=ns": dial tcp: lookup local-influx-influxdb2.influx: i/o timeout
+Batch kept for retrying
+2023/09/07 11:23:29 Updating the service: activator-with-cc-lin
+2023/09/07 11:23:29 Error getting ksvc activator-with-cc-lin: Get "https://172.30.0.1:443/apis/serving.knative.dev/v1/namespaces/default/services/activator-with-cc-lin": dial tcp 172.30.0.1:443: connect: connection refused
