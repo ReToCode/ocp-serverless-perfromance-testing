@@ -1,0 +1,67 @@
+apiVersion: maistra.io/v2
+kind: ServiceMeshControlPlane
+metadata:
+  name: basic
+  namespace: istio-system
+spec:
+  profiles:
+    - default
+
+  general:
+    logging:
+      componentLevels:
+        all: debug
+
+  security:
+    dataPlane:
+      mtls: false
+
+  techPreview:
+    meshConfig:
+      defaultConfig:
+        terminationDrainDuration: 35s
+
+  gateways:
+    ingress:
+      service:
+        metadata:
+          labels:
+            knative: ingressgateway
+      runtime:
+        container:
+          resources:
+            requests:
+              cpu: 10m
+              memory: 128Mi
+            limits:
+              cpu: 4000m
+              memory: 6000Mi
+        deployment:
+          autoScaling:
+            enabled: true
+
+  proxy:
+    runtime:
+      container:
+        resources:
+          requests:
+            cpu: 50m
+            memory: 50Mi
+          limits:
+            cpu: 10000m
+            memory: 6000Mi
+
+    networking:
+      trafficControl:
+        inbound:
+          excludedPorts:
+            - 8444 # metrics
+            - 8022 # serving: wait-for-drain k8s pre-stop hook
+
+  addons:
+    grafana:
+      enabled: true
+    kiali:
+      enabled: true
+    prometheus:
+      enabled: true

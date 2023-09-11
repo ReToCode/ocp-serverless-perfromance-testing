@@ -1,0 +1,33 @@
+apiVersion: operator.knative.dev/v1beta1
+kind: KnativeServing
+metadata:
+  annotations:
+    serverless.openshift.io/default-enable-http2: "true"
+  name: knative-serving
+  namespace: knative-serving
+spec:
+  ingress:
+    istio:
+      enabled: true
+  config:
+    features:
+      kubernetes.podspec-init-containers: enabled # this is only necessary for adding artificial startup-delays
+  workloads:
+    - name: activator
+      annotations:
+        "sidecar.istio.io/inject": "true"
+        "sidecar.istio.io/rewriteAppHTTPProbers": "true"
+      replicas: 10
+      resources:
+        - container: activator
+          requests:
+            cpu: 500m       # default: 300m  (HPA on this target 100%)
+            memory: 500Mi   # default: 60Mi
+          limits:
+            cpu: 5000m      # default: 1000m
+            memory: 5000Mi  # default: 600Mi
+    - name: autoscaler
+      annotations:
+        "sidecar.istio.io/inject": "true"
+        "sidecar.istio.io/rewriteAppHTTPProbers": "true"
+      replicas: 5

@@ -1,0 +1,353 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    k8s.v1.cni.cncf.io/network-status: |-
+      [{
+          "name": "openshift-sdn",
+          "interface": "eth0",
+          "ips": [
+              "10.129.6.47"
+          ],
+          "default": true,
+          "dns": {}
+      }]
+    openshift.io/scc: restricted-v2
+    prometheus.io/path: /stats/prometheus
+    prometheus.io/port: "15020"
+    prometheus.io/scrape: "true"
+    seccomp.security.alpha.kubernetes.io/pod: runtime/default
+    sidecar.istio.io/inject: "false"
+  creationTimestamp: "2023-09-11T08:03:54Z"
+  generateName: istio-ingressgateway-5d498db65b-
+  labels:
+    app: istio-ingressgateway
+    chart: gateways
+    heritage: Tiller
+    istio: ingressgateway
+    istio.io/rev: basic
+    knative: ingressgateway
+    maistra-control-plane: istio-system
+    maistra.io/gateway: istio-ingressgateway.istio-system
+    pod-template-hash: 5d498db65b
+    release: istio
+    service.istio.io/canonical-name: istio-ingressgateway
+    service.istio.io/canonical-revision: basic
+    sidecar.istio.io/inject: "false"
+  name: istio-ingressgateway-5d498db65b-d6n8j
+  namespace: istio-system
+  ownerReferences:
+  - apiVersion: apps/v1
+    blockOwnerDeletion: true
+    controller: true
+    kind: ReplicaSet
+    name: istio-ingressgateway-5d498db65b
+    uid: 5ecde162-f34f-420b-b168-d3d34d1dcf6b
+  resourceVersion: "211517"
+  uid: 33039730-966b-44ae-99b5-50d30c5f9aab
+spec:
+  affinity:
+    nodeAffinity:
+      preferredDuringSchedulingIgnoredDuringExecution:
+      - preference:
+          matchExpressions:
+          - key: kubernetes.io/arch
+            operator: In
+            values:
+            - amd64
+        weight: 2
+      - preference:
+          matchExpressions:
+          - key: kubernetes.io/arch
+            operator: In
+            values:
+            - ppc64le
+        weight: 2
+      - preference:
+          matchExpressions:
+          - key: kubernetes.io/arch
+            operator: In
+            values:
+            - s390x
+        weight: 2
+      requiredDuringSchedulingIgnoredDuringExecution:
+        nodeSelectorTerms:
+        - matchExpressions:
+          - key: kubernetes.io/arch
+            operator: In
+            values:
+            - amd64
+            - ppc64le
+            - s390x
+  containers:
+  - args:
+    - proxy
+    - router
+    - --domain
+    - $(POD_NAMESPACE).svc.cluster.local
+    - --proxyLogLevel=warning
+    - --proxyComponentLogLevel=misc:error
+    - --log_output_level=all:debug
+    env:
+    - name: JWT_POLICY
+      value: first-party-jwt
+    - name: PILOT_CERT_PROVIDER
+      value: istiod
+    - name: CA_ADDR
+      value: istiod-basic.istio-system.svc:15012
+    - name: NODE_NAME
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: spec.nodeName
+    - name: POD_NAME
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: metadata.name
+    - name: POD_NAMESPACE
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: metadata.namespace
+    - name: INSTANCE_IP
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: status.podIP
+    - name: HOST_IP
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: status.hostIP
+    - name: SERVICE_ACCOUNT
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: spec.serviceAccountName
+    - name: ISTIO_META_WORKLOAD_NAME
+      value: istio-ingressgateway
+    - name: ISTIO_META_OWNER
+      value: kubernetes://apis/apps/v1/namespaces/istio-system/deployments/istio-ingressgateway
+    - name: ISTIO_META_MESH_ID
+      value: cluster.local
+    - name: TRUST_DOMAIN
+      value: cluster.local
+    - name: ISTIO_META_UNPRIVILEGED_POD
+      value: "true"
+    - name: ISTIO_META_DNS_AUTO_ALLOCATE
+      value: "true"
+    - name: ISTIO_META_DNS_CAPTURE
+      value: "true"
+    - name: PROXY_XDS_VIA_AGENT
+      value: "true"
+    - name: ISTIO_META_CLUSTER_ID
+      value: Kubernetes
+    image: registry.redhat.io/openshift-service-mesh/proxyv2-rhel8@sha256:2b5cb346d61deb35083fab97ffbda6d2f6e04aed7e10403b995b654c1d0ea393
+    imagePullPolicy: IfNotPresent
+    name: istio-proxy
+    ports:
+    - containerPort: 15021
+      name: status-port
+      protocol: TCP
+    - containerPort: 8080
+      name: http2
+      protocol: TCP
+    - containerPort: 8443
+      name: https
+      protocol: TCP
+    - containerPort: 15090
+      name: http-envoy-prom
+      protocol: TCP
+    readinessProbe:
+      failureThreshold: 30
+      httpGet:
+        path: /healthz/ready
+        port: 15021
+        scheme: HTTP
+      initialDelaySeconds: 1
+      periodSeconds: 2
+      successThreshold: 1
+      timeoutSeconds: 1
+    resources:
+      limits:
+        cpu: "2"
+        memory: 1Gi
+      requests:
+        cpu: 10m
+        memory: 128Mi
+    securityContext:
+      allowPrivilegeEscalation: false
+      capabilities:
+        drop:
+        - ALL
+      privileged: false
+      readOnlyRootFilesystem: true
+      runAsUser: 1000670000
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/workload-spiffe-uds
+      name: workload-socket
+    - mountPath: /var/run/secrets/credential-uds
+      name: credential-socket
+    - mountPath: /var/run/secrets/workload-spiffe-credentials
+      name: workload-certs
+    - mountPath: /etc/istio/proxy
+      name: istio-envoy
+    - mountPath: /etc/istio/config
+      name: config-volume
+    - mountPath: /var/run/secrets/istio
+      name: istiod-ca-cert
+    - mountPath: /var/lib/istio/data
+      name: istio-data
+    - mountPath: /etc/istio/pod
+      name: podinfo
+    - mountPath: /etc/istio/ingressgateway-certs
+      name: ingressgateway-certs
+      readOnly: true
+    - mountPath: /etc/istio/ingressgateway-ca-certs
+      name: ingressgateway-ca-certs
+      readOnly: true
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-5zfbd
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  imagePullSecrets:
+  - name: istio-ingressgateway-service-account-dockercfg-ttdlx
+  nodeName: ip-10-0-220-104.eu-west-2.compute.internal
+  preemptionPolicy: PreemptLowerPriority
+  priority: 0
+  restartPolicy: Always
+  schedulerName: default-scheduler
+  securityContext:
+    fsGroup: 1000670000
+    runAsNonRoot: true
+    seLinuxOptions:
+      level: s0:c26,c10
+    seccompProfile:
+      type: RuntimeDefault
+  serviceAccount: istio-ingressgateway-service-account
+  serviceAccountName: istio-ingressgateway-service-account
+  terminationGracePeriodSeconds: 30
+  tolerations:
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+    tolerationSeconds: 300
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+    tolerationSeconds: 300
+  - effect: NoSchedule
+    key: node.kubernetes.io/memory-pressure
+    operator: Exists
+  volumes:
+  - emptyDir: {}
+    name: workload-socket
+  - emptyDir: {}
+    name: credential-socket
+  - emptyDir: {}
+    name: workload-certs
+  - configMap:
+      defaultMode: 420
+      name: istio-ca-root-cert
+    name: istiod-ca-cert
+  - downwardAPI:
+      defaultMode: 420
+      items:
+      - fieldRef:
+          apiVersion: v1
+          fieldPath: metadata.labels
+        path: labels
+      - fieldRef:
+          apiVersion: v1
+          fieldPath: metadata.annotations
+        path: annotations
+    name: podinfo
+  - emptyDir: {}
+    name: istio-envoy
+  - emptyDir: {}
+    name: istio-data
+  - configMap:
+      defaultMode: 420
+      name: istio-basic
+      optional: true
+    name: config-volume
+  - name: ingressgateway-certs
+    secret:
+      defaultMode: 420
+      optional: true
+      secretName: istio-ingressgateway-certs
+  - name: ingressgateway-ca-certs
+    secret:
+      defaultMode: 420
+      optional: true
+      secretName: istio-ingressgateway-ca-certs
+  - name: kube-api-access-5zfbd
+    projected:
+      defaultMode: 420
+      sources:
+      - serviceAccountToken:
+          expirationSeconds: 3607
+          path: token
+      - configMap:
+          items:
+          - key: ca.crt
+            path: ca.crt
+          name: kube-root-ca.crt
+      - downwardAPI:
+          items:
+          - fieldRef:
+              apiVersion: v1
+              fieldPath: metadata.namespace
+            path: namespace
+      - configMap:
+          items:
+          - key: service-ca.crt
+            path: service-ca.crt
+          name: openshift-service-ca.crt
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2023-09-11T08:03:54Z"
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2023-09-11T08:26:59Z"
+    status: "True"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2023-09-11T08:26:59Z"
+    status: "True"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2023-09-11T08:03:54Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - containerID: cri-o://c9a36b0f7e195c7e63520fd9cf066ca9934797926aa32f0bd42996e2f4459704
+    image: registry.redhat.io/openshift-service-mesh/proxyv2-rhel8@sha256:2b5cb346d61deb35083fab97ffbda6d2f6e04aed7e10403b995b654c1d0ea393
+    imageID: registry.redhat.io/openshift-service-mesh/proxyv2-rhel8@sha256:2b5cb346d61deb35083fab97ffbda6d2f6e04aed7e10403b995b654c1d0ea393
+    lastState:
+      terminated:
+        containerID: cri-o://e5f8bc147924364228f6d4df54623d28273e990f2e033a19a598a12649835615
+        exitCode: 0
+        finishedAt: "2023-09-11T08:26:57Z"
+        reason: OOMKilled
+        startedAt: "2023-09-11T08:03:57Z"
+    name: istio-proxy
+    ready: true
+    restartCount: 1
+    started: true
+    state:
+      running:
+        startedAt: "2023-09-11T08:26:58Z"
+  hostIP: 10.0.220.104
+  phase: Running
+  podIP: 10.129.6.47
+  podIPs:
+  - ip: 10.129.6.47
+  qosClass: Burstable
+  startTime: "2023-09-11T08:03:54Z"

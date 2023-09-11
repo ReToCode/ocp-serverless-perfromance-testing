@@ -182,18 +182,52 @@ export ARTIFACTS=$PWD/logs
 #     annotations:
 #       sidecar.istio.io/inject: "true"
 #       proxy.istio.io/config: { "holdApplicationUntilProxyStarts": true }
-
-# rollout-probe/jobs also need the following to not get OOMKilled
-#   metadata:
-#     annotations:
-#       sidecar.istio.io/inject: "true"
-#       proxy.istio.io/config: { "holdApplicationUntilProxyStarts": true }
-#       sidecar.istio.io/proxyCPULimit: "1" # setting this, removes the memory limit of istio-proxy
         
 ./scripts/run-all-performance-tests.sh
 ```
 
-## Testing throughput and resources of datapath components
+⛔️ Note: The tests do not run with our default settings. See below for a changed setup.
+
+
+### Cluster setup: Istio with KnativeServing increased resources
+
+```bash
+# Cluster setup
+# > Install Istio + Serverless, SMCP, SMMR and gateways as per S-O script
+
+# Patch the SMCP + gateway with increased defaults
+oc apply -f scenarios/customizations-istio
+ 
+# > Scale machines
+for name in $(oc get machineset -n openshift-machine-api -o name); do oc scale $name -n openshift-machine-api --replicas=4; done
+oc wait --for=jsonpath={.status.availableReplicas}=4 machineset --all -n openshift-machine-api --timeout=-1s
+
+# Set KnativeServing with increased resources
+oc apply -f scenarios/knative-serving-istio-increased-limits.yaml
+
+# Deploy the testing webhook, that injects istio annotations to ksvc
+export SERVERLESS_OPERATOR=/Users/rlehmann/code/openshift-knative/serverless-operator
+oc apply -f $SERVERLESS_OPERATOR/serving/metadata-webhook/config
+sed "s|registry.ci.openshift.org/knative/openshift-serverless-nightly:metadata-webhook|quay.io/openshift-knative/metadata-webhook:latest|g" $SERVERLESS_OPERATOR/serving/metadata-webhook/config/webhook.yaml | oc apply -f - 
+
+# Environment
+export KO_DOCKER_REPO=quay.io/rlehmann
+export SYSTEM_NAMESPACE=knative-serving
+export KO_DEFAULTPLATFORMS=linux/amd64
+export SERVING=/Users/rlehmann/code/knative/serving
+export INFLUX_URL=http://local-influx-influxdb2.influx:80
+export ARTIFACTS=$PWD/logs
+
+# Manually (for now) make sure to add istio-inject annotations to all jobs in $SERVING and the deployment in dataplane-probe-setup.yaml
+#   metadata:
+#     annotations:
+#       sidecar.istio.io/inject: "true"
+#       proxy.istio.io/config: { "holdApplicationUntilProxyStarts": true }
+        
+./scripts/run-all-performance-tests.sh
+```
+
+## Testing throughput and resources of data-path components
 
 ### Setup
 ```bash

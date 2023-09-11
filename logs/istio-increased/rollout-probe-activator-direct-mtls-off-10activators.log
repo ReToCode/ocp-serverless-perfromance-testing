@@ -1,0 +1,18 @@
+{"level":"info","ts":1694415468.6189778,"logger":"fallback","caller":"injection/injection.go:63","msg":"Starting informers..."}
+2023/09/11 06:57:48 Running rollout probe test with selector: serving.knative.dev/service=activator-with-cc
+2023/09/11 06:57:49 Inferred first revision = activator-with-cc-00001
+2023/09/11 06:58:18 Updating the service: activator-with-cc
+2023/09/11 06:58:18 Successfully updated the service.
+Requests      [total, rate, throughput]         180000, 999.97, 470.24
+Duration      [total, attack, wait]             3m23s, 3m0s, 23.299s
+Latencies     [min, mean, 50, 90, 95, 99, max]  930.021µs, 12.059s, 7.897s, 30s, 30.002s, 30.015s, 30.351s
+Bytes In      [total, mean]                     3492215, 19.40
+Bytes Out     [total, mean]                     0, 0.00
+Success       [ratio]                           53.11%
+Status Codes  [code:count]                      0:77493  200:95602  503:6905  
+Error Set:
+Get "http://activator-with-cc.default.svc.cluster.local?sleep=100": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+Get "http://activator-with-cc.default.svc.cluster.local?sleep=100": dial tcp 0.0.0.0:0->172.30.194.206:80: bind: address already in use
+503 Service Unavailable
+2023/09/11 07:01:12 Shutting down InfluxReporter
+2023/09/11 07:01:12 SLA 1 failed. P95 latency is not in 100-110ms time range: 30.001892165s
